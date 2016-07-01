@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="activity-current-page  ">
+    <input type="hidden" id="currentPage" value="activity" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80OTc4MA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80OTc4MA==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80OTc4MA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80OTc4MA==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>Fábio's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li class="selected">
+			<a href="/user/activity/49780">Atividade</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/following/49780">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/49780">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">Fábio RJ's Atividade</h2>
+
+<div id="activityTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	
+        <li class="selected"><a href="#" id="tab_myIdeas">Ideias</a></li>
+        <li ><a href="#" id="tab_myComments">Comentários</a></li>
+                <li ><a href="#" id="tab_myVotes">Votos</a></li>
+            </ul>
+</div>
+<div class="tabView">
+    
+    <div id="viewtab_myIdeas" class="viewtab_myIdeas">
+
+    	<div id="myIdeas_subContainer">
+    		<div class="b-single-challenge__ideas-list i-ideas-list" style="background:#f5f5f5;padding:10px;">
+    			<div class="b-row b-single-challenge__ideas-header">
+    				<div class="b-column b-column--6" style="flex-basis:50%;">
+    					<span>Exibindo:</span>
+    					<strong><span class="result-count">2</span> Results</strong>
+    				</div>
+    				
+    				<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:50%;">
+    					<div class="viewoptions-wrapper">
+							<select name="myIdeas_sort" id="myIdeas_sort" class="i-mix-sort">
+							        	<option value="newest" selected="selected">Mais novos</option>
+							        	<option value="hottest" >Destaques</option>
+							        	<option value="mostPopular" >Mais Votadas</option>
+							        	<option value="mostComments" >Mais comentadas</option>
+							        	<option value="adopted" >Escolhas</option>
+							        </select>
+    					</div>
+    					
+    					<div class="viewoptions-wrapper">
+    						<span>Ordenar por</span>
+    					</div>
+    				</div>
+    			</div>
+	    		<div id="results-container" class="b-row results-view-list">
+		            				        
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="7" data-randorder="1609436027" data-id="100795" class="b-column b-idea__container filter-ready filter-active filter-2930 filter-default tag-Mobilidade tag-CampoGrande tag-ZonaOeste tag-BRS tag-integração   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/100795" onclick="return postAJAXObj.display(100795,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/95c06cf98148ce3110f0e8adda4454a4" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/100795" onclick="return postAJAXObj.display(100795,{  });">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/100795" onclick="return postAJAXObj.display(100795,{  });">    O Bairro de C.Grande atualmente sofre com constantes engarramentos a qualquer hora do dia, suas vias estão com esgotadas e já não dão conta do grande fluxo de veículos, o mais populoso bairro do Rio e o 3º mais motorizado não dispõe de estrutura viária suficiente para o grande número de tráfego. Uma das causas? todas as suas principais vias convergem num só ponto, o centro. Se um morador quiser se deslocar entre os sub-bairros mais distantes de Campo Grande obrigatoriamente terá que se...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Fábio RJ" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fábio RJ</a><br />
+                                                            <time data-tip="09:47  - 31 Mar 2015">Mar 31, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-100795" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:100795, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:100795, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-100795"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/100795">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>7</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Fábio RJ" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fábio RJ</a><br />
+										</div>
+										<time data-tip="09:47  - 31 Mar 2015">Mar 31, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="18" data-randorder="2125822972" data-id="84563" class="b-column b-idea__container filter-ready filter-active filter-2930 filter-default tag-Recreio tag-Jacarepaguá tag-Integração tag-Transporte tag-Mobilidade tag-ZonaOeste tag-CampoGrande tag-BRS   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84563" onclick="return postAJAXObj.display(84563,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/0c112e5c0257e4ef76e6376630b5228e" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84563" onclick="return postAJAXObj.display(84563,{  });">Corredor Viário C.Grande - Jaracarepaguá</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84563" onclick="return postAJAXObj.display(84563,{  });"> Esta proposta envolve não só aspectos de mobilidade urbarna, mas também infraestrutura, pois não há mobilidade sem infraestrutura para isso, a criação de um corredor viário que ligará diretamente o  centro dos dois bairros mais importantes da cidade e que são também os que mais crescem, atualemente C.Grande é o bairro mais populoso do Rio e a Região de Jacarepaguá que conta um número cada vez maior de moradores, considerado a última barreira da cidade o Maciço da Pedra Branca que separa e...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Fábio RJ" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fábio RJ</a><br />
+                                                            <time data-tip="05:27  - 24 Fev 2015">Feb 24, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84563" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84563, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84563, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84563"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84563">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>18</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Fábio RJ" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/49780" onclick="popUp('/user/view/49780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fábio RJ</a><br />
+										</div>
+										<time data-tip="05:27  - 24 Fev 2015">Feb 24, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+        <script>
+        (function() {
+            var voteBoxes = document.getElementsByClassName('voteBox');
+            for(var i = 0; i < voteBoxes.length; i++) {
+                voteBoxes[i].onclick = function(e) {
+                    e.preventDefault();
+                }
+            }
+        })();
+    </script>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/49780?mode=posts&hubbub_id=206&startFrom=%7B%22post%22%3A%2284563%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%222015-02-24+05%3A27%3A05%22%7D',$(this).up());return false;">Carregar mais</a></div>
+    
+
+
+<script>
+    Category.opentipCloseOnClick();
+    Category.voteBoxClick();
+</script>
+		            	            </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewtab_myComments" style="display:none;">
+    	        	                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a></h2>
+        <p><p>Ah ideia é mto boa!! utiliza os modais de forma integrada e apresenta uma solução para um dos problemas de mobilidade que temos na cidade que é a locomoção dentro dos próprios bairros, que por norma só acontece nos bairros maiores, como C.G, Stª.Cruz, Tijuca, e os da região de Jpa,só não resolve o problema de circulação entre bairros, mas como foi mesma desenvolvida para os sub-centros, acho mto válida, o vlt atenderia facilmente a demanda intra-bairro e substituiria com éxito algumas linhas de ônibus, mas isso não exclui o que o jhmelman disse é preciso também um eixo que conecte esses bairros, pois a demanda entre eles é significativa e afeta a circulação de outros bairros que ficam entre esses 3. Uma dúvida é sobre o vlt na Rio-SP, para isso precisaria duplicá-la, é uma estrada de mão dupla, mas por se tratar de uma BR, a BR 465 essas melhorias ficariam à cargo de quem? Prefeitura, do Estado ou Gov.Federal? pois foi apresentado no desafio uma proposta de duplicação dessa estrada, mas ela foi encerrada e colocaram a etiqueta rosa dizendo ser atribuição do Gov.Estadual quando na verdade é de responsabilidade do Gov.Federal, no ano passado o DNIT informou que iriam começar obras de melhorias, mas não foi falado em duplicação, só em recapeamento e construção de passarelas, creio que esse trecho será o único que a Prefeitura excluiria, pois sem duplicação não tem como construir vlt ali, a via está péssima, fora isso a ideia seria mto benéfica, os mapas tbm ficaram mto bons, ótima explicação!! Parabéns Rafael M.F.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100736">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100795">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a></h2>
+        <p><p>Mto legal essa ideia jhmeman !!! ideal para esses bairros (C.G, Taquara e Tijuca), sei que C.G e Tijuca já tiveram bondes, seria como uma volta ao passado e oas linhas de vlts propostas poderiam atém substituir várias linhas de ônibus, só fiquei na dúvida sobre a Rio-SP, ela é Federal e ainda de mão dupla, precisaria duplicar, há espaço de sobra para fazer isso não precisaria de remoções, mas para  isso a Prefeitura precisaria de um acordo com o Gov.Federal, nada muito complexo, já que a Brasil apesar de Federal mas creio que a responsabilidade é da Prefeitura, espero que seja o mesmo caso da Rio-SP, alguém aqui no desafio propôs a duplicação da estrada, mas puseram aquela tag rosa dizendo ser atribuição do Governo Estadual. </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100795">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84563">Corredor Viário C.Grande - Jaracarepaguá</a></h2>
+        <p><p>Rodrigo Jpa e C.Grande são uns dos principais bairros do Rio e uns dos poucos que não possuem ligação direta, o túnel proposto não liga diretamente os dois bairros, mas facilita, agiliza o deslocamento entre os dois através da Est. dos Bandeirantes, sobre ligar Jpa ao Centro é sim importante, mas atualmente já existem dois trajetos possíveis, um deles é pela Serra, Jpa não é tão isolado do restante da cidade como é C.Grande, para ligar Jpa ao Centro não há mais alternativas a não ser por trilhos (via os ramais da Supervia ou a L2 e a L4 do metrô), para isso o metrô é essencial, segundo informações o Gov. Estadual já estuda com a Prefeitura levar o metrô até à Freguesia pela Alvorada ( trecho original da L6, que em tese, futuramente deverá seguir por Madureira ou o traçado da L.Amarela até à Ilha), mas por enquanto não há projeto de uma ligação direta Jpa-Centro e mesmo se houvesse seja por trilho ou estradas isso não resolveria o problema de circulação interna do bairro, no momento não faz mais sentido que se invista mais milhões ou bilhões em obras que liguem os bairros ao Centro do Rio, principalmente metrô, que deve ser em rede e não linear ou linhas paralelas com todas as elas convergindo para o Centro, o metrô tem que integrar e para isso deveria seguir de Jpa em direção à Ilha para que interligue todos os ramais da Supervia e também a L2, já existem muitas ligações de trilhos em direção ao Centro, o que deve ser feito por parte da Prefeitura é descentralizar, incentivar uma melhor distribuição de empregos na área central do município (geograficamente falando), enquanto isso não acontecer sempre haverá o movimento pendular e nenhum transporte de massa conseguirá atender satisfatoriamente à demanda, é por isso que de manhã todos os trens ficam cheios e avenidas ficam congestionadas em direção ao Centro, enquanto em direção à Z.Oeste e Baixada Fluminense as vias estão livres, o que também acontece no período entre a tarde e a noite quando todos voltam para casa, só que ao contrário, as vias em direção ao Centro estão livres e em direção oeste totalmente paradas.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 1, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84563">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100795">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a></h2>
+        <p><p>Valeu pela sugestão jhmelman, realmente o texto ficou muito confuso, vou reeditar e alterar o título.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100795">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/98461">Revitalização das Calçadas de Copacabana</a></h2>
+        <p><p>só tem um dado errado aí, Copacabana não é nem de longe o bairro mais populoso, pode ser sim o mais ou um dos densos, mas não o mais populoso, C.Grande é o 1º com 328 mil, seguido de Bangu com 243 mil, Santa Cruz em 3º 217 mil,  Barra e Jacarepaguá também estão entres os mais populosos. Copacabana nos últimos anos até perdeu moradores e ainda é considerado o bairro com a maior população de idosos do país. (Censo 2010).                                http://noticias.terra.com.br/brasil/cidades/zona-oeste-tem-os-bairros-mais-populosos-do-rio-diz-ibge,edfa0970847ea310VgnCLD200000bbcceb0aRCRD.html</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/98461">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84236">Ligação direta Campo Grande – Taquara – Tijuca – Centro usando modais coletivos</a></h2>
+        <p><p>Boa proposta!!! ligar CG- Taquara- Tijuca e Centro, são uns dos principais bairros e que mais possuem atividades econômicas, geram riquezas, acredito ser essencial essa ligação, isso sem contar que C.G atualmente dos todos os citados só tem ligação com Centro por trem ou por ônibus, não existe ligação direta C.G- JPA e mto menos C.G- Tijuca e vice-versa, o mais próximo que C.G chega da Tijuca é no Méier por ônibus e trem ou Macanã por trem, JPA e C.G é feita por vans que fazem o que querem, o ideal seria ligar esses bairros por trilhos, seria um expresso, pena que aqui só podemos nos referir a projetos da Prefeitura, mas com o recente acordo da Prefeitura com o Gov. Estadual que estudam levar o metrô da Alvorada até a Freguesia pode melhorar esse aspecto.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84236">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84563">Corredor Viário C.Grande - Jaracarepaguá</a></h2>
+        <p><p>Olá CET-Rio fico feliz com o vosso comentário, fiquei curioso sobre esse projeto de Ligação B, vocês tem mais detalhes sobre isso? o trajeto? grandes remoções? seria pela antiga Rio-SP? achei bem interessante esse projeto. Sobre a proposta do túnel, sei de todos os entraves, sei que é uma APA, mas quando propus não quis me alongar muito, pois se fizerem, será de acordo com a lei e para minimizar ou neutralizar os danos ambientais existe a compensação ambiental, o túnel é escolhido justamente para minimizar esses impactos, a Suíça por exemplo tem umas das leis mais rígidas quanto a isso e fazem túneis na mesma, o mesmo está a ser feito pela Concer na nova subida da serra de Petrópolis, acredito que o benefício será enorme e a Transolímpica beneficiará os bairros mais próximos, como Bangu e Sen. Camará, os bairros a partir de Vasconcelos não terão tantos benefícios porque continuarão distantes da Transolímpica, caso contrário quem sai de Cosmos,Inhoaíba, C.Grande e se destina às Vargens, Camorim, Curicica e adjacências e vai pela Grota Funda e subtamente começar ir via Bangu para acessar a Transolímpica, congestionará as vias de Bangu, Pde. Miguel, Realengo, por  isso acredito ser uma alternativa esse novo túnel que ao contrário da Ligação B que por ser um trajeto extenso que provavelmente cortaria C.G e outros bairros ao meio exigiria mais remoções o que encarecerá a obra, mesmo que seja bom para o bairro.           Obrigado pelo comentário CET-Rio    :)</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 28, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84563">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+
+
+            </div>
+        <div id="viewtab_myVotes" style="display:none;">
+    	        	            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                            na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100795">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/84563">Corredor Viário C.Grande - Jaracarepaguá</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/100795">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/85152">Elevar ou colocar subterrâneos os trilhos da Supervia em bairros estratégicos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/85152">Elevar ou colocar subterrâneos os trilhos da Supervia em bairros estratégicos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Fábio RJ votou
+                                                            um comentário na ideia <a href="/post/85152">Elevar ou colocar subterrâneos os trilhos da Supervia em bairros estratégicos</a>
+                    </div>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/49780?mode=votes&hubbub_id=206&start=2015-03-31 09:50:46',$(this).up());return false;">Carregar mais</a></div>
+    
+            </div>
+    </div>
+
+        <script type="text/javascript">
+        
+        	jQuery(function() {
+        		jQuery('#myIdeas_sort').change(function() {
+        			loadMore($('results-container'),'/user/activity/49780?mode=posts&hubbub_id=206&sortBy='+$('myIdeas_sort').getValue(), null, true);
+        		});
+        	});
+        
+        </script>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter230.png" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">Fábio RJ</h2>
+                        <p>
+                            (Fábio Almeida)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(49780,0,{ 'user_id':49780, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            Rio de Janeiro, Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Nov 26, 2014</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup49780" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">9</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">2622</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/49780">Ideias</a><span>2</span></li>
+                        <li><a href="/user/activity/49780?goTab=myVotes">Votos</a><span>11</span></li>
+                        <li><a href="/user/activity/49780?goTab=myComments">Comentários</a><span>7</span></li>
+            <li><a href="/user/following/49780">Seguidores</a><span>32</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/49780?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/49780?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/49780?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/49780">Assinaturas</a><span>6</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">7</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><span>CET-Rio</span></a>
+                                                                        <a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><span>Prefeitura do Rio</span></a>
+                                                                        <a  href="user/activity/29780" onclick="popUp('/user/view/29780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29780_f9f4a50b1d1316e762e135ff337167f3_logo%20SMO%20para%20e-mail.PNG.jpg);"><span>Secretaria Municipal de Obras</span></a>
+                                                                        <a  href="user/activity/29895" onclick="popUp('/user/view/29895', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29895_273c742a72deac09af782932f246ed91_LOGO%20SUBPREFEITURA%20DEITADO.png.jpg);"><span>SubZ.O</span></a>
+                                                                        <a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><span>Secretaria Municipal de Urbanismo</span></a>
+                                                                        <a  href="user/activity/29694" onclick="popUp('/user/view/29694', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29694_bb00a5a8a37f0b8db05e03b50706fb2a_logo%20prefeitura.jpg.jpg);"><span>Secretaria de Urbanimo</span></a>
+                                                                        <a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><span>Secretaria Municipal de Transportes</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

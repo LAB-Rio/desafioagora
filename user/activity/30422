@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="activity-current-page  ">
+    <input type="hidden" id="currentPage" value="activity" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQyMg==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQyMg==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQyMg==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQyMg==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>João's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li class="selected">
+			<a href="/user/activity/30422">Atividade</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/following/30422">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/30422">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">João Ferraz Fernandes de Mello's Atividade</h2>
+
+<div id="activityTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	
+        <li class="selected"><a href="#" id="tab_myIdeas">Ideias</a></li>
+        <li ><a href="#" id="tab_myComments">Comentários</a></li>
+                <li ><a href="#" id="tab_myVotes">Votos</a></li>
+            </ul>
+</div>
+<div class="tabView">
+    
+    <div id="viewtab_myIdeas" class="viewtab_myIdeas">
+
+    	<div id="myIdeas_subContainer">
+    		<div class="b-single-challenge__ideas-list i-ideas-list" style="background:#f5f5f5;padding:10px;">
+    			<div class="b-row b-single-challenge__ideas-header">
+    				<div class="b-column b-column--6" style="flex-basis:50%;">
+    					<span>Exibindo:</span>
+    					<strong><span class="result-count">6</span> Results</strong>
+    				</div>
+    				
+    				<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:50%;">
+    					<div class="viewoptions-wrapper">
+							<select name="myIdeas_sort" id="myIdeas_sort" class="i-mix-sort">
+							        	<option value="newest" selected="selected">Mais novos</option>
+							        	<option value="hottest" >Destaques</option>
+							        	<option value="mostPopular" >Mais Votadas</option>
+							        	<option value="mostComments" >Mais comentadas</option>
+							        	<option value="adopted" >Escolhas</option>
+							        </select>
+    					</div>
+    					
+    					<div class="viewoptions-wrapper">
+    						<span>Ordenar por</span>
+    					</div>
+    				</div>
+    			</div>
+	    		<div id="results-container" class="b-row results-view-list">
+		            				        
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="5" data-randorder="2115150691" data-id="84774" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-mobilidadeurbana tag-VLT tag-QualidadedeVida tag-tr&#226;nsito tag-TrilhosUrbanos   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84774" onclick="return postAJAXObj.display(84774,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/0573c835df443452d529c00f5043a433" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84774" onclick="return postAJAXObj.display(84774,{  });">VLT Carioca - Trilhos Urbanos</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84774" onclick="return postAJAXObj.display(84774,{  });"> O Rio de Janeiro possuiu uma das maiores malhas de trilhos de urbanos do país. As linhas de carris abriram novos caminhos e auxiliaram na costrução de novos espaços, hoje consagrados, da cidade como a orla da zona Sul e os bairros proletários da zona Norte. Durante décadas os bondes levavam cidadãos no trajeto de casa para o trabalho bem como realizavam outros serviços, como limpeza urbana entre outros. A ideia consiste em, assim como acontece hoje na zona Portuária, nas obras do Porto...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="06:45  - 24 Fev 2015">Feb 24, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84774" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84774, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84774, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84774"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84774">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>5</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="06:45  - 24 Fev 2015">Feb 24, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="1" data-randorder="174380838" data-id="66350" class="b-column b-idea__container filter-ready filter-active filter-2380 filter-default   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        			                    
+			                                                                                            <section class="b-idea__quote">
+                                         Implantar telhados verdes e princípios da arquitetura...
+                                    </section>
+			                                                                
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details" style="padding-top:0px;">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/66350" onclick="return postAJAXObj.display(66350,{  });">Prédio públicos verdes</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/66350" onclick="return postAJAXObj.display(66350,{  });"> Implantar telhados verdes e princípios da arquitetura sustentável nos prédios públicos municipais. </a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="07:19  -  6 Out 2014">Oct 6, 2014</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-66350" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count unavailable">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger-closed">
+                Voting<br />Closed
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-66350"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/66350">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>1</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="07:19  -  6 Out 2014">Oct 6, 2014</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="0" data-randorder="638550869" data-id="64369" class="b-column b-idea__container filter-ready filter-active filter-2380 filter-default tag-Energiacin&#233;tica tag-FontesAlternativas tag-diminui&#231;&#227;odoConsumodeEnergiaEl&#233;trica   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        			                    
+			                                                                                            <section class="b-idea__quote">
+                                         Instalar placas de energia cinética nas praças para...
+                                    </section>
+			                                                                
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details" style="padding-top:0px;">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/64369" onclick="return postAJAXObj.display(64369,{  });">Energia Carioca</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/64369" onclick="return postAJAXObj.display(64369,{  });"> Instalar placas de energia cinética nas praças para geração de energia elétrica por meio das atividades físicas praticadas pelos usuários. 
+   
+   </a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="03:39  - 22 Set 2014">Sep 22, 2014</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-64369" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count unavailable">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger-closed">
+                Voting<br />Closed
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-64369"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/64369">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>0</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="03:39  - 22 Set 2014">Sep 22, 2014</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="3" data-randorder="1913394342" data-id="64058" class="b-column b-idea__container filter-ready filter-active filter-2379 filter-default tag-ArteUrbana tag-Brizol&#227;o tag-Ipanema   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/64058" onclick="return postAJAXObj.display(64058,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/09907398cdc1c8b2cfdbd0eb2c6b1590" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/64058" onclick="return postAJAXObj.display(64058,{  });">Arte Urbana no Brizolão de Ipanema.</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/64058" onclick="return postAJAXObj.display(64058,{  });"> Convidar artistas de rua para realizar a revitalização da parte externa do CIEP João Goulart, em Ipanema. </a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="02:23  - 19 Set 2014">Sep 19, 2014</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-64058" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count unavailable">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger-closed">
+                Voting<br />Closed
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-64058"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/64058">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>3</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="02:23  - 19 Set 2014">Sep 19, 2014</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="3" data-randorder="1324471372" data-id="63885" class="b-column b-idea__container filter-ready filter-active filter-2380 filter-default tag-meioambiente tag-MosaicoCarioca tag-UnidadesdeConserva&#231;&#227;o tag-Arboriza&#231;&#227;o tag-Arboriza&#231;&#227;oUrbana tag-Biodiversidade   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/63885" onclick="return postAJAXObj.display(63885,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/38f695fd04ab5cdff70a17490d48c7ec" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/63885" onclick="return postAJAXObj.display(63885,{  });">Arborização funcional</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/63885" onclick="return postAJAXObj.display(63885,{  });"> Uso de espécies nativas de mata atlântica para a arborização urbana. </a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="02:34  - 18 Set 2014">Sep 18, 2014</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-63885" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count unavailable">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger-closed">
+                Voting<br />Closed
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-63885"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/63885">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>3</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="02:34  - 18 Set 2014">Sep 18, 2014</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="9" data-randorder="739848395" data-id="62354" class="b-column b-idea__container filter-ready filter-active filter-2380 filter-default tag-MobilidadeUrbana tag-VLT   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        			                    
+			                                                                                            <section class="b-idea__quote">
+                                         Implantar linhas de VLT na cidade com base na malha...
+                                    </section>
+			                                                                
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details" style="padding-top:0px;">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/62354" onclick="return postAJAXObj.display(62354,{  });">VLT pela cidade</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/62354" onclick="return postAJAXObj.display(62354,{  });"> Implantar linhas de VLT na cidade com base na malha viária dos antigos bondes. </a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+                                                            <time data-tip="07:54  - 10 Set 2014">Sep 10, 2014</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-62354" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count unavailable">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger-closed">
+                Voting<br />Closed
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-62354"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/62354">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>9</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a><br />
+										</div>
+										<time data-tip="07:54  - 10 Set 2014">Sep 10, 2014</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+        <script>
+        (function() {
+            var voteBoxes = document.getElementsByClassName('voteBox');
+            for(var i = 0; i < voteBoxes.length; i++) {
+                voteBoxes[i].onclick = function(e) {
+                    e.preventDefault();
+                }
+            }
+        })();
+    </script>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/30422?mode=posts&hubbub_id=206&startFrom=%7B%22post%22%3A%2262354%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%222014-09-10+18%3A54%3A08%22%7D',$(this).up());return false;">Carregar mais</a></div>
+    
+
+
+<script>
+    Category.opentipCloseOnClick();
+    Category.voteBoxClick();
+</script>
+		            	            </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewtab_myComments" style="display:none;">
+    	        	                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84774">VLT Carioca - Trilhos Urbanos</a></h2>
+        <p><p>Outra coisa que penso é, que essas obras de BRT já deveriam contemplar um espaço entre as pistas para futura implantação do VLT. Enquanto nas demais áreas deveriam ser suprimidas as faixas de rolamento mesmo, para desestimular o uso do carro.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Feb 26, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84774">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84774">VLT Carioca - Trilhos Urbanos</a></h2>
+        <p><p>Fernando, vi sua idéia e gostei da proposta, inclusive coloquei um "joinha" lá, rs. Acredito que o traçado das linhas de bonde (ou correndo paralela as linhas de trem, como o Bolanhos propõe) sejam como etapas iniciais do projeto. O objetivo final seria atingir a malha de trilhos do auge do tempo dos carris. Mas, sem dúvidas, deveríamos propor por etapas. Até para faciliar a captação de recursos para o projeto. </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Feb 26, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84774">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62354">VLT pela cidade</a></h2>
+        <p><p>Exatamente por isso, William, propus que, a partir da malha dos antigos bondes se elaboração um projeto revitalizasse essas linhas com bondes modernos.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Oct 20, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62354">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/64105">Caminho das Montanhas</a></h2>
+        <p><p>Olha, achei bacana a idéia mas esses maciços são protegidos por Unidades de Conservação (Tijuca, federal e Pedra Branca e Mendanha, Estadual) de modo que a articulação necessária seria bastante complexa. Outro ponto que se deve atentar é o tombamento da paisagem como um todo, o contorno dessas montanhas é tombado pela UNESCO. De modo que acredito que a idéia vai enfrentar muita resistência por parte do ICMBio, INEA e, quiçá, da propria prefeitura. </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 25, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/64105">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/63885">Arborização funcional</a></h2>
+        <p><p>Sim, Brites jardins verticas e telhados verdes seriam ações complementares de grande relevância. Quanto a essa questão da poda das árvores é um ponto que eu desconhecia. Sem dúvida merece atenção detalhada e debate para sobrepujarmos esse ponto. Quando pensei nessa idéia estava pensando na arborização de rua mesmo, de responsabilidade da Prefeitura, uma vez que dentro da propriedade privada o poder público não pode determinar o que será plantado. Obrigado por sua colaboração.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 22, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/63885">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/64058">Arte Urbana no Brizolão de Ipanema.</a></h2>
+        <p><p>Fellmir, a idéia é puramente estética mesmo. O lugar já tem uso com diversos projetos sociais acontecento. Nada impede de se replicar o projeto para outras áreas, mas pensei nesse específico exatamente por ser na Zona Sul e dar visiblidade (algo que qualquer patrocinador quer quando financia um projeto).  </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 22, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/64058">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62096">Navegar pela Barra e Recreio</a></h2>
+        <p><p>Márcio, a borda lagunar com seus ecossistemas de mangue e restinga (o pouco que resta) são fundamentais para vida das lagoas. Concordo com sua idéia em partes pois essa ocupação deveria ocorrer respeitando esses ecossistemas e as leis ambientais vigentes, preservando as APPs. Abraço </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 12, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62096">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62096">Navegar pela Barra e Recreio</a></h2>
+        <p><p>Tulio, talvez se a população se apropriasse deste espaço com o uso - recreativo ou funcional - a qualidade ambiental das lagoas seria mais valorizada e o tema entraria em pauta (para além das Olimpíadas, lógico). Cito como exemplo a própria Lagoa Rodrigo de Freitas, que vem passando por um processo de despoluição pela mobilização social dos moradores. De modo que acredito que, enquanto as lagoas ficarem somente embaixo das pontes e vias expressas da Barra e adjacências, pouca coisa vai melhorar. Abraço</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 12, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62096">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62354">VLT pela cidade</a></h2>
+        <p><p>Cdurp, conheço bem o projeto de vocês pois trabalho na praça mauá e observo cotidianamente as transformações proporcionadas. Inclusive já uso a bicicleta para vir ao trabalho 3 vezes por semana e acredito que, quando finalizarem as obras o trajeto será, de fato, uma maravilha. Mas entendo que as implantações dessa solução não devam parar por aqui na zona portuária e, sim, se expandir para o resto do município e trabalhar integrando os sistemas de metrô, BRT's, trens entre outros. Espero sinceramente que o VLT aqui na zona portuária seja um sucesso e posteriormente seja replicado para toda a cidade!</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 11, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62354">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62106">Anel cicloviário</a></h2>
+        <p><p>Concordo com a idéia porém não vejo necessidade de se construir pontes ou elevados para a biccicleta, a supressão de faixas de rolamento das vias, com as devidas sinalizações verticais e horizontais, iria desonerar significativamente o projeto. Agora, importante frisar que o sistema de transportes públicos, deverá funcionar de forma integrada ao uso da bicicleta para, de fato, criar alternativas ao uso do carro.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 11, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62106">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/62096">Navegar pela Barra e Recreio</a></h2>
+        <p><p>Achei interessante a idéia e pertinente o comentário do Cristóvão Barbosa no que tange a preocupação quanto a qualidade da água do ecossistema lagunar, porém isso não impede de se investir em veículos aquáticos elétricos com placas fotovoltáicas, gerando a energia a partir do sol, por exemplo. Outro aspecto importante seria o calado das embarcações pois em alguns trechos das lagoas, principalmente a da Tijuca, há pouca profundidade. </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Sep 11, 2014</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/62096">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+
+    <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/30422?mode=comments&hubbub_id=206&start=2014-09-11 14:47:33',$(this).up());return false;">Carregar mais</a></div>
+
+            </div>
+        <div id="viewtab_myVotes" style="display:none;">
+    	        	            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/84774">VLT Carioca - Trilhos Urbanos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/84774">VLT Carioca - Trilhos Urbanos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/84506">Ciclovias Arteriais no Rio de Janeiro</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/66350">Prédio públicos verdes</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/62096">Navegar pela Barra e Recreio</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/65432">SANEAMENTO &amp; MOBILIDADE</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/65432">SANEAMENTO &amp; MOBILIDADE</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/65432">SANEAMENTO &amp; MOBILIDADE</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/65432">SANEAMENTO &amp; MOBILIDADE</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                            na ideia <a href="/post/65402">REVITALIZAÇÃO DOS SOBRADOS NO CENTRO DO RIO DE JANEIRO E MELHORIAS PARA O TRANSITO</a>
+                    </div>
+            <div class="voteActivity">
+            <p>João Ferraz Fernandes de Mello votou
+                                                            um comentário na ideia <a href="/post/63405">Redes Hidroviárias - Mobilidade e Conectividade</a>
+                    </div>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/30422?mode=votes&hubbub_id=206&start=2014-09-25 20:00:39',$(this).up());return false;">Carregar mais</a></div>
+    
+            </div>
+    </div>
+
+        <script type="text/javascript">
+        
+        	jQuery(function() {
+        		jQuery('#myIdeas_sort').change(function() {
+        			loadMore($('results-container'),'/user/activity/30422?mode=posts&hubbub_id=206&sortBy='+$('myIdeas_sort').getValue(), null, true);
+        		});
+        	});
+        
+        </script>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_230,h_230,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">João Ferraz Fernandes de Mello</h2>
+                        <p>
+                            (João de Mello)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(30422,0,{ 'user_id':30422, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            Rio de Janeiro, Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Set  9, 2014</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                                        <p class="lightGrey">
+                            <b>Biografia</b> Graduou-se em Geografia e Meio Ambiente pela PUC-Rio em 2002. Atuou como geógrafo em programas de recuperação de áreas degradadas em empresas de mineração no estado do Pará, projetos de Zoneamento Ecológico Econômico no estado de Minas Gerais. Participou de diversos projetos de proteção a flora e a fauna do Parque Nacional da Tijuca. Coordenou a implantação de Unidades de Conservação no estado do Rio de Janeiro, atualmente trabalha com reconhecimento e planejamento de Reservas particulares do Patrimônio Natural (RPPN) no Instituto Estadual do Ambiente (INEA-RJ).
+                        </p>
+                        
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup30422" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">52</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">392</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/30422">Ideias</a><span>6</span></li>
+                        <li><a href="/user/activity/30422?goTab=myVotes">Votos</a><span>13</span></li>
+                        <li><a href="/user/activity/30422?goTab=myComments">Comentários</a><span>11</span></li>
+            <li><a href="/user/following/30422">Seguidores</a><span>27</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/30422?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/30422?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/30422?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/30422">Assinaturas</a><span>1</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">25</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><span>Ágora Rio</span></a>
+                                                                        <a  href="user/activity/30304" onclick="popUp('/user/view/30304', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30304_ea4aa562ef023450e0b623e6d2765907_1.png.jpg);"><span>Cdurp - Porto Maravilha</span></a>
+                                                                        <a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29732_a2b8dcf0f30a41df98f1dfeee05d0e75_Logo%20COR%20-%20Centro%20de%20Operacoes%20Rio-peq.jpg.jpg);"><span>Centro de Operações Rio</span></a>
+                                                                        <a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><span>CET-Rio</span></a>
+                                                                        <a  href="user/activity/29925" onclick="popUp('/user/view/29925', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29925_8255c3fad6f050dec7f6ecedc7882ea5_Logo%20CEDS.jpg.jpg);"><span>Coord. Esp. da Diversidade Sexual</span></a>
+                                                                        <a  href="user/activity/29750" onclick="popUp('/user/view/29750', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29750_dbf35efc314df84aff867fa1c84c79fc_Logo%20CGM.jpg.jpg);"><span>Controladoria Geral do  Rio de Janeiro</span></a>
+                                                                        <a  href="user/activity/29907" onclick="popUp('/user/view/29907', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29907_b97341932d9a7d19c8d839f60b52700c_rio-450-anos-102.jpg.jpg);"><span>Comitê Rio450</span></a>
+                                                                        <a  href="user/activity/30478" onclick="popUp('/user/view/30478', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30478_8fe6ad407cc43dfcdc5852a456fb4c0e_COMLURB-quad230%20%281%29.gif.jpg);"><span>Comlurb</span></a>
+                                                                        <a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29764_f4f3c1b111bef73ceff5a490b4805bd3_%C3%81gora_logo%20site_DC.jpg.jpg);"><span>Defesa Civil Municipal</span></a>
+                                                                        <a  href="user/activity/29707" onclick="popUp('/user/view/29707', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29707_a87faa22caf3025ed95dbeb606ec1de6_Desenvolvimento%20foto.jpg.jpg);"><span>Desenvolvimento Social RJ</span></a>
+                                                                        <a  href="user/activity/30398" onclick="popUp('/user/view/30398', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30398_12a08bbc7c306823d1338c5e04a60333_avatar-agorario-eixorio.jpg.jpg);"><span>EixoRio</span></a>
+                                                                        <a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29738_0a3c6cfaac1b54eae0b0af4476279422_EOM_face_perfil-02.jpg.jpg);"><span>Empresa Olímpica Municipal</span></a>
+                                                                        <a  href="user/activity/29889" onclick="popUp('/user/view/29889', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29889_5f0d62fe0f3e49d6afb8b0b150af0604_Planet%C3%A1rio.jpg.jpg);"><span>Fundação Planetário Rio</span></a>
+                                                                        <a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29766_b2606c443e4511200aadf37ce4a5ac18_Instituto%20Pereira%20Passos.jpg.jpg);"><span>Instituto Pereira Passos - IPP Rio</span></a>
+                                                                        <a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29879_a84f6305e40ad9af01545a6f60bccb80_logoiplan.png.jpg);"><span>IPLANRIO</span></a>
+                                                                        <a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29700_0952229e1ea146fd98195cccad1b6838_Agora_SECONSERVA.jpg.jpg);"><span>Secretaria de Conservação</span></a>
+                                                                        <a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29711_7e32adabc5b92d13b5baf1418809df0e_logo%20smc.jpg.jpg);"><span>Secretaria Municipal de Cultura</span></a>
+                                                                        <a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29754_f292a1baf2ecfdd7eed148dfd909627b_pacucar.jpg.jpg);"><span>Riotur</span></a>
+                                                                        <a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29719_791999a0cb378bee4a1514671dde83f0_3LGW63I-_400x400.jpeg.jpg);"><span>MultiRio</span></a>
+                                                                        <a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29717_1455c40871453b99864f6055c4f8ebb2_245_x_213_pixel.jpg.jpg);"><span>Sec. Desenvolvimento Econômico Solidário</span></a>
+                                                                        <a  href="user/activity/29745" onclick="popUp('/user/view/29745', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29745_ba6f94d142f02ab20c92f88d0782d2f9_10302031_558397894271348_2271766097123412335_n.jpg.jpg);"><span>Secretaria Municipal de Habitação</span></a>
+                                                                        <a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><span>Secretaria Municipal de Transportes</span></a>
+                                                                        <a  href="user/activity/29743" onclick="popUp('/user/view/29743', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29743_716746cd59a50c13ca571b66bc634220_logoHorEducAzulGrande.gif.jpg);"><span>Secretaria Municipal de Educação</span></a>
+                                                                        <a  href="user/activity/29777" onclick="popUp('/user/view/29777', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29777_abcaa6cee7494d3d5a33abd702c81e9b_sect_logo.jpg.jpg);"><span>Secretaria de Ciência e Tecnologia</span></a>
+                                                                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><span>Secretaria Municipal de Meio Ambiente</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

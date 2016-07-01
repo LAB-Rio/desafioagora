@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="activity-current-page  ">
+    <input type="hidden" id="currentPage" value="activity" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQzNj9zb3J0Qnk9cGFydGlhbGx5QWRvcHRlZA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQzNj9zb3J0Qnk9cGFydGlhbGx5QWRvcHRlZA==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQzNj9zb3J0Qnk9cGFydGlhbGx5QWRvcHRlZA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zMDQzNj9zb3J0Qnk9cGFydGlhbGx5QWRvcHRlZA==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>Edison's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li class="selected">
+			<a href="/user/activity/30436">Atividade</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/following/30436">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/30436">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">EdisonMoreira's Atividade</h2>
+
+<div id="activityTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	
+        <li class="selected"><a href="#" id="tab_myIdeas">Ideias</a></li>
+        <li ><a href="#" id="tab_myComments">Comentários</a></li>
+                <li ><a href="#" id="tab_myVotes">Votos</a></li>
+            </ul>
+</div>
+<div class="tabView">
+    
+    <div id="viewtab_myIdeas" class="viewtab_myIdeas">
+
+    	<div id="myIdeas_subContainer">
+    		<div class="b-single-challenge__ideas-list i-ideas-list" style="background:#f5f5f5;padding:10px;">
+    			<div class="b-row b-single-challenge__ideas-header">
+    				<div class="b-column b-column--6" style="flex-basis:50%;">
+    					<span>Exibindo:</span>
+    					<strong><span class="result-count">1</span> Results</strong>
+    				</div>
+    				
+    				<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:50%;">
+    					<div class="viewoptions-wrapper">
+							<select name="myIdeas_sort" id="myIdeas_sort" class="i-mix-sort">
+							        	<option value="newest" >Mais novos</option>
+							        	<option value="hottest" >Destaques</option>
+							        	<option value="mostPopular" >Mais Votadas</option>
+							        	<option value="mostComments" >Mais comentadas</option>
+							        	<option value="adopted" >Escolhas</option>
+							        </select>
+    					</div>
+    					
+    					<div class="viewoptions-wrapper">
+    						<span>Ordenar por</span>
+    					</div>
+    				</div>
+    			</div>
+	    		<div id="results-container" class="b-row results-view-list">
+		            				        
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="3" data-randorder="836004233" data-id="85458" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-aplicativodispositivomóvel tag-aplicativodispositovomóvel tag-efetividadedafiscalização tag-colaboração tag-fiscalizaçãodeônibus tag-ônibusfiscalização tag-plataformasdigitaiscolaborativas   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        			                    
+			                                                                                            <section class="b-idea__quote">
+                                         Considerando que o transporte coletivo modal ônibus...
+                                    </section>
+			                                                                
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details" style="padding-top:0px;">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/85458" onclick="return postAJAXObj.display(85458,{  });">Plataforma para fiscalização do transporte coletivo - modal ônibus </a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/85458" onclick="return postAJAXObj.display(85458,{  });"> Considerando que o transporte coletivo modal ônibus (concessão municipal) é o que contem mais ocorrências desta prestação de serviços aos cidadãos e visitantes da cidade do Rio de Janeiro; 
+ Considerando que a fiscalização, premissa legal dos fiscais da Prefeitura da cidade do Rio de Janeiro, necessita aumentar sua efetividade, visto que seu contigente é pequeno em relação as ocorrências; 
+ Considerando que grande parte dos usuários de ônibus utilizam dispositivos móveis (celulares, tablets...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/30436" onclick="popUp('/user/view/30436', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/78d4bc756c810d1e79442bcbfe2a8353" alt="EdisonMoreira" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/30436" onclick="popUp('/user/view/30436', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EdisonMoreira</a><br />
+                                                            <time data-tip="06:57  - 26 Fev 2015">Feb 26, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-85458" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:85458, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:85458, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-85458"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/85458">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>3</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/30436" onclick="popUp('/user/view/30436', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_60,h_60,c_fill/78d4bc756c810d1e79442bcbfe2a8353" alt="EdisonMoreira" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/30436" onclick="popUp('/user/view/30436', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EdisonMoreira</a><br />
+										</div>
+										<time data-tip="06:57  - 26 Fev 2015">Feb 26, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+        <script>
+        (function() {
+            var voteBoxes = document.getElementsByClassName('voteBox');
+            for(var i = 0; i < voteBoxes.length; i++) {
+                voteBoxes[i].onclick = function(e) {
+                    e.preventDefault();
+                }
+            }
+        })();
+    </script>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/30436?mode=posts&hubbub_id=206&startFrom=%7B%22post%22%3A%2285458%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%222015-02-26+18%3A57%3A18%22%7D',$(this).up());return false;">Carregar mais</a></div>
+    
+
+
+<script>
+    Category.opentipCloseOnClick();
+    Category.voteBoxClick();
+</script>
+		            	            </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewtab_myComments" style="display:none;">
+    	        	                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/88269">Desafogando a Freguesia com Ciclovias</a></h2>
+        <p><p>A discussão é de via compartilhada ou exclusiva para bicicletas. Interviram para a Transcarioca, reforma da Ayrton Senna e não houve marcação de via para ciclistas na Estrada do Gabinal, na Abelardo Bueno. A ciclovia existente na gardência;/bosque da freguesia é permanente invadida por carros de mecânica ou de pessoas que vão nas lojas de serviços</p>
+<p> </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 10, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/88269">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/85121">Divulgação de informações atualizadas para apps de mobilidade urbana</a></h2>
+        <p><p>VIctor, prezados</p>
+<p>os portais de dados abertos geridos pela Prefeitura tem alguns conjuntos de dados sobre mobilidade/transportes e aplicativos que usam estas informações :</p>
+<p>1) DATA.RIO http://data.rio.rj.gov.br/group/transporte-e-mobilidade </p>
+<p>2) Rio Datamine http://riodatamine.com.br/#/banco-de-dados/?/cat/transportes/text/</p>
+<p>Além das informações e aplicativos é muito importante o acompanhamento dos serviços prestados, visto que são concessões públicas. Estou propondo e descrevendo uma idéia :  uma plataforma colaborativa digital para fiscalização do transporte coletivo modal ônibus/BRT/BRs. </p>
+<p>Abs</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 4, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/85121">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84637">Aplicativo:  Rio + Mobilidade</a></h2>
+        <p><p>Oi Andrezza,</p>
+<p>uma questão preliminar e básica é a evolução equilibrada da triade gestão, o aplicativo e a tecnologia interligada  e colaboração. Atuo no LINC Iplanrio, laboratório de inovação colaborativa digital e vimos propondo, analisando plataformas colaborativas entre outras ReclameAqui.com, MercadoLIvre, Taxibeat, buus, moovit, assim como iniciando o desenvolvimento de aplicativos/partes de plataforma colaborativa para orgãos da Prefeitura</p>
+<p>Boas ideias, bons aplicativos não se viabilizaram pois não tiveram uma gestão adequada, ou baixo ou nenhum feedback para os colaboradores, como você enfatizou ou exibem informações imprecisas ou erradas. </p>
+<p>entre outros videos sugiro https://www.youtube.com/channel/UCMTAKraa1cqX2_rACHFNXFQ/videos?view=1</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84637">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84540">Adesivos Indicativos de Integração</a></h2>
+        <p><p>jrluis, boa ideia.  sugiro indicar também o VLT que está em fase de implantação, inclusive no documentos disonibilizados pela prefeitura estão os relacionados ao VLT.</p>
+<p>em um dos diagramas são indicadas as integrações do VLT e os outros modais de transportes coletivos</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84540">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84523">Mapeamento das linhas de transportes públicos</a></h2>
+        <p><p>Matheus, prezados</p>
+<p>Estão disponiveis alguns aplicativos, conforme o jrluis comentou que utilizam bases de dados abertas junto com outros conjuntos de dados sobre modais de transportes. Em relação a Prefeitura do Rio de Janeiro indico dois portais :</p>
+<p>1) DATA.RIO http://data.rio.rj.gov.br/group/transporte-e-mobilidade </p>
+<p>2) Rio Datamine http://riodatamine.com.br/#/banco-de-dados/?/cat/transportes/text/</p>
+<p>Além das informações e aplicativos é muito importante o acompanhamento dos serviços prestados, visto que são concessões públicas. Estou propondo e descrevendo uma idéia :  uma plataforma colaborativa digital para fiscalização do transporte coletivo modal ônibus/BRT/BRs</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84523">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84637">Aplicativo:  Rio + Mobilidade</a></h2>
+        <p><p>Andrezza, prezados</p>
+<p>Venho atuando e acompanhado mobilidade urbana há algum tempo. Apoio as iniciativas de aplicativos relacionados. Ampliando esta ideia estou propondo uma plataforma de fiscalização do transporte coletivo modal ônibus, BRT e BRS. Lá descrevo como funciona e os pilares fundamentais. Aplicativos fazem parte do pilar tecnologia.</p>
+<p>Os ônibus coletivos, BRT e BRS são disparados o modal de transporte coletivo mais utilizado e com mais ocorrências da ruim prestação de serviços aos passageiros (cidadãos ou visitantes) de nossa cidade. Em relação à aplicativos existem inúmeras iniciativas.</p>
+<p>no portal de dados abertos da Prefeitura DATA.RIO estão listados diversos relacionados à transporte e mobilidade urbana http://data.rio.rj.gov.br/aplicativos-transportes.html</p>
+<p>Alguns aplicativos (MOOVIT, RIO BUS e outros) já estão usando os GPS dos ônibus fornecidos pelas empresas e repassados no DATA.RIO</p>
+<p> </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84637">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/85458">Plataforma para fiscalização do transporte coletivo - modal ônibus </a></h2>
+        <p><p>Oi gpto, </p>
+<p>Grato pela mensagem e retorno. Apresentei uma visão geral da plataforma. Como você observou a colaboração dos passageiros precisará ser bem definida e possivelmente moderada, para se evitar palavrões, agressões, expressões de racismo, discriminação. Este filtro será implementada no pilar de tecnologia.</p>
+<p>Quanto a vinculação da avaliação dos serviços a produtividade das empresas/linhas;profissionais, se eu entendi o conceito, na minha opinião,é uma proposta de médio prazo, a ser analisada e aprovada pelo gestor da plataforma.</p>
+<p>Complementando a proposta descrita na mensagem inicial cabe ao gestor recolher, analisar e decidir quais são as mudanças, prioiridades aplicadas a colaboração e a tecnologia.</p>
+<p>Concordo plenamente com sua avaliação quanto a gestão do transporte público na cidade do rio de janeiro </p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/85458">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+
+
+            </div>
+        <div id="viewtab_myVotes" style="display:none;">
+    	        	            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                            na ideia <a href="/post/87792">Estação do BRT Maria Tereza</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                                                            um comentário na ideia <a href="/post/87076">Interligação de modais aos trens e metrô</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                            na ideia <a href="/post/84637">Aplicativo:  Rio + Mobilidade</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                            na ideia <a href="/post/84540">Adesivos Indicativos de Integração</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                            na ideia <a href="/post/84391">Painel informativo disponibilizando o tempo do percurso  </a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                                                            um comentário na ideia <a href="/post/84523">Mapeamento das linhas de transportes públicos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                            na ideia <a href="/post/84523">Mapeamento das linhas de transportes públicos</a>
+                    </div>
+            <div class="voteActivity">
+            <p>EdisonMoreira votou
+                                                            um comentário na ideia <a href="/post/84637">Aplicativo:  Rio + Mobilidade</a>
+                    </div>
+    
+    
+            </div>
+    </div>
+
+        <script type="text/javascript">
+        
+        	jQuery(function() {
+        		jQuery('#myIdeas_sort').change(function() {
+        			loadMore($('results-container'),'/user/activity/30436?mode=posts&hubbub_id=206&sortBy='+$('myIdeas_sort').getValue(), null, true);
+        		});
+        	});
+        
+        </script>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_230,h_230,c_fill/78d4bc756c810d1e79442bcbfe2a8353" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">EdisonMoreira</h2>
+                        <p>
+                            (Edison Moreira)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(30436,0,{ 'user_id':30436, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Set  9, 2014</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                                        <p class="lightGrey">
+                            <b>Biografia</b> Gerente e Lider de Projetos -  Iplanrio
+Consultor do Comitê da Candidatura Rio2016 para sediar Olimpiadas e Paralimpiadas 2016
+
+Coordenador na Organização dos XV Jogos PanAmericanos e Parapanamericanos 2007, Rio de Janeiro
+Gerente de Resultados dos XV Jogos PanAmericanos e Parapanamericanos 2007, Rio de Janeiro
+
+Lider de Projetos - Universidade Santa Ursula
+                        </p>
+                        
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup30436" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">55</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">376</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/30436">Ideias</a><span>1</span></li>
+                        <li><a href="/user/activity/30436?goTab=myVotes">Votos</a><span>5</span></li>
+                        <li><a href="/user/activity/30436?goTab=myComments">Comentários</a><span>7</span></li>
+            <li><a href="/user/following/30436">Seguidores</a><span>15</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/30436?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/30436?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/30436?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/30436">Assinaturas</a><span>3</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">7</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29700_0952229e1ea146fd98195cccad1b6838_Agora_SECONSERVA.jpg.jpg);"><span>Secretaria de Conservação</span></a>
+                                                                        <a  href="user/activity/30660" onclick="popUp('/user/view/30660', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30660_ce1f93387dec5e9e8bef86c96ab5653b_Dani_em_Praga.jpg.jpg);"><span>Daniele Oliveira</span></a>
+                                                                        <a  href="user/activity/30870" onclick="popUp('/user/view/30870', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30870_8a4f48c684540f9d2365bfac3c479be7_foto3x4.jpg.jpg);"><span>cesampa</span></a>
+                                                                        <a  href="user/activity/31458" onclick="popUp('/user/view/31458', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_31458_ea4cc7dbe0a2a6c86662ab5d0cca0b75_smel.jpg.jpg);"><span>Secretaria Municipal de Esportes e Lazer</span></a>
+                                                                        <a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29719_791999a0cb378bee4a1514671dde83f0_3LGW63I-_400x400.jpeg.jpg);"><span>MultiRio</span></a>
+                                                                        <a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29764_f4f3c1b111bef73ceff5a490b4805bd3_%C3%81gora_logo%20site_DC.jpg.jpg);"><span>Defesa Civil Municipal</span></a>
+                                                                        <a  href="user/activity/30304" onclick="popUp('/user/view/30304', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30304_ea4aa562ef023450e0b623e6d2765907_1.png.jpg);"><span>Cdurp - Porto Maravilha</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

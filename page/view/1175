@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="&lt;h2 dir=&quot;ltr&quot;&gt;Termos de Uso e Regras de Participa&amp;ccedil;&amp;atilde;o&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;span&gt;Este &amp;eacute; um contrato juridicamente v&amp;aacute;lido e vinculante celebrado por meio eletr&amp;ocirc;nico entre a &lt;/span&gt;&lt;span&gt;&amp;Aacute;gora Rio e a Prefeitura do Rio&lt;/span&gt;&lt;span&gt;, operadora e gestora do SITE www.desafioagorario.com.br (&amp;ldquo;SITE&amp;rdquo; ou &amp;ldquo;&amp;Aacute;gora Rio&amp;rdquo;), &amp;nbsp;e..." />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="&lt;h2 dir=&quot;ltr&quot;&gt;Termos de Uso e Regras de Participa&amp;ccedil;&amp;atilde;o&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;span&gt;Este &amp;eacute; um contrato juridicamente v&amp;aacute;lido e vinculante celebrado por meio...">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="-current-page  ">
+    <input type="hidden" id="currentPage" value="" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcGFnZS92aWV3LzExNzU=" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcGFnZS92aWV3LzExNzU=' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcGFnZS92aWV3LzExNzU=" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcGFnZS92aWV3LzExNzU=' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+            <div class="community-banner" >
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" ><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="">
+        <div id="main">
+    <div class="full_col">
+
+            <h1> </h1>
+            <h2 dir="ltr">Termos de Uso e Regras de Participa&ccedil;&atilde;o</h2>
+<p dir="ltr"><span>Este &eacute; um contrato juridicamente v&aacute;lido e vinculante celebrado por meio eletr&ocirc;nico entre a </span><span>&Aacute;gora Rio e a Prefeitura do Rio</span><span>, operadora e gestora do SITE www.desafioagorario.com.br (&ldquo;SITE&rdquo; ou &ldquo;&Aacute;gora Rio&rdquo;), &nbsp;e voc&ecirc;, usu&aacute;rio do SITE (&ldquo;Usu&aacute;rio&rdquo;). Ao entrar no SITE, submeter ideias ou informa&ccedil;&otilde;es, e de qualquer modo utilizar suas funcionalidades e recursos, voc&ecirc; declara sua aceita&ccedil;&atilde;o das condi&ccedil;&otilde;es deste Contrato, sem ressalvas.</span></p>
+<p dir="ltr"><span>1. &nbsp;&nbsp;&nbsp;&nbsp;<strong>Apresenta&ccedil;&atilde;o</strong>. </span><span>O &Aacute;gora Rio n&atilde;o &eacute; um concurso ou uma promo&ccedil;&atilde;o, mas sim um projeto experimental que visa retomar a pol&iacute;tica da Cidade como um projeto coletivo em constante execu&ccedil;&atilde;o e renova&ccedil;&atilde;o, com a participa&ccedil;&atilde;o de todos que se interessem em fazer do Rio de Janeiro uma cidade mais inteligente, mais colaborativa e humana. O Projeto Desafios &Aacute;gora Rio &eacute; um projeto da Prefeitura da Cidade do Rio de Janeiro para criar um processo aberto e participativo capaz de incluir a sociedade civil no debate das pol&iacute;ticas p&uacute;blicas da Cidade.</span></p>
+<p dir="ltr"><span>2. &nbsp;&nbsp;&nbsp;&nbsp;<strong>Objetivos</strong>. </span><span>Constituem objetivos norteadores do &Aacute;gora Rio: (i) ser um espa&ccedil;o leg&iacute;timo, democr&aacute;tico e inclusivo de discuss&atilde;o sobre a cidade e suas pol&iacute;ticas p&uacute;blicas entre os cidad&atilde;os e a Prefeitura da Cidade do Rio de Janeiro; (ii) &nbsp;aproximar os cidad&atilde;os do poder p&uacute;blico municipal; (iii) devolver ao cidad&atilde;o sua participa&ccedil;&atilde;o na constru&ccedil;&atilde;o da cidade e seus processos decis&oacute;rio;</span></p>
+<p dir="ltr"><span>3. &nbsp;&nbsp;&nbsp;&nbsp;<strong>Submiss&atilde;o</strong> <strong>de</strong>&nbsp;<strong>propostas</strong>. </span><span>Qualquer usu&aacute;rio poder&aacute; submeter ideias e propostas que visem melhorar as pol&iacute;ticas p&uacute;blicas da cidade do Rio de Janeiro e/ou solucionar problemas reais identificados pelo SITE , durante o prazo permitido pelo SITE. Para isto o Usu&aacute;rio dever&aacute; preencher os formul&aacute;rios dispon&iacute;veis no SITE e submeter sua Ideia no formato designado, acompanhada das demais informa&ccedil;&otilde;es solicitadas. O Usu&aacute;rio declara sua inequ&iacute;voca ci&ecirc;ncia de que a submiss&atilde;o de uma Id&eacute;ia n&atilde;o gera qualquer direito ou garantia de sua efetiva implementa&ccedil;&atilde;o. Cada Usu&aacute;rio pode submeter um n&uacute;mero ilimitado de Ideias.</span></p>
+<p dir="ltr"><span>4. &nbsp;&nbsp;&nbsp;&nbsp;</span><span><strong>Avalia&ccedil;&atilde;o</strong> <strong>das</strong> <strong>Ideias</strong>.</span><span> As Ideias submetidas ser&atilde;o avaliadas pelos pr&oacute;prios usu&aacute;rios da plataforma e podem ser comentadas tanto na plataforma como em discuss&otilde;es em audi&ecirc;ncias p&uacute;blicas ou hangouts. Estudos de viabilidade t&eacute;cnica e operacional ser&atilde;o feitos por convidados do SITE, podendo ser membros da Academia, da Sociedade Civil Organizada ou da pr&oacute;pria Prefeitura.&nbsp;</span>Somente ser&atilde;o aceitas as propostas referentes &agrave;s pol&iacute;ticas p&uacute;blicas em &acirc;mbito municipal e de acordo com os temas dos desafios lan&ccedil;ados neste canal.</p>
+<p dir="ltr"><span>5. &nbsp;&nbsp;&nbsp;&nbsp;<strong>Implementa&ccedil;&atilde;o</strong>. </span><span>A Prefeitura do Rio compromete-se a avaliar o documento final produzido colaborativamente com as melhores ideias e a coment&aacute;-lo, mas reserva-se legalmente da obriga&ccedil;&atilde;o de implementar qualquer projeto ou ideia presentes. &nbsp;A Prefeitura busca, atrav&eacute;s do SITE, amadurecer a sua rela&ccedil;&atilde;o com os cidad&atilde;os, entendendo melhor o que pensam e o que priorizam, de maneira que possa direcionar suas decis&otilde;es, projetos e pol&iacute;ticas no mesmo sentido.</span></p>
+<p dir="ltr"><span>O PORTAL &Aacute;GORA RIO &Eacute; UMA PLATAFORMA INTERATIVA DISPONIBILIZADA LIVREMENTE AOS USU&Aacute;RIOS. O SITE N&Atilde;O FISCALIZA OS CONTE&Uacute;DOS DISPONIBILIZADOS PELOS USU&Aacute;RIOS. FICA EXPRESSAMENTE AFASTADA TODA E QUALQUER RESPONSABILIDADE POR CONDUTAS OU CONTE&Uacute;DOS DOS USU&Aacute;RIOS NO WEBSITE.</span></p>
+<p dir="ltr"><span>6. &nbsp;<strong>Cronograma</strong>. </span><span>O cronograma previsto para as etapas de sele&ccedil;&atilde;o das Id&eacute;ias poder&aacute; ser modificado a livre crit&eacute;rio do SITE. Salvo altera&ccedil;&atilde;o posterior, as datas previstas ser&atilde;o as seguintes: </span></p>
+<div dir="ltr">
+<table><colgroup><col width="197" /><col width="357" /></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>Idea&ccedil;&atilde;o</strong></p>
+</td>
+<td>
+<p dir="ltr"><span>De 9 de setembro at&eacute; 20 de outubro</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>Discuss&atilde;o</strong></p>
+</td>
+<td>
+<p dir="ltr"><span>de 20 outubro/2014 a 9 de novembro/2014</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span><strong>Vota&ccedil;&atilde;o</strong> <strong>Online</strong></span></p>
+</td>
+<td>
+<p dir="ltr"><span>de 10 a 17 de novembro/2014 </span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span><strong>Produ&ccedil;&atilde;o</strong> <strong>do</strong> <strong>Documento </strong></span></p>
+</td>
+<td>
+<p dir="ltr"><span>de 17 a 24 de novembro/2014</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span><strong>Entrega</strong> <strong>ao</strong> <strong>Prefeito</strong></span></p>
+</td>
+<td>
+<p dir="ltr"><span>04 de dezembro</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">&nbsp;7. &nbsp;<strong>Modera&ccedil;&atilde;o</strong>. As ideias enviadas &nbsp;ser&atilde;o moderadas antes da sua publica&ccedil;&atilde;o no SITE imediatamente em hor&aacute;rio comercial. A modera&ccedil;&atilde;o eliminar&aacute; qualquer conte&uacute;do ofensivo, ilegal, criminoso ou que fa&ccedil;a apologia a conte&uacute;dos assim, podendo os usu&aacute;rios tamb&eacute;m serem banidos da plataforma. Gaming, Hacking, Spans e contas fakes (fantamas) n&atilde;o ser&atilde;o tolerados.</p>
+<p dir="ltr"><span>8. &nbsp;<strong>Licen&ccedil;a</strong>. </span><span>Ao participar do Desafio &Aacute;gora Rio os Usu&aacute;rios autorizam o licenciamento de suas ideias sob Creative Commons:</span><a href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR"><span>Creative Commons &ndash; Atribui&ccedil;&atilde;o 3.0 N&atilde;o Adaptada. (CC BY 3.0)&rdquo;</span></a><span>.</span></p>
+<p dir="ltr"><span>9 &nbsp;<strong>Garantias</strong>. </span><span>O Usu&aacute;rio declara e garante que a Ideia submetida n&atilde;o infringe direitos de terceiros, em especial direitos de propriedade intelectual. O Usu&aacute;rio responder&aacute;, de forma exclusiva e integral, por eventuais reclama&ccedil;&otilde;es, questionamentos, acusa&ccedil;&otilde;es ou alega&ccedil;&otilde;es de pl&aacute;gio ou viola&ccedil;&atilde;o a direitos autorais, conexos, patrimoniais, de propriedade industrial, de titularidade de terceiros, dentre outros, inclusive pela omiss&atilde;o de informa&ccedil;&otilde;es.</span></p>
+<p dir="ltr"><span>10. &nbsp;<strong>Obriga&ccedil;&atilde;o</strong> <strong>de Indenizar.</strong></span><span> Obriga-se o Usu&aacute;rio a responder por toda e qualquer reclama&ccedil;&atilde;o, reivindica&ccedil;&atilde;o ou a&ccedil;&atilde;o promovida por terceiros quanto a suposta viola&ccedil;&atilde;o de direitos de propriedade intelectual, isentando O SITE de qualquer responsabilidade quanto &agrave; licitude, idoneidade e originalidade das Id&eacute;ias e promovendo sua defesa em todas as esferas competentes. O Usu&aacute;rio indenizar&aacute; o SITE, suas filiais, empresas controladas ou controladoras, diretores, administradores, colaboradores, representantes e empregados por qualquer demanda promovida por outros usu&aacute;rios ou terceiros decorrentes de suas atividades no SITE, por seu descumprimento dos Termos de Uso ou pela viola&ccedil;&atilde;o de qualquer lei ou direitos de terceiros, incluindo direitos autorais e direitos de propriedade intelectual em geral.</span></p>
+<p dir="ltr"><span>11. &nbsp;&nbsp;<strong>Cess&atilde;o</strong> <strong>a Terceiros</strong>.</span><span> O SITE poder&aacute; promover a cess&atilde;o total ou parcial dos direitos patrimoniais das Obras a terceiros, sem necessidade de aprova&ccedil;&atilde;o pr&eacute;via do Usu&aacute;rio. As obras inscritas nesse projeto podem ser compartilhadas nas redes na qual a Benfeitoria e seus apoiadores e/ou patrocinadores participam (facebook, twitter, youtube etc.) ainda que sem rela&ccedil;&atilde;o direta com este SITE.</span></p>
+<p dir="ltr"><span>12. &nbsp;&nbsp;<strong>Inexist&ecirc;ncia</strong> <strong>de V&iacute;nculos.</strong></span><span> Este Termo de Uso n&atilde;o gera nenhum v&iacute;nculo societ&aacute;rio, empregat&iacute;cio, n&atilde;o constitui mandato, licen&ccedil;a ou franquia entre o SITE e o Usu&aacute;rio.</span></p>
+<p dir="ltr"><span>13. &nbsp;<strong>Limita&ccedil;&otilde;es de Responsabilidade.</strong></span><span> Na m&aacute;xima extens&atilde;o permitida por lei, o SITE n&atilde;o ser&aacute; responsv&aacute;el por qualquer perda ou dano ocorrido em raz&atilde;o do uso ou frui&ccedil;&atilde;o de seus recursos ou funcionalidades. O SITE n&atilde;o garante a veracidade da publica&ccedil;&atilde;o de terceiros, ainda que disseminadas atrav&eacute;s do seu SITE, nem faz qualquer garantia de adequa&ccedil;&atilde;o ou aplicabilidade pr&aacute;tica de seu conte&uacute;do. O SITE n&atilde;o se responsabiliza por qualquer dano, preju&iacute;zo ou perda no equipamento do Usu&aacute;rio causado por falhas no sistema, no servidor ou na internet decorrentes de condutas de terceiros. O SITE tamb&eacute;m n&atilde;o ser&aacute; respons&aacute;vel por qualquer v&iacute;rus que possa atacar o equipamento do Usu&aacute;rio em decorr&ecirc;ncia do acesso, utiliza&ccedil;&atilde;o ou navega&ccedil;&atilde;o no SITE na internet; ou como conseq&uuml;&ecirc;ncia da transfer&ecirc;ncia de dados, arquivos, imagens, textos ou &aacute;udio. O Usu&aacute;rio n&atilde;o poder&aacute; atribuir ao SITE nenhuma responsabilidade nem exigir o pagamento por lucro cessante em virtude de preju&iacute;zos resultantes de dificuldades t&eacute;cnicas ou falhas nos sistemas ou na internet.</span></p>
+<p dir="ltr"><span>14. &nbsp;<strong>Propriedades do SITE.</strong> </span><span>O uso comercial da express&atilde;o &ldquo;&Aacute;gora Rio&rdquo; como marca, nome empresarial ou nome de dom&iacute;nio, os conte&uacute;dos das telas relativas aos servi&ccedil;os do SITE, assim como os programas, bancos de dados, redes e arquivos, que permitam que o Usu&aacute;rio acesse e use sua conta s&atilde;o propriedade do SITE e est&atilde;o protegidos pelas leis e tratados internacionais relativos &agrave; propriedade intelectual, e demais leis ou normas aplic&aacute;veis. &Eacute; vedada sua reprodu&ccedil;&atilde;o ou uso por terceiros, sem pr&eacute;via autoriza&ccedil;&atilde;o.</span></p>
+<p dir="ltr"><span>15. &nbsp;<strong>Conte&uacute;do Vedado.</strong></span><span> O Usu&aacute;rio n&atilde;o poder&aacute; enviar/postar conte&uacute;do que: (i) desrespeite a legisla&ccedil;&atilde;o brasileira, de um modo geral e, em especial, as leis de direito autoral e/ou de propriedade intelectual; (ii) contenha imagens, mensagens ou qualquer classe de conte&uacute;do de cunho pornogr&aacute;fico, ped&oacute;filo, racista, homof&oacute;bico, sexista, violento ou ainda ofensivo &agrave; honra, &agrave; vida privada, &agrave; imagem, &agrave; intimidade pessoal e familiar, ou de qualquer maneira ofensivo ou contr&aacute;rio &agrave;s leis, &agrave; ordem, &agrave; moral e aos bons costumes; (iii) seja produzido com o intuito de cometer fraude ou estimular a pr&aacute;tica de condutas il&iacute;citas ou contr&aacute;rias &agrave; moral; (iv) seja produzido sem a devida e pr&eacute;via obten&ccedil;&atilde;o expressa de todas as autoriza&ccedil;&otilde;es e consentimentos de terceiros que eventualmente apare&ccedil;am no conte&uacute;do, sejam titulares de direitos autorais e/ou conexos de materiais inseridos no conte&uacute;do, e/ou sejam titulares de direitos de imagem e/ou voz; (v)desrespeite a legisla&ccedil;&atilde;o eleitoral e partid&aacute;ria; (vi) contenham imagens e/ou participa&ccedil;&atilde;o de menores.</span></p>
+<p dir="ltr"><span>16. &nbsp;</span><span><strong>Comunica&ccedil;&otilde;es entre as Partes.</strong></span><span> As comunica&ccedil;&otilde;es decorrentes do exerc&iacute;cio deste Termo ser&atilde;o enviadas por e-mail e ter&atilde;o validade sempre que dirigidas aos endere&ccedil;os informados no cadastro do usu&aacute;rio, sendo sua obriga&ccedil;&atilde;o mant&ecirc;-lo sempre atualizado. Todas as notifica&ccedil;&otilde;es e comunica&ccedil;&otilde;es dirigidas ao SITE ser&atilde;o feitas por escrito e enviadas ao administrador dos servi&ccedil;os atrav&eacute;s do e-mail contato@desafioagoriario.com.br</span></p>
+<p dir="ltr"><span>17. &nbsp;</span><span><strong>Rela&ccedil;&otilde;es</strong> <strong>entre</strong> <strong>Usu&aacute;rios</strong>.</span><span> O SITE n&atilde;o &eacute; respons&aacute;vel subsidi&aacute;rio ou solid&aacute;rio quanto &agrave;s obriga&ccedil;&otilde;es assumidas por um Usu&aacute;rio perante Outro ou perante terceiros, estando desde j&aacute; autorizado a pedir a sua exclus&atilde;o de qualquer demanda judicial que exista ou venha a existir entre os Usu&aacute;rios. Eventual declara&ccedil;&atilde;o judicial de co-responsabilidade dever&aacute; observar a atua&ccedil;&atilde;o do &Aacute;gora Rio nos termos deste instrumento.</span></p>
+<p dir="ltr"><span>18. &nbsp;</span><span><strong>Legisla&ccedil;&atilde;o</strong> <strong>aplic&aacute;vel</strong> <strong>e</strong> <strong>foro de elei&ccedil;&atilde;o.</strong> </span><span>O presente Termo &eacute; redigido de acordo com as Leis da Rep&uacute;blica Federativa do Brasil e dever&aacute; ser interpretado conforme a boa-f&eacute; e os usos do lugar de sua celebra&ccedil;&atilde;o. Para dirimir qualquer quest&atilde;o oriunda deste contrato as partes elegem o Foro da Comarca do Rio de Janeiro &ndash; Capital do Estado do Rio de Janeiro.</span></p>
+<p dir="ltr"><span>Este Termo de Uso &eacute; a vers&atilde;o 3.0 do Termo de Uso do SITE, vigorando a partir da data de 05/10/2013 at&eacute; que seja substitu&iacute;do por outro na forma aqui prevista.</span></p>
+<p dir="ltr">&nbsp;</p>
+<h2 dir="ltr"><span>Perguntas Frequentes</span></h2>
+<p><strong>O que &eacute; o &Aacute;gora Rio?<br /></strong>O &Aacute;gora Rio &eacute; um projeto que convoca a participa&ccedil;&atilde;o de qualquer cidad&atilde;o para construir uma cidade mais inteligente. A ideia &eacute; tornar a pol&iacute;tica municipal cada vez mais coletiva. E ningu&eacute;m melhor do que o carioca para propor novas ideias para se melhorar o Rio.</p>
+<p><strong>Para que o &Aacute;gora Rio foi criado?<br /></strong>Este espa&ccedil;o foi desenvolvido com o objetivo de devolver ao cidad&atilde;o sua participa&ccedil;&atilde;o na constru&ccedil;&atilde;o da cidade. &Eacute; uma plataforma democr&aacute;tica de discuss&atilde;o, que aproxima a popula&ccedil;&atilde;o do poder p&uacute;blico, transformando o processo de tomada de decis&otilde;es e tornando a gest&atilde;o colaborativa.</p>
+<p><strong>O &Aacute;gora Rio &eacute; um concurso?<br /></strong>N&atilde;o. A recompensa do usu&aacute;rio do &Aacute;gora Rio &eacute; fazer parte de um projeto que vai discutir alternativas e posteriormente fazer da cidade um lugar melhor para todos n&oacute;s.</p>
+<p><strong>O &Aacute;gora Rio &eacute; um canal de atendimento ao cidad&atilde;o?</strong><br />N&atilde;o. Este &eacute; um canal colaborativo que conta com a participa&ccedil;&atilde;o dos usu&aacute;rios e dos setores da Prefeitura a fim de debater ideias e propostas para as melhorias da cidade. Para enviar solicita&ccedil;&otilde;es e/ou reclama&ccedil;&otilde;es sobre os servi&ccedil;os municipais, voc&ecirc; deve acessar o portal 1746, http://www.1746.rio.gov.br/, o canal de atendimento ao cidad&atilde;o da Prefeitura do Rio.</p>
+<p><strong>Por que existe um desafio no site? Qual o objetivo?</strong></p>
+<p>O desafio do &Aacute;gora Rio tem o objetivo de promover o debate de forma ordenada e colaborativa. Tendo um tema espec&iacute;fico o usu&aacute;rio pode focar seu pensamento na dire&ccedil;&atilde;o de um objetivo definido, fortalecendo sua proposta.&nbsp;</p>
+<p><strong>Que tipo de proposta posso enviar para o &Aacute;gora Rio?</strong><br />O &Aacute;gora Rio &eacute; um espa&ccedil;o dedicado a receber e a debater com voc&ecirc; suas propostas relacionadas direta ou indiretamente &agrave;s pol&iacute;ticas p&uacute;blicas em &acirc;mbito municipal e de acordo com os temas dos desafios lan&ccedil;ados neste canal.</p>
+<p><strong>Quem pode enviar ideias para o &Aacute;gora Rio?<br /></strong>Qualquer usu&aacute;rio pode submeter ideias e propostas que visem melhorar as pol&iacute;ticas p&uacute;blicas da cidade e/ou solucionar problemas identificados pelo site.</p>
+<p><strong>Quem julga as ideias enviadas?<br /></strong>Os pr&oacute;prios usu&aacute;rios do &Aacute;gora Rio podem avaliar e fazer coment&aacute;rios sobre as ideias no site, em audi&ecirc;ncias p&uacute;blicas. Em um segundo momento, convidados especiais ir&atilde;o verificar a viabilidade das sugest&otilde;es, e propor caminhos para a implementa&ccedil;&atilde;o das mesmas.&nbsp;</p>
+<p><strong>O site ter&aacute; modera&ccedil;&atilde;o? Qual a regulamenta&ccedil;&atilde;o no site?<br /></strong>O &Aacute;gora Rio &eacute; um espa&ccedil;o democr&aacute;tico e n&atilde;o tem censura. Mas seu comit&ecirc; organizador tem o direito de excluir da plataforma ideias que contenham ou fa&ccedil;am apologia a conte&uacute;do ofensivo, ilegal ou criminoso. Em alguns casos, os usu&aacute;rios respons&aacute;veis por tais ideia poder&atilde;o tamb&eacute;m ser banidos da plataforma. Gaming, hacking, span e contas fantasmas tamb&eacute;m n&atilde;o ser&atilde;o toleradas.<br />A ideia aqui &eacute; tornar nossa cidade melhor atrav&eacute;s da gest&atilde;o colaborativa. Ent&atilde;o, aproveite o espa&ccedil;o para enviar sugest&otilde;es, se poss&iacute;vel com imagens ou exemplos j&aacute; existentes.</p>
+<p><strong>Como ser&aacute; calculada a pontua&ccedil;&atilde;o das ideias? E como ser&atilde;o escolhidas aquelas que v&atilde;o ser submetidas &agrave; Prefeitura?<br /></strong>Os pr&oacute;prios usu&aacute;rios poder&atilde;o votar nas ideias que melhor atendam ao desafio. &Eacute; importante que voc&ecirc; tamb&eacute;m vote em suas favoritas, porque as 10 propostas mais votadas entrar&atilde;o no documento que ser&aacute; entregue ao Prefeito e ao grupo de trabalho do Plano de Mobilidade Urbana Sustent&aacute;vel (PMUS).</p>
+<p><strong>Porque &eacute; importante que eu utilize&nbsp;<em>tags</em>&nbsp;na minha ideia?<br /></strong>O sistema de&nbsp;<em>tags</em>&nbsp;(etiquetas, no ingl&ecirc;s) facilita a procura de ideias. Ao relacionar palavras-chave com a sua proposta, voc&ecirc; estar&aacute; ampliando a possibilidade desta ser vista e votada. Assim, quando o usu&aacute;rio fizer uma busca sobre um assunto espec&iacute;fico, a sua ideia aparecer&aacute; em uma lista para a aprecia&ccedil;&atilde;o de todos.</p>
+
+	</div>
+</div>
+
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

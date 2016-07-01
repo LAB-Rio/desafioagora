@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba" type="text/css" media="screen" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var httpMode='https';var base='desafioagorario.crowdicity.com';
+            var outputDevice='desktop';
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects"></script>
+        
+        <script type="text/javascript" data-app-id="podCFvakCivvIbN5QVwn9g" src="https://c64.assets-yammer.com/assets/platform_js_sdk.js"></script>
+
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+                
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+                <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+            </head>
+	<body id="docBody" class="logonBody">
+    <!--[OTHER_DATA]-->
+	<div id="loginContainer">
+    	<div id="loginContainerMiddle">
+        	<div class="inner">
+		        <div class="legals">
+<h1 class="MainTitle">Crowdicity Community terms of use</h1>
+<p class="NumberedHeading1"><strong>1. Crowdicity Community terms of use</strong></p>
+<p class="NumberedHeading2">1.1. This page (together with the documents referred to on it) tells you the terms and conditions (&ldquo;Terms&rdquo;) on which you may use any online Communityof which Crowdicity forms part (&ldquo;Crowdicity Community(s)&rdquo;. &ldquo;Crowdicity&rdquo; is Crowdicity Limited&rsquo;s web-based idea management and innovation toolwhich allows online community based donation, collaboration, voting and market researching of new ideas. Crowdicity Communities generally formpart of Crowdicity Limited&rsquo;s website <a href="http://www.crowdicity.com">www.crowdicity.com</a> (the &ldquo;Site&rdquo;) but may form part of other websites. By registering with any Crowdicity Community, you will become an &ldquo;ideator&rdquo; and may generally participate in all other Crowdicity Communities.</p>
+<p class="NumberedHeading2">1.2. You should print a copy of these Terms for future reference.</p>
+<p class="NumberedHeading2">1.3. These Terms are supplemented by the terms of website use&nbsp; and privacy policy of the website on which the Crowdicity Community you are accessing is based, our privacy policy&nbsp;and also the community rules of Crowdicity Limited which apply to all Crowdicity Communities.</p>
+<p class="NumberedHeading1"><strong>2. Information about Crowdicity Limited</strong></p>
+<p class="NumberedHeading2">2.1. Crowdicity, the Crowdicity Communities (other than any contributions made by any ideator and any material owned by the Community owner (where we are not the Community owner) and the Site are proprietary to Crowdicity Limited. Crowdicity Limited are registered in England and Wales under company number 7907506 and have its registered office and main trading address at 88-90 North Sherwood Street, Nottingham NG1 4EE. Crowdicity Limited&rsquo;s VAT number is 128527015.</p>
+<p class="NumberedHeading1"><strong>3. Accessing Crowdicity Community(s)</strong></p>
+<p class="NumberedHeading2">3.1. Each Crowdicity Community is operated by its Community owner (&ldquo;Community Owner&rdquo;). The Community Owner may be Crowdicity Limited or a customer of Crowdicity Limited. Where the Community Owner is a customer of Crowdicity Limited, the Crowdicity Community concerned will give certain information about the Community Owner, such as their full legal name, their county of registration (if they are a company), their company number (or any similar registration number), their registered office address (if they have one) and their main trading address. Their VAT registration number may also be given if they are a UK organisation and have registered for VAT. Where the Community Owner is Crowdicity Limited, this information is given in clause 2 above.</p>
+<p class="NumberedHeading2">3.2. Before participating in any Crowdicity Community(s) you must register with us by completing our registration form to create a new Crowdicity user account. If you prefer we can automatically complete our registration form using your information from your Facebook, Twitter, OpenID, LinkedIn, MSN Yahoo or Google accounts.</p>
+<p class="NumberedHeading2">3.3. After fully completing the registration form and submitting it to us, your account will be created and you will be given immediate access to all &ldquo;open&rdquo; or &ldquo;public&rdquo; Crowdicity Communities. After submitting your registration form you will receive an e-mail from us asking you to verify your email address. If you verify your email address your access to all &ldquo;open&rdquo; or &ldquo;public&rdquo; Crowdicity Communities will become unrestricted and you will be allowed to participate in all votes and receive updates from us. If you do not verify your email address your access to all &ldquo;open&rdquo; or &ldquo;public&rdquo; Crowdicity Communities will remain restricted and you will be unable to participate in certain aspects of that community. You may, of course, verify your email address at a later date. &nbsp;</p>
+<p class="NumberedHeading2">3.4. Some of the Crowdicity Community(s) are &ldquo;closed&rdquo; or &ldquo;private&rdquo; Communities for access by those who are invited by the Community Owner to take part for the purpose for which that Community has been established. To access &ldquo;closed&rdquo; or &ldquo;private&rdquo; Communities you must click on the link in the invitation the Community Owner has sent to you. You will need to register an account to use the Crowdicity Communities if you do not already have one. You can, of course, request access to a &ldquo;closed&rdquo; or &ldquo;private&rdquo; Crowdicity Community, but access will only be granted at the complete discretion of the Community Owner.</p>
+<p class="NumberedHeading2">3.5. Access to all Crowdicity Community(s) is permitted on a temporary basis, and the Community Owner reserves the right to withdraw or amend their Crowdicity Community without notice (see below) at any time. The Community Owner concerned will not be liable if for any reason their Crowdicity Community is unavailable at any time or for any period.</p>
+<p class="NumberedHeading2">3.6. If you choose, or you are provided with, a username, password or any other piece of information as part of our security procedures, you must treat such information as confidential, and you must not disclose it to any third party. We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our opinion you have failed to comply with any of the provisions of these Terms (or the documents referred to in them).</p>
+<p class="NumberedHeading2">3.7. You are responsible for making all arrangements necessary for you to have access to the Crowdicity Community(s).&nbsp;</p>
+<p class="NumberedHeading1"><strong>4. Use of Crowdicity Communities by children</strong></p>
+<p class="NumberedHeading2">4.1. If you are under the age of 18 years, you must obtain the consent of your parent or guardian for your registration to use Crowdicity Communities. In such instances, you confirm, by submitting your completed registration form, that you have obtained such consent from your parent or guardian. We advise parents and guardians who permit their children to use Crowdicity Communities that it is important that they communicate with their children about their safety online. Children who are using Crowdicity Communities should be made aware of the potential risks to them and of their obligation to comply with these Terms (and the documents referred to in them) when using the Crowdicity Communities.</p>
+<p class="NumberedHeading1"><strong>5. Moderation</strong></p>
+<p class="NumberedHeading2">5.1. Whether a particular Crowdicity Community is moderated will depend on the nature of the Community concerned.</p>
+<p class="NumberedHeading2">5.2. Where a Crowdicity Community is not moderated, you understand that any contribution submitted to the Crowdicity Community is your sole responsibility. This means that you, and not the Community Owner, are entirely responsible for any contribution to the Crowdicity Community. Accordingly, where the Crowdicity Community is not moderated the Community Owner will not be responsible as author, editor or publisher of any contribution you make and the Community Owner expressly excludes its liability for any loss or damage arising from your use of the Crowdicity Community. Nevertheless, the Community Owner reserves the right to promptly remove, edit or to disable access to, any contribution which is deemed to be potentially unlawful, in breach of any third party rights or in breach of these Terms (or the documents referred to in them).</p>
+<p class="NumberedHeading2">5.3. Where a Crowdicity Community is moderated, the mechanism for moderation shall be explained on the Crowdicity Community concerned. It may be that every contribution submitted to the Crowdicity Community will be checked by the Community Owner for compliance with the Community Rules before it is published or that every contribution is automatically published and checked for compliance with the Community Rules after being published. In either case, the Community Owner is not under any obligation to you or any other person to oversee, monitor or moderate the Crowdicity Community or any other service that the Community Owner provides and the Community Owner may stop moderating the Crowdicity Community at any time. Nevertheless, the Community Owner reserves the right to promptly remove, edit or to disable access to, any contribution which is deemed to be potentially unlawful, in breach of any third party rights or in breach of these Terms (or the documents referred to in them).</p>
+<p class="NumberedHeading1"><strong>6. Submission of contributions</strong></p>
+<p class="NumberedHeading2">6.1. In each Crowdicity Community you can post a new idea (feedback, suggestion or the like) or a comment to an existing idea. You can also vote in polls that are held. Each Crowdicity Community will have a &lsquo;post&rsquo; button for ideas (the wording of this button could change from Community to Community). In some cases you can also add images and document files to support your contribution.</p>
+<p class="NumberedHeading2">6.2. There is no limit to the length of a contribution to a Crowdicity Community.</p>
+<p class="NumberedHeading2">6.3. Your username, photo (if you have uploaded one) and other personal information that you have provided for publication with your profile will appear as part of your contribution when published on a Crowdicity Community.</p>
+<p class="NumberedHeading1"><strong>7. Confidentiality</strong></p>
+<p class="NumberedHeading2">7.1. If you access a &ldquo;closed&rdquo; or &ldquo;private&rdquo; Crowdicity Community you undertake to the relevant Community Owner that you will at all times during the period which your Crowdicity user account remains active, and for a period of 3 years after the termination of your Crowdicity user account, not disclose to any person any of the information and ideas (the &ldquo;Material&rdquo;) that you have seen or had access to when accessing such &ldquo;closed&rdquo; or &ldquo;private&rdquo; Crowdicity Communities, except that you may disclose the Material:</p>
+<ul style="list-style-type: circle;">
+<li>7.1.1. to your employees, officers, representatives or advisers who need to know such Material for the purposes of participating in to the relevant &ldquo;closed&rdquo; or &ldquo;private&rdquo; Crowdicity Community, provided that you shall ensure that your employees, officers, representatives or advisers to whom you disclose the Material fully comply with this clause 7;&nbsp;<br />&nbsp;</li>
+<li>7.1.2. as may be required by law, court order or any governmental or regulatory authority;<br />&nbsp;</li>
+<li>7.1.3. with the consent of the Community Owner; and<br />&nbsp;</li>
+<li>7.1.4. if the Material comes into the public domain through no fault of you or any person to whom you have disclosed the Material.</li>
+</ul>
+<p class="NumberedHeading2">7.2. You shall not use the Material for any purpose other than to participate in the relevant &ldquo;closed&rdquo; or &ldquo;private&rdquo; Crowdicity Community or otherwise participate in such Crowdicity Community.</p>
+<p class="NumberedHeading2">7.3. Please be aware that you may also be bound by confidentiality obligations owed to the Community Owner based on contracts you have in place with the Community Owner such as, for example, under a contract of employment or contract for services. If this is the case, nothing in this clause 7 is intended to override those confidentiality obligations. Accordingly, in the event of conflict, those confidentiality obligations shall prevail.</p>
+<p class="NumberedHeading1"><strong>8. Intellectual property rights</strong></p>
+<p class="NumberedHeading2">8.1. By making a contribution to a Crowdicity Community:</p>
+<ul style="list-style-type: circle;">
+<li>8.1.1.&nbsp;<span style="text-decoration: underline;">you grant us the right to host, edit and remove your contribution</span>; and<br />&nbsp;</li>
+<li>8.1.2.&nbsp;<span style="text-decoration: underline;">you grant the Community Owner (and in the case of &ldquo;public&rdquo; or &ldquo;open&rdquo; Crowdicity Communities all other users of such Crowdicity Community too) a world-wide, royalty and payment free, non-exclusive licence to use that contribution and all the intellectual property rights in it for their business purposes from time to time</span>.</li>
+</ul>
+<p class="NumberedHeading2">8.2. Unless otherwise provided by law or in any contract you have with the Community Owner (such as a contract of employment or contract for services), you will still own any intellectual property rights in your contribution (and may use it without restriction). However, the scope of the licence granted in clause 8.1.2 includes a right for the Community Owner (and in the case of &ldquo;public&rdquo; or &ldquo;open&rdquo; Crowdicity Communities all other users of such Crowdicity Community) to <span style="text-decoration: underline;">freely use, edit, alter, reproduce, develop, publish, distribute, create derivative work from and/or otherwise commercially exploit your contribution and the intellectual property rights in it. This licence is free of charge, perpetual, irrevocable and capable of unlimited sub-licensing. </span></p>
+<p class="NumberedHeading2">8.3. Please also note that, in accordance with the Community Rules, you must ensure that any contribution you make to a Crowdicity Community does not infringe any copyright, rights in design, patent, database right, trade mark, other intellectual property rights of any person or any obligation of confidence. <span style="text-decoration: underline;">By making your contribution to a Crowdicity Community, you are warranting that you have the right to grant the non-exclusive licences described above.</span></p>
+<p class="NumberedHeading2">8.4. If you are not in a position to grant the licences set out above, please do not make any contribution to any Crowdicity Community(s) or otherwise participate in them.</p>
+<p class="NumberedHeading1"><strong>9. Your use of contributions</strong></p>
+<p class="NumberedHeading2">9.1. If you print off, copy or download any part of a Crowdicity Community in breach of these Terms (or the documents referred to in them), your right to use the Crowdicity Communities will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.</p>
+<p class="NumberedHeading1"><strong>10. Reliance on contributions</strong></p>
+<p class="NumberedHeading2">10.1. Contributions and other information and material provided in the Crowdicity Community(s) are not intended to amount to advice on which reliance should be placed. The material displayed on, or contributed to, the Crowdicity Community(s) is provided without any guarantees, conditions or warranties as to its accuracy, quality or completeness. Accordingly the Community Owner and you:</p>
+<ul style="list-style-type: circle;">
+<li>10.1.1. disclaim all liability and responsibility arising from any reliance placed on such materials by the others, or by anyone who may be informed of any of its contents; and<br />&nbsp;</li>
+<li>10.1.2. agree that we each must evaluate and bear all risks associated with our own use of any contribution posted on the Crowdicity Community(s), or other information and material on the Crowdicity Community(s), including any reliance on its accuracy, quality or completeness.</li>
+</ul>
+<p class="NumberedHeading1"><strong>11. Viruses, hacking and other offences</strong></p>
+<p class="NumberedHeading2">11.1. You must not misuse the Crowdicity Community(s) or our Site by knowingly introducing viruses, trojans, worms, logic bombs or other material which is malicious or technologically harmful. You must not attempt to gain unauthorised access to the Crowdicity Community(s), our Site or the server on which they are stored or any server, computer or database connected to them. You must not attack the Crowdicity Community(s) or our Site via a denial-of-service attack or a distributed denial-of service attack.</p>
+<p class="NumberedHeading2">11.2. By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use the Crowdicity Community(s) and our Site will cease immediately.</p>
+<p class="NumberedHeading2">11.3. We, or the Community Owner, will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of the Crowdicity Community(s) or to your downloading of any material posted on it, or on any website linked to it. Accordingly, you should ensure you have appropriate anti-virus and firewall software protecting your computer systems.</p>
+<p class="NumberedHeading1"><strong>12. Additional terms</strong></p>
+<p class="NumberedHeading2">12.1. Additional terms and conditions may apply to particular Crowdicity Communities. If so, you will be advised of them on the relevant Crowdicity Community. Any conflict between the provisions of these Terms and any additional terms and conditions that may apply to a particular Crowdicity Community will be resolved in favour of these Terms.</p>
+<p class="NumberedHeading2">12.2. When using the Crowdicity Communities and our Site, you must comply with terms of website use that apply to the website on which the Crowdicity Community is located and the Community Rules and these are incorporated into the Terms by reference. Any conflict between such terms of website use and these Terms, will be resolved in favour of these Terms.</p>
+<p class="NumberedHeading1"><strong>13. Breach of these Terms</strong></p>
+<p class="NumberedHeading2">13.1. When we, or a Community Owner, consider that a breach of these Terms (or any document referred to in them) has occurred, we may at our discretion take such action as we, or the Community Owner, deem appropriate. Failure to comply with these Terms (or any document referred to in them) constitutes a material breach, and may result in the taking all or any of the following actions:</p>
+<ul style="list-style-type: circle;">
+<li>13.1.1. immediate, temporary or permanent withdrawal of your right to use the Crowdicity Communities;<br />&nbsp;</li>
+<li>13.1.2. immediate, temporary or permanent removal of any contribution you have already make to the Crowdicity Communities;<br />&nbsp;</li>
+<li>13.1.3. issue of a warning to you; or<br />&nbsp;</li>
+<li>13.1.4. disclosure of such information to law enforcement authorities as we reasonably feel is necessary or as required by law.</li>
+</ul>
+<p class="NumberedHeading2">13.2. We, and the Community Owner, exclude all liability for all action that may be taken in response to breaches of these Terms (including the documents referred to in them). The actions described above are not limited, and other actions that are reasonably deemed appropriate may also be taken.</p>
+<p class="NumberedHeading1"><strong>14. Information about you and your visits</strong></p>
+<p class="NumberedHeading2">14.1. We process information about you in accordance with our privacy policy.&nbsp; By using our Site and the Crowdicity Community(s), you consent to such processing. Your information will also be processed by other Community Owners. They will process information about you in accordance with their privacy policies as they are stated on their Crowdicity Community. You should make sure you read, understand and agree to such processing.</p>
+<p class="NumberedHeading1"><strong>15. Limitation of liability</strong></p>
+<p class="NumberedHeading2">15.1. This provision sets out our liability, and the liability of the Community Owners, for your use of Crowdicity, the Crowdicity Community(s) and our Site and reflects the fact that they are free to use.</p>
+<p class="NumberedHeading2">15.2. In respect of your use of Crowdicity, the Crowdicity Community(s) and our Site, to the extent permitted by law, we and the Community Owners hereby expressly exclude:</p>
+<ul style="list-style-type: circle;">
+<li>15.2.1. all conditions, warranties and other terms which might otherwise be implied by statute, common law or the law of equity; and<br />&nbsp;</li>
+<li>15.2.2. any liability for any direct, indirect or consequential loss or damage incurred: (i) by you in connection with Crowdicity, the Crowdicity Community(s) or our Site or in connection with the use, inability to use, or results of the use of Crowdicity, the Crowdicity Community(s) or our Site; (ii) your use of any websites linked to the Crowdicity Community(s) or our Site; and (iii) your use of any materials posted on the Crowdicity Community(s) or our Site (including any contributions); including, without limitation, any liability for:<br />&nbsp;</li>
+<li>15.2.2.1 loss of income or revenue;</li>
+<li>15.2.2.2 loss of business;</li>
+<li>15.2.2.3 loss of profits or contracts;</li>
+<li>15.2.2.4 loss of anticipated savings;</li>
+<li>15.2.2.5 loss of data;</li>
+<li>15.2.2.6 loss of goodwill;</li>
+<li>15.2.2.7 wasted development, management or office time; or</li>
+<li>15.2.2.8 for any other loss or damage of any kind, however arising and whether caused by tort (including negligence), breach of contract or otherwise, even if foreseeable.</li>
+</ul>
+<p class="NumberedHeading2">15.3. Our total liability to you, and the total liability of the Community Owners, whether in contract, tort or otherwise and whether in connection with these Terms or any collateral agreement, shall in no circumstances exceed an aggregate of <span style="text-decoration: underline;">&pound;100</span>.</p>
+<p class="NumberedHeading2">15.4. The provisions in this clause 15, or elsewhere in these Terms, do not in any way exclude or limit our liability for:</p>
+<ul style="list-style-type: circle;">
+<li>15.4.1. death or personal injury arising from our negligence;<br />&nbsp;</li>
+<li>15.4.2. fraudulent misrepresentation or misrepresentation as to a fundamental matter; or<br />&nbsp;</li>
+<li>15.4.3. any matter for which liability cannot be excluded or limited under applicable law.</li>
+</ul>
+<p class="NumberedHeading1"><strong>16. Termination</strong></p>
+<p class="NumberedHeading2">16.1. Your user account will commence on the date we grant you access to your first Crowdicity Community and shall continue until: (a) the expiry of 7-days from your request to delete your user account submitted through the mechanism provided for in your account profile (provided you do not cancel your request to delete your user account before the expiry of that 7-day period); (b) we terminate your user account because you have breached the Terms (or any documents referred to in it); or (c) we terminate your user account by giving you 7-days advanced written notice for any reason by emailing you at the email address registered against your account.</p>
+<p class="NumberedHeading2">16.2. When you submit a request to delete your user account through the mechanism provided for in your account profile, we will automatically delete your user account from Crowdicity on the expiry of 7-days from the date you submit your request (unless you cancel your request to delete your user account before the expiry of that 7-day period). <span style="text-decoration: underline;">Although your user account will be deleted, all the contributions you have made to any Crowdicity Communities will remain, although they will be attributed to an unknown user.</span></p>
+<p class="NumberedHeading1"><strong>17. Third party websites</strong></p>
+<p class="NumberedHeading2">17.1. We may also provide links on our Site to the websites of other companies (such as the Community Owner), whether affiliated with us or not. We cannot give any undertakings regarding those websites or any agreements that you enter into with such companies to whose website we have provided a link on our Site.</p>
+<p class="NumberedHeading1"><strong>18. Written communications</strong></p>
+<p class="NumberedHeading2">18.1. Applicable laws require that some of the information or communications we send to you should be in writing. You accept that communication with us will be mainly electronic. We will contact you by e-mail or provide you with information by posting notices on our Site. For contractual purposes, you agree to this electronic means of communication and you acknowledge that all contracts, notices, information and other communications that we provide to you electronically comply with any legal requirement that such communications be in writing. This condition does not affect your statutory rights.</p>
+<p class="NumberedHeading1"><strong>19. Notices</strong></p>
+<p class="NumberedHeading2">19.1. All notices given by you to us must be given to Crowdicity Limited at <a href="mailto:notices@crowdicity.com">notices@crowdicity.com</a>. We may give notice to you at either the e-mail or postal address registered against your account. Notice will be deemed received and properly served immediately when posted on our Site or the Crowdicity Community concerned, 24 hours after an e-mail is sent, or three days after the date of posting of any letter. In proving the service of any notice, it will be sufficient to prove, in the case of a letter, that such letter was properly addressed, stamped and placed in the post and, in the case of an e-mail, that such e-mail was sent to the specified e-mail address of the addressee.</p>
+<p class="NumberedHeading2">19.2. If you intend to contact the Community Owner (where it is not us), you should contact them through the mechanism provided on their Crowdicity Community.</p>
+<p class="NumberedHeading1"><strong>20. Complaints</strong></p>
+<p class="NumberedHeading2">20.1. If you wish to complain about any contribution made to the Crowdicity Communities, please contact the Community Owner through the mechanism provided for on the Crowdicity Community concerned for the reporting of any contribution. The Community Owner will then review the contribution and decide whether it complies with the Community Rules. Any contribution which, in the Community Owner&rsquo;s opinion, breaches the Community Rules will be dealt with as described above (see section "Breach of these Terms").&nbsp; If you are not satisfied by the way the Community Owner concerned has handled your complaint about a contribution, or you have any complaint about a Crowdicity Community generally, please contact us at <a href="mailto:help@Crowdicity.com">help@Crowdicity.com</a>.</p>
+<p class="NumberedHeading1"><strong>21. Events outside our control</strong></p>
+<p class="NumberedHeading2">21.1. Neither we, nor a Community Owner, will be liable or responsible for any failure to perform, or delay in performance of, any obligations under these Terms that is caused by events outside our, or their, reasonable control.</p>
+<p class="NumberedHeading1"><strong>22. Waiver</strong></p>
+<p class="NumberedHeading2">22.1. If we or a Community Owner fail, at any time, to insist upon strict performance of any of your obligations under the Terms, or if we or a Community Owner fail to exercise any of our or their rights or remedies under the Terms, this shall not constitute a waiver of such rights or remedies and shall not relieve you from compliance with such obligations.</p>
+<p class="NumberedHeading1"><strong>23. Severability</strong></p>
+<p class="NumberedHeading2">23.1. If any of these Terms are determined by any competent authority to be invalid, unlawful or unenforceable to any extent, the relevant term, condition or provision will to that extent be severed from the remaining Terms which will continue to be valid to the fullest extent permitted by law.</p>
+<p class="NumberedHeading1"><strong>24. Entire agreement</strong></p>
+<p class="NumberedHeading2">24.1. The Terms (and any document referred to in them) constitute the whole agreement between us and supersede any previous arrangement, understanding or agreement between us, relating to your access to the Crowdicity Communities and our Site.</p>
+<p class="NumberedHeading1"><strong>25. Jurisdiction and applicable law</strong></p>
+<p class="NumberedHeading2">25.1. The English courts will have non-exclusive jurisdiction over any claim arising from, or related to, these Terms and your use of the Crowdicity Communities and our Site. These Terms are governed by English law and these Terms, and any agreement pursuant to them, shall be in the English language.</p>
+<p class="NumberedHeading1"><strong>26. Changes to these Terms</strong></p>
+<p class="NumberedHeading2">26.1. You will be subject to the Terms as they are in force at the time that you registered your user account, however, we reserve the right to change our Terms by giving you notice in writing. Such notice will usually be given to you when you attempt to login to your user account. If you do not agree to those changes, you may terminate your user account as provided in these Terms. &nbsp;&nbsp;</p>
+</div>
+<div class="clear"><!-- IE --></div>
+
+
+        	</div>
+    	</div>
+	</div>
+	<div class="signInCWBadge">
+        <a href="http://www.crowdicity.com/" target="_blank" ><span>Powered by Crowdicity</span></a>                    <a href="" target="_blank" class="footerCWBadgePartner">
+                <img src="https://resources.crowdworks.net/partnerlogos/9.png" />
+                <span>Rio Prefeitura</span>
+            </a>
+                    </div>
+
+    <!--[TRACKING]-->
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      
+  ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+    
+     
+  ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+
+        
+	</body>
+</html>

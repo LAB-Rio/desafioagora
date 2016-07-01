@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="activity-current-page  ">
+    <input type="hidden" id="currentPage" value="activity" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zNTczNg==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zNTczNg==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zNTczNg==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS8zNTczNg==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>José Henrique's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li class="selected">
+			<a href="/user/activity/35736">Atividade</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/following/35736">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/35736">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">jhmelman's Atividade</h2>
+
+<div id="activityTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	
+        <li class="selected"><a href="#" id="tab_myIdeas">Ideias</a></li>
+        <li ><a href="#" id="tab_myComments">Comentários</a></li>
+                <li ><a href="#" id="tab_myVotes">Votos</a></li>
+            </ul>
+</div>
+<div class="tabView">
+    
+    <div id="viewtab_myIdeas" class="viewtab_myIdeas">
+
+    	<div id="myIdeas_subContainer">
+    		<div class="b-single-challenge__ideas-list i-ideas-list" style="background:#f5f5f5;padding:10px;">
+    			<div class="b-row b-single-challenge__ideas-header">
+    				<div class="b-column b-column--6" style="flex-basis:50%;">
+    					<span>Exibindo:</span>
+    					<strong><span class="result-count">10</span> Results</strong>
+    				</div>
+    				
+    				<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:50%;">
+    					<div class="viewoptions-wrapper">
+							<select name="myIdeas_sort" id="myIdeas_sort" class="i-mix-sort">
+							        	<option value="newest" selected="selected">Mais novos</option>
+							        	<option value="hottest" >Destaques</option>
+							        	<option value="mostPopular" >Mais Votadas</option>
+							        	<option value="mostComments" >Mais comentadas</option>
+							        	<option value="adopted" >Escolhas</option>
+							        </select>
+    					</div>
+    					
+    					<div class="viewoptions-wrapper">
+    						<span>Ordenar por</span>
+    					</div>
+    				</div>
+    			</div>
+	    		<div id="results-container" class="b-row results-view-list">
+		            				        
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="1" data-randorder="1326764943" data-id="99064" class="b-column b-idea__container filter-ready filter-active filter-2929 filter-default tag-bicicleta tag-bikerio tag-gr&#225;tis   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/99064" onclick="return postAJAXObj.display(99064,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/59a0ab084ef3007418ded80f0156e9de" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/99064" onclick="return postAJAXObj.display(99064,{  });">Passe gratuito no BikeRio ajudando a balancear a oferta de bicicletas no sistema</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/99064" onclick="return postAJAXObj.display(99064,{  });"> Há diversas estações com problema de falta crônica de bicicletas ou de vagas, a depender da hora do dia. 
+ Para melhorar isto, já vi em algumas oportunidades um veículo da Bike Rio com reboques carregando bicicletas, o que é uma solução que impacta trânsito e aumenta poluição. 
+ Uma solução interessante seria a possibilidade de usuários poderem ganhar uma viagem específica que tirasse uma bicicleta de uma estação (quase) lotada e/ou deixasse uma bicicleta numa (quase) vazia. 
+ Funcionaria...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="02:07  - 27 Mar 2015">Mar 27, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-99064" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:99064, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:99064, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-99064"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/99064">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>1</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="02:07  - 27 Mar 2015">Mar 27, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="5" data-randorder="218837316" data-id="92552" class="b-column b-idea__container filter-ready filter-active filter-2929 filter-default tag-bicicleta tag-bikerio tag-integra&#231;&#227;o tag-ofertadebicicletas   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/92552" onclick="return postAJAXObj.display(92552,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/85dec77911b453233171758c3743d3dd" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/92552" onclick="return postAJAXObj.display(92552,{  });">Dimensionamento adequado das estações do BikeRio</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/92552" onclick="return postAJAXObj.display(92552,{  });"> Em certos locais é visível que a demanda é extremamente incompatível com a quantidade de bikes numa determinada região. O centro por volta das 18h é uma prova disso. Aliás, dado fluxo predominante, dá até pra arriscar que a partir das 18h acabam as bicicletas no centro. Só ficam as quebradas e defeituosas. 
+ Estações de Trem/Metrô/Barcas são pontos onde muitas pessoas poderiam pegar bicicletas se houver oferta adequada. Na foto, uma imagem não tão incomum da estação próxima ao Metrô de...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="12:31  - 12 Mar 2015">Mar 12, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-92552" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:92552, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:92552, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-92552"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/92552">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>5</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="12:31  - 12 Mar 2015">Mar 12, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="4" data-randorder="1568218320" data-id="84365" class="b-column b-idea__container filter-ready filter-active filter-2930 filter-default tag-vi&#225;rio tag-adequa&#231;&#227;o tag-tr&#225;fego tag-engarrafamento tag-cal&#231;adas tag-fluidez   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84365" onclick="return postAJAXObj.display(84365,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/c886598fb0cd19c77e7e07558f3cf3f7" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84365" onclick="return postAJAXObj.display(84365,{  });">Adequação do viário ao tráfego para evitar engarrafamentos</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84365" onclick="return postAJAXObj.display(84365,{  });">  
+  
+ Por toda a cidade há pistas cujos desenhos não favorecem a fluidez do tráfego ou geram problemas quando ocorrem engarrafamentos. São espaços demasiado largos, ou faixas pintadas largas e que terminam abruptamente. Às vezes até há linhas hachuradas nos trechos que não deveriam ser usadas, o que auxilia apenas quando o trânsito está fluindo dentro da normalidade. 
+ Diante do primeiro sinal de retenção esses espaços esses espaços que “sobram” na pista acabam ocupados por motoristas em...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="03:16  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84365" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84365, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84365, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84365"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84365">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>4</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="03:16  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="8" data-randorder="1419860771" data-id="84245" class="b-column b-idea__container filter-ready filter-active filter-2930 filter-default tag-pedestres tag-zona40 tag-substitui&#231;&#227;odoautom&#243;vel tag-ciclistas tag-bicicleta tag-redu&#231;&#227;odeacidentes tag-seguran&#231;anotr&#226;nsito   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84245" onclick="return postAJAXObj.display(84245,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/646b64a1ec38d715c4ce1d131021d6ff" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84245" onclick="return postAJAXObj.display(84245,{  });">Instalação de Zona 40 em toda a cidade</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84245" onclick="return postAJAXObj.display(84245,{  });">  
+  
+ Recentemente Nova York anunciou a redução dos limites de valocidade em toda a cidade para 25 milhas por hora, ou 40 km/h,  com o objetivo de reduzir as fatalidades no trânsito. Com  a redução da velocidade, espera-se que haja uma redução do número  e da gravidade dos acidentes, já que os carros precisariam de um menor espaço para frenagem e também o aumento de chances de sobrevivência em caso de atropelamentos. 
+ A adoção de limites de velocidade baixos também desestimularia o uso de...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:54  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84245" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84245, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84245, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84245"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84245">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>8</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:54  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="2" data-randorder="1694602690" data-id="84244" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-VLT tag-Urca tag-Leme tag-substituiçãodoautomóvel tag-pilotoVLT tag-botafogo tag-copacabana tag-sãoconrado tag-grajaú tag-barradatijuca tag-riodaspedras tag-méier tag-cachambi   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84244" onclick="return postAJAXObj.display(84244,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/1653d7d088f3f468e562376cf521bb9d" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84244" onclick="return postAJAXObj.display(84244,{  });">Piloto para outros VLTs da Cidade: VLTs da Urca e do Leme</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84244" onclick="return postAJAXObj.display(84244,{  });"> Projeto-piloto para ampliação do uso dos VLT no restante da cidade. Bairros pequenos próximos a metrô, que poderiam ser integrados à rede. 
+ Os bairros do Leme e da Urca estão próximos a estações de metrô (Cardeal Arcoverde e Botafogo, respectivamente), no entanto de certa forma distantes delas para que o metrô sirva como uma verdadeira opção de transporte para sua população. 
+ São bairros pequenos e localizados em extremidades (não são "passagem" para outros ou para o Centro) cuja população...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:45  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84244" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84244, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84244, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84244"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84244">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>2</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:45  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="9" data-randorder="1451981846" data-id="84242" class="b-column b-idea__container filter-ready filter-active filter-2928 filter-default tag-acessibilidade tag-botafogo tag-avenidabrasil tag-madureira tag-pedestres tag-tecidourbanoíntegro tag-pne tag-bicicleta tag-trânsitosubterrâneo tag-parques tag-espalanadas tag-paisagismo   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84242" onclick="return postAJAXObj.display(84242,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/22acc55af46f30be503775d271e6eee5" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84242" onclick="return postAJAXObj.display(84242,{  });">Recuperação de espaços para os pedestres</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84242" onclick="return postAJAXObj.display(84242,{  });"> Rebaixamento de pistas e/ou sua cobertura para criar espaços amigáveis para pedestres. 
+ Há na cidade diversos espaços ocupados com pistas de rolamento que criam ambientes hostis para padestres e ciclistas. Ruas de grande movimento com calçadas estreitas e/ou que só podem ser cruzadas por passagens subterrâneas ou passarelas. Essas ruas passariam a ser subterrâneas, deixando a superfície para os pedestres, criando até mesmo grandes esplanadas e parques. O transporte coletivo poderia circular...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:36  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84242" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84242, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84242, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84242"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84242">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>9</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:36  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="6" data-randorder="2128749319" data-id="84241" class="b-column b-idea__container filter-ready filter-active filter-2928 filter-default tag-pedestre tag-acessibilidade tag-pne tag-bicicleta tag-esquinas tag-idosos   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84241" onclick="return postAJAXObj.display(84241,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/b5938d808f6023852dc33783147b5ad0" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84241" onclick="return postAJAXObj.display(84241,{  });">Rebaixamento da altura das calçadas para melhorar a acessibilidade e maior conforto dos pedestres, evitando degraus e descidas bruscas</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84241" onclick="return postAJAXObj.display(84241,{  });">  
+  
+ Há pela cidade diversas calçadas com grande diferença de altura para a rua. Algumas até têm alguma rampagem específica para os pontos de travessia, de forma a facilitar o acesso por cadeirantes e ciclistas. 
+ No entanto, por vezes o acesso rampado é demasiado estreito e as calçadas são muito altas, de forma que pessoas com dificuldade de locomoção, como pessoas idosas e alguns PNEs, acabam ou usando o acesso ou descendo/subindo o degrau para a calçada, correndo risco de acidentes. 
+ As...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:31  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84241" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84241, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84241, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84241"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84241">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>6</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:31  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																											
+																						                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="1" data-adoptedorder="1" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="6" data-randorder="9735550" data-id="84240" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-trem tag-metr&#244; tag-tremregional tag-campogrande tag-tijuca tag-centro tag-taquara tag-sumidouro tag-expresso tag-22minutos   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84240" onclick="return postAJAXObj.display(84240,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/1b149c670b74eb688033fbc8551dd979" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                                                                                                                                                         <!-- <div class="smallNotice" style="color:#ffffff;background-color:#F052E2;">ATRIBUIÇÃO DO GOVERNO ESTADUAL</div>-->
+                                               <div class="b-single-idea__label-silver" style="color:#ffffff;background-color:#F052E2;top:0px;">
+                                                   ATRIBUIÇÃO DO GOVERNO ESTADUAL
+                                               </div>
+                                                                                                                              
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84240" onclick="return postAJAXObj.display(84240,{  });">Ligação longitudinal rápida por trilhos (Centro-CG em 22 minutos via Taquara)</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84240" onclick="return postAJAXObj.display(84240,{  });">  
+  
+ Articulação com Metrô ou Supervia para a criação de linhas “sumidouro” entre Campo Grande, Taquara, Tijuca e Centro (Centro-CG em 22 minutos). 
+ A ideia consiste na criação de linhas ferroviárias com pouquíssimas estações com grandes distâncias entre si. Os trens usados seriam do tipo “trem regional”, refrigerados, que alcançam velocidades de 140 a 160km/h, configurados com assentos laterais como as novas composições do metrô e com bitola compatível com a do Metrô e da Supervia. 
+ A...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:26  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84240" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84240, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84240, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84240"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84240">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>6</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:26  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="4" data-randorder="1414705331" data-id="84239" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-BRT tag-TransCarioca tag-TransOeste tag-TransOl&#237;mpica tag-TransBrasil tag-integra&#231;&#227;o   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84239" onclick="return postAJAXObj.display(84239,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/7bb892416dca8e2e93784e3cbc36197c" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84239" onclick="return postAJAXObj.display(84239,{  });">Linhas que correm por mais de um corredor BRT</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84239" onclick="return postAJAXObj.display(84239,{  });">  
+  
+ A iniciativa do BRT é ótima, embora certamente necessite de aprimoramentos. Um deles poderia ser a integração das linhas existentes (e futuras) de modo a evitar baldeações. 
+ Segundo essa proposta, ônibus da Transoeste e da Transcarioca (e dos futuros BRTs em constução e a construir que fossem interligados) poderiam perfazer trajetos de pelo menos parte das duas linhas. 
+ Exemplos (sempre fica mais fácil de entender): 
+ - Uma linha expressa saindo do Recreio Shopping indo até Madureira...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:20  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84239" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84239, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84239, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84239"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84239">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>4</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:20  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="11" data-randorder="137196492" data-id="84237" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-&#244;nibus tag-pisobaixo tag-motortraseiro tag-BRT tag-BRS tag-suspens&#227;opneum&#225;tica tag-autom&#225;tico tag-bicicleta tag-licita&#231;&#227;o tag-modelode&#244;nibus   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/84237" onclick="return postAJAXObj.display(84237,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/952eafd0cfac9100c0bd84027ccb56cb" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/84237" onclick="return postAJAXObj.display(84237,{  });">Elaboração do Padrão OnibusCarioca para uso pelas empresas de ônibus</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/84237" onclick="return postAJAXObj.display(84237,{  });">  
+  
+ Seria interessante a Prefeitura formular requisitos para o que seria o ônibus ideal para a circulação no Município. A ideia não é dizer um modelo/formato específico, mas características genéricas, de modo que os produtores de carrocerias pudessem até mesmo elaborar produtos específicos para a cidade ou que pudesse ter essas características previstas em futuros editais. 
+ Alguns detalhes gerais desejáveis: 
+ - Aviso visual e sonoro da próxima parada, segundo o trajeto e com apoio de...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+                                                            <time data-tip="04:16  - 23 Fev 2015">Feb 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-84237" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:84237, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:84237, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-84237"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/84237">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>11</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="jhmelman" class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a><br />
+										</div>
+										<time data-tip="04:16  - 23 Fev 2015">Feb 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+        <script>
+        (function() {
+            var voteBoxes = document.getElementsByClassName('voteBox');
+            for(var i = 0; i < voteBoxes.length; i++) {
+                voteBoxes[i].onclick = function(e) {
+                    e.preventDefault();
+                }
+            }
+        })();
+    </script>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/35736?mode=posts&hubbub_id=206&startFrom=%7B%22post%22%3A%2284237%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%222015-02-23+04%3A16%3A50%22%7D',$(this).up());return false;">Carregar mais</a></div>
+    
+
+
+<script>
+    Category.opentipCloseOnClick();
+    Category.voteBoxClick();
+</script>
+		            	            </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewtab_myComments" style="display:none;">
+    	        	                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/84239">Linhas que correm por mais de um corredor BRT</a></h2>
+        <p><p>Adicionando comentários que fiz em outro post:</p>
+<p>Alvorada? Eu o vejo como um gargalo atualmente. Há engarrafamento de ônibus na chegada. Aquela plataforma deveria ser toda ela (os dois lados) do BRT ( http://mapeando.rio.gov.br/#/demands/show/953 ) e deveria haver integração do TransOeste com o TransCarioca sem passar pelo Alvorada ( https://desafioagorario.crowdicity.com/post/84239 )</p>
+<p>No Alvorada acho que teria que fazer uma pista virando para a direita antes da rotatória dentro do Alvorada pra o ônibus fazer TransOeste-TransCarioca. TransCarioca-TransOeste seria só o ônibus virar na rotatoria ao entrar no Alvorada. Na direção Jardim Oceânico não sei como seria.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/84239">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102567">Linhas alimentadoras circulando dentro do BRT (Integração)</a></h2>
+        <p><p>No Alvorada acho que teria que fazer uma pista virando para a direita antes da rotatória dentro do Alvorada pra o ônibus fazer TransOeste-TransCarioca. TransCarioca-TransOeste seria só o ônibus virar na rotatoria ao entrar no Alvorada. Na direção Jardim Oceânico não sei como seria.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102567">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102567">Linhas alimentadoras circulando dentro do BRT (Integração)</a></h2>
+        <p><p>Alvorada? Eu o vejo como um gargalo atualmente. Há engarrafamento de ônibus na chegada. Aquela plataforma deveria ser toda ela (os dois lados) do BRT ( http://mapeando.rio.gov.br/#/demands/show/953 ) e deveria haver integração do TransOeste com o TransCarioca sem passar pelo Alvorada ( https://desafioagorario.crowdicity.com/post/84239 )</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102567">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102591">Automoção do sistema de ônibus urbanos: tecnologia a serviço das pessoas</a></h2>
+        <p><p>Não sei... Em Londres e Paris já comprei passagens diretamente dos motoristas... Acredito que não haja problema, desde que a compra com o motorista seja algo residual. Melhor seria se todos tivesses passes diários/mensais/anuais ( https://desafioagorario.crowdicity.com/post/84235 ) e que apenas validassem no ônibus para controle de transportes realizados. Assim, a população que usa o transporte todo dia basicamente entraria no ônibus e validaria o passe, comprariam apenas os usuários eventuais ou turistas (que também poderiam comprar passes antecipadamente)</p>
+<p>A achei a ideia confusa e está misturando conceitos: pagamento, características dos ônibus ( https://desafioagorario.crowdicity.com/post/84237 ), recarga de RioCard ( https://desafioagorario.crowdicity.com/post/90959 )...</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102591">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102557">BRT e Avenida Expressa TransLight</a></h2>
+        <p><p>Então seria a via com uma das faixas com VLT até Honório e Colégio e depois o BRT, acima de Madureira e BRT de Madureira ao Méier?</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102557">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102350">Identificação paradas BRS</a></h2>
+        <p><p>Sim. O ideal seria um ônibus BRS3 avisar "Próxima parada: Siqueira Campos", e um BRS 2 avisar "Próxima parada Praça Serzedelo Correia". Avisar por painel luminoso e por áudio.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102350">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102557">BRT e Avenida Expressa TransLight</a></h2>
+        <p><p>Uma vantagem de estender a outra seria o menor impacto da passagem de VLT do que uma pista com BRT e autos.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102557">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102557">BRT e Avenida Expressa TransLight</a></h2>
+        <p><p>Essa proposta não está de certa forma colidindo com a VLT Madureira – a consolidação de uma centralidade pelos trilhos de bonde ( https://desafioagorario.crowdicity.com/post/102552 )? Porque há trechos coincidentes, não seria o caso de conciliar as duas ideias usando essa para estender a outra?</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102557">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102567">Linhas alimentadoras circulando dentro do BRT (Integração)</a></h2>
+        <p><p>Não sei se entrar no corredor, porque mais ônibus acabariam atrapalhando o embarque/desembarque dos articulados e poderia saturar o caminho.</p>
+<p>Mas, definitivamente, fazer terminais com melhor integração, como uma mini-rodoviária com serviços, passagem direta dos passageiros dos alimentadores para a plataforma do BRT (isto é, se eles puderem sair do ônibus usando uma passagem que leve à plataforma de embarque do BRT), isso sem dúvida poderia ser feito!</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102567">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/102572">Mobilidade na Escola</a></h2>
+        <p><p>Não entendi sua ideia...</p>
+<p>Tenta separar por assuntos e desenvolver... Preferencialmente, busca pelos assuntos que te interessam, há uma boa chance de ter alguma proposta semelhante, entra e comenta, dá apoio, se não tiver, sugere.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/102572">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/101999">VLT cultural</a></h2>
+        <p><p>Ideia relacionada: https://desafioagorario.crowdicity.com/post/84651</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 2, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/101999">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+
+    <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/35736?mode=comments&hubbub_id=206&start=2015-04-02 19:43:20',$(this).up());return false;">Carregar mais</a></div>
+
+            </div>
+        <div id="viewtab_myVotes" style="display:none;">
+    	        	            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/100795">Ligação direta Av.Brasil - Av. Américas que não obrigue a passagem pelo centro de C.Grande</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/84245">Instalação de Zona 40 em toda a cidade</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/84440">Taxi só na pista de corredor expresso</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/102567">Linhas alimentadoras circulando dentro do BRT (Integração)</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                            na ideia <a href="/post/102557">BRT e Avenida Expressa TransLight</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/102557">BRT e Avenida Expressa TransLight</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/102557">BRT e Avenida Expressa TransLight</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/102350">Identificação paradas BRS</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/102350">Identificação paradas BRS</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                            na ideia <a href="/post/102350">Identificação paradas BRS</a>
+                    </div>
+            <div class="voteActivity">
+            <p>jhmelman votou
+                                                            um comentário na ideia <a href="/post/97100">Via Carioca: Monotrilho no Caminho Imperial</a>
+                    </div>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/35736?mode=votes&hubbub_id=206&start=2015-04-02 19:42:20',$(this).up());return false;">Carregar mais</a></div>
+    
+            </div>
+    </div>
+
+        <script type="text/javascript">
+        
+        	jQuery(function() {
+        		jQuery('#myIdeas_sort').change(function() {
+        			loadMore($('results-container'),'/user/activity/35736?mode=posts&hubbub_id=206&sortBy='+$('myIdeas_sort').getValue(), null, true);
+        		});
+        	});
+        
+        </script>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter230.png" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">jhmelman</h2>
+                        <p>
+                            (José Henrique Melman)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(35736,0,{ 'user_id':35736, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            Rio de Janeiro, Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Out 21, 2014</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup35736" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">3</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">6854</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/35736">Ideias</a><span>16</span></li>
+                        <li><a href="/user/activity/35736?goTab=myVotes">Votos</a><span>125</span></li>
+                        <li><a href="/user/activity/35736?goTab=myComments">Comentários</a><span>173</span></li>
+            <li><a href="/user/following/35736">Seguidores</a><span>9</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/35736?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/35736?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/35736?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/35736">Assinaturas</a><span>81</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">4</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/51166" onclick="popUp('/user/view/51166', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_51166_4cdf4efded492c3d2d963a4dea3ac4df_LOGOQM2.png.jpg);"><span>Quero Metrô</span></a>
+                                                                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><span>Bolanhos</span></a>
+                                                                        <a  href="user/activity/51178" onclick="popUp('/user/view/51178', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_51178_aa2f78dcfc2b4ce27819a0af7a8069f2_avatarglobo.jpg.jpg);"><span>Pedro Geaquinto</span></a>
+                                                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><span>Rafael M. F.</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

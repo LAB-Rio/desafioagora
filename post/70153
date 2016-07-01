@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Racionalização das linhas de ônibus (vide estudo divulgado) - Desafio Ágora Rio" />
+                <meta property="og:description" content=" Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. " />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/post/70153" />
+                                                                                        <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_33061_d787a7953805aa04c9f2aafb44908530_2014-760407528-2014101512509.jpg_20141015.jpg" />
+                            <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_33061_d787a7953805aa04c9f2aafb44908530_2014-760407528-2014101512509.jpg_20141015.jpg">
+                                                                                                <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_33061_c2ebdca4f48bb19fc369fb3063d6a3ff_mapa-onibus-1.jpg" />
+                            <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_33061_c2ebdca4f48bb19fc369fb3063d6a3ff_mapa-onibus-1.jpg">
+                                                                            
+
+                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Racionalização das linhas de ônibus (vide estudo divulgado) - Desafio Ágora Rio">
+                <meta name="twitter:description" content=" Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. ">
+                
+
+                        <meta name="description" content=" Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. " />
+            <meta itemprop="description" content=" Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. " />
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="post-current-page  ">
+    <input type="hidden" id="currentPage" value="post" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container l-grid__buffer"  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+                        <div class="community-banner" style="display:none;">
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" style="display:none;"><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="width:auto;">
+        <div id="ideaBrowser" class="ideaBrowser_container">
+    <div id="idea_lowerFold">
+        
+			<script>
+	
+		jQuery(function() {
+			jQuery('.edit_idea_trigger').unbind();
+			
+			jQuery('.edit_idea_trigger').click(function(e) {
+				var currentCategoryId = 2379;
+				var isModerator = jQuery(this).data('moderator');
+				
+									var themeId = 2380
+								
+				jQuery(".b-single-post--underlay").fadeToggle();
+				
+		    	jQuery.ajax('/post/update/' + 70153, {
+		    		data: {
+		    			category_id: currentCategoryId
+		    		},
+		    		success: function(data) {
+		    	    	jQuery(".b-single-post--wrapper").html(data).fadeToggle();
+		    	    	
+		    	    	
+		    	    	jQuery('#custom_postfields').html('');
+		    	    	var postfields = jQuery('#postFields-' + currentCategoryId).clone();
+		    	    	
+		    	    	var postfieldsOuter = postfields.find('div.postfield-outer');
+		    	    	
+		    	    	jQuery('#custom_postfields').append(postfieldsOuter);
+		    	    	
+		    	    	jQuery('#custom_postfields .b-single-post--field textarea').each(function() {
+		    	    		jQuery(this).addClass('mceEditor');
+		    	    	});
+		    	    	
+		                // update the themes dropdown
+		                var themes = jQuery('#category_themes-' + currentCategoryId).clone();
+		                
+		                if(themes.length > 0) {
+		                	jQuery(".selected_category_themes-wrap").show();
+		                	jQuery('#selected_category_themes').html(themes);
+		                	
+		                	jQuery(themes).change(function() {
+		                		var selectedTheme = jQuery(this).find(':selected').val();
+		                		if(selectedTheme != 0) {
+		                			jQuery('#post_category').val(selectedTheme);
+		                		}
+		                	});
+		                	
+		                	jQuery(themes).attr('disabled', 1).css('background', '#eee').css('color', '#bbb');
+		                } else {
+		                	jQuery(".selected_category_themes-wrap").hide();
+		                }
+		                
+		                if(themeId) {
+		                	jQuery('#category_themes-' + currentCategoryId).val(themeId);
+		                }
+		    	    	
+		    	        tinyMCE.init({
+		    	            mode : "specific_textareas",
+		    	            editor_selector : "mceEditor",
+		    	            theme : "crowdworks",
+		    	            theme_crowdworks_buttons1 : "bold,italic,bullist,|,undo,redo",
+		    	            file_browser_callback : "cwMCEFileBrowser",
+		    	            language : "en",
+		    	            width: "537",
+		    	            height: "150",
+		    	            relative_urls : false,
+		    	            remove_script_host : false,
+		    	            convert_urls : false
+		    	        });
+		    	        
+		    	        document.fire("crowdworks:updateComplete");
+		    	    }
+		    	});
+		    	
+		    	return false;
+			});
+		});
+	
+	</script>
+	
+
+
+
+<div class="l-grid__wrapper">
+
+    
+	<div class="l-grid__left">
+            		<div class="b-single-idea__labels">
+		    		    
+            		    
+		    		    
+		    		</div>
+		
+		<div class="b-single-idea__content">
+                                        
+			<h1>Racionalização das linhas de ônibus (vide estudo divulgado)</h1>
+			
+			<div class="b-single-idea__sub-heading">
+				<span>por</span>
+				<figure class="b-avatar b-idea__avatar" >
+										<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="20" height="20" src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/6aee79f1a18bba74dfcb4783953fa3a3" alt="RodrigoRJ" /></a>
+									</figure>
+				
+				<span><a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a></span>
+				<span class="b-single-idea__sub-spacer">|</span>
+				<span data-tip="04:48  - 22 Out 2014">Oct 22, 2014</span>
+				<span class="b-single-idea__sub-spacer">|</span>
+				<span>
+                                        
+					em <a id="current-category-link" href="/category/2379" data-id="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</a>
+				</span>
+			</div>
+
+			<p>Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro.</p>
+			
+											<h3>Explicando melhor</h3>
+                                                    <p>É comum ouvirmos a reclamação de que falta ônibus em algumas regiões, que os mesmos demoram e andam superlotados. Um problema tão grave quanto esse é a oferta excessiva e desordenada de ônibus em outras regiões, o que provoca engarrafamentos, mais poluição e dificuldade de entender como chegar de um lugar a outro. </p>
+<p>O estudo a seguir detalha essa última situação na Zona Sul e que, consequentemente, reflete negativamente em toda cidade, especialmente no Centro. </p>
+<p><a href="http://oglobo.globo.com/rio/bairros/onibus-da-zona-sul-circulam-com-50-da-capacidade-em-horario-de-rush-mostra-estudo-1-14320303" target="_blank">http://oglobo.globo.com/rio/bairros/onibus-da-zona-sul-circulam-com-50-da-capacidade-em-horario-de-rush-mostra-estudo-1-14320303</a></p>
+<p>É necessário racionalizar esse sistema. Além de realocar os ônibus nas regiões onde mais é preciso, é necessário criar troncos principais, com ônibus de maiores capacidade e frequência. Da mesma forma, seria importante a criação de estações de transbordo de linhas secundárias às linha centrais. A situação da SMTR nesse quesito é tão dramática que eles nem têm o mapa da malha de linhas que cortam a cidade!</p>
+                        									</div>
+		
+				
+									<div class="b-single-idea__content">
+					<section class="b-single-section">
+						<div class="b-single-section-title">Tagged users</div>
+						<div class="b-single-tags">
+																				<div class="b-single-tag">
+								<a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-single-tag__image--rounded" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg" /></a>
+								<span><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Transportes</a></span>
+							</div>
+																				<div class="b-single-tag">
+								<a  href="user/activity/30408" onclick="popUp('/user/view/30408', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-single-tag__image--rounded" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30408_4521b399895bd1aebf19535a36283ce9_Subprefeitura%20Zona%20Sul_reduzido2.jpg.jpg" /></a>
+								<span><a  href="user/activity/30408" onclick="popUp('/user/view/30408', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Subprefeitura da Zona Sul</a></span>
+							</div>
+																				<div class="b-single-tag">
+								<a  href="user/activity/29763" onclick="popUp('/user/view/29763', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-single-tag__image--rounded" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29763_c01d403491294f7ef54a8057ba267066_Logo%20Sub2.jpg.jpg" /></a>
+								<span><a  href="user/activity/29763" onclick="popUp('/user/view/29763', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Subprefeitura do Centro RJ</a></span>
+							</div>
+												<div class="clear"></div>
+						</div>
+					</section>
+				</div>
+							
+		<div class="b-gallery">
+			<div class="gallery main">
+                
+                				<div class="image gallery_image_landscape-large">
+					<a href="#">
+                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,c_fill/d787a7953805aa04c9f2aafb44908530" data-gallery-image="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,b_rgb:000000,c_pad/d787a7953805aa04c9f2aafb44908530" width="710" height="500" data-link="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/d787a7953805aa04c9f2aafb44908530" data-id="1">
+					</a>
+				</div>
+                				<div class="image gallery_image_landscape-large">
+					<a href="#">
+                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,c_fill/c2ebdca4f48bb19fc369fb3063d6a3ff" data-gallery-image="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,b_rgb:000000,c_pad/c2ebdca4f48bb19fc369fb3063d6a3ff" width="710" height="500" data-link="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/c2ebdca4f48bb19fc369fb3063d6a3ff" data-id="2">
+					</a>
+				</div>
+                			</div>
+		</div>
+		
+				<div class="b-single-idea__other-content">
+                		</div>
+				
+		<div id="comments_outer">
+			                    <form id="commentForm" class="commentForm" method="post" action="/post/addcomment/70153">
+			<div class="b-single-idea__new-comment">
+			<input type="hidden" name="idea_id" value="70153" id="idea_id" />
+                        
+                        
+                        <div class="b-single-idea__comment-signin">
+                            <span>Sign in to comment</span>
+
+                            <div class="b-single-idea__comment-signin-buttons">
+                                <div class="b-header__action-item-signin-overlay">
+                                    <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==' });return false;">Register</a></div>
+                                    <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC83MDE1Mw==' });return false;">Sign In</a></div>
+                                    <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                            </div>
+                        </div>
+
+                         
+                        
+			</div>
+		</form>
+
+		
+		<div id="comment_list_container">
+								<div class="b-single-idea__comments">
+				<div class="b-single-idea__comments-menu">
+					<ul>
+						
+                        <li><a href="#" data-target="all"><span class="icon-bubble8"></span> All Comments (9)</a></li>
+						<li><a href="#" data-target=".filter-admin">Moderator Comments</a></li>
+						<li><a href="#" data-target=".filter-author">Author Comments</a></li>
+                                                
+                        <li class="b-single-idea__comments-menu-sort">
+                            <select id="comments-sort" name="comments-sort" class="i-mix-sort b-single-idea__comments-sort">
+                                <option value="posted:asc">Oldest</option>
+                                <option value="posted:desc">Mais novos</option>
+                                <option value="votes:desc">Top Voted</option>
+                            </select>
+                        </li>
+
+					</ul>
+					<div class="line"></div>
+				</div>
+				<div class="b-single-idea__comments-list">
+
+                                                                                
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                        
+                                                <div class="mix b-single-idea__comments-list-item" id="comment-70189" data-posted="2014-10-22 17:38:11" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/70189',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_32249_c7ea82fd29b5941e176032940e37fb28_wc.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DIEL</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                                                    Oct 22, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>Olá, Rodrigo. Li na íntegra a reportagem que você enviou no link.</p>
+<p> A reportagem faz um retrato fiel do que ocorre no Rio, por isso sugeri várias rotas de BRts nas minhas propostas no Ágora, mas parece que as pessoas do forum moram em cidades européias e não no Rio pois poucos votaram nas propostas de novos BRTs.  reportagem sugeri exatamente o que os BRTs fazem. racionalização de linhas. Circulam apenas 2 linhas uma expressa e outra paradora sendo alimentadas por pequenas linhas ao longo do trajeto. Esse acúmulo de linhas não só poluem o meio ambiente, mas também entopem as vias ocupando espaço físico fator de tanto valor e tão debatido em cidades modernas, pioram o trãnsito dos carros, ocuam lugares que poderiam servir de ciclovia e o pior de tudo mantém esse serviço horroroso que é andar de ônibus comum que entre tantas atrocidades somente no Rio costuma andar em alta velocidade em zig zag, fazendo ultrapassagens perigosas, não oferecem ar condicionado numa cidade de calor escaldante, circulam em véiculos construídos sobre o chassi de caminhão fazendo com o piso fique muito alto dificultanto o embarque não só de todos, mas principalmente de cadeirantes, idosos, gestantes e adultos com crianças de colo, não possuem cãmbio automático o deixa brechas para os péssimos motoristas arrancarem bruscamente em 2ª marcha, possuem o motor na frente causando um barulho infernal, não possuem mapa com trajetos, tarifa, frequencia e dia e horarios de funcionamento, costumeiramente não param nem para embarque nem para desembarque mesmo com passageiros no interior do veículo dando sinal e quando param não raramente o fazem na 2ª ou 3ª faixa aspecto absurdo e inacreditável para pessoas de cidades modernas. Enfim, mas parece que as pessoa deste forum moram na Suécia e não no Rio e andam em excellentes ônibus, linhas de metrô e chegam rápido em casa. fazer o quê ? Cada população tem o serviço que merece e exige, não é mesmo ?</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70189" style="display:none;">
+                                <form action="/post/addcomment/70153" method="post" id="commentForm-70189" class="commentForm commentForm-70189">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70189" value="" type="hidden">
+		<input name="post_immediateParent" value="70189" id="commentform_post_immediateParent-70189" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70189" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70189">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70189" id="user_tag_input-70189" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70189');
+            </script>
+			<div id="user_tag_results-70189" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70189" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(70189, 70153);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-2" id="comment-70231" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/70231',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--2" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                            Oct 22, 2014
+                                        </span>
+									</p>
+									<p><p>É Diel, sei como você se sente. Eu também fico revoltado como é caótica a maneira que funciona o transporte rodoviário em nossa cidade.</p>
+<p>Quanto as suas propostas, creio que foram muitos os traçados sugeridos. Não sabemos se realmente o indicado é a construção de BRT em todos eles. Entendo que seja necessário um estudo para se avaliar se de fato é um BRT que se aplica, uma faixa BRS, um metrô, ou somente uma reorganização das linhas. </p>
+<p>Entendo que temos um problema comum, queremos a solução, mas como exatamente será essa solução, não é tão direto assim. É preciso avaliar caso a caso e, ao mesmo tempo, pensar no conjunto.</p>
+<p>A proposta da ideia aqui apresentada é racionalizar! Como será essa racionalização, se por meio de BRTs, BRSs ou simplesmente reorganizando as linhas e os pontos, não é possível afirmar com convicção em um primeiro momento, mas é necessário que a SMTR comece a se mexer logo para resolver isso. Ah, e, por favor, que a sociedade e os especialistas participem da solução!</p>
+<p>Forte abraço!</p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        										                                                                                <div class="b-single-idea__comment-tags">
+										<p>Users tagged:</p>
+																									                                            <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);background-repeat:no-repeat;padding-left:25px;"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+											                                                                                </div>
+																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70231" style="display:none;">
+                                        <form action="/post/addcomment/70153" method="post" id="commentForm-70231" class="commentForm commentForm-70231">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--2">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70231" value="" type="hidden">
+		<input name="post_immediateParent" value="70231" id="commentform_post_immediateParent-70231" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70231" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70231">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70231" id="user_tag_input-70231" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70231');
+            </script>
+			<div id="user_tag_results-70231" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70231" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(70231, 70153);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-3" id="comment-70234" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                            <div class="b-single-idea__comment-hide">
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/70234',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--3" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_32249_c7ea82fd29b5941e176032940e37fb28_wc.jpg.jpg" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DIEL</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                            Oct 22, 2014
+                                        </span>
+									</p>
+									<p><p>Com a péssima postura dos nossos motoristas penso que manter linhas convencionais vai continuar a mesma bagunça que é.</p>
+<p>Eu concordo que o modal principal deva ser o metrô, trens, barcas e VLT como já expus em comentários anteriores. A questão é que por esse caal só dá para sugerir os BRTs por estarmos falando com a prefeitura e não com o estado.</p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70234" style="display:none;">
+                                        <form action="/post/addcomment/70153" method="post" id="commentForm-70234" class="commentForm commentForm-70234">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--3">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70234" value="" type="hidden">
+		<input name="post_immediateParent" value="70234" id="commentform_post_immediateParent-70234" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70234" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70234">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70234" id="user_tag_input-70234" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70234');
+            </script>
+			<div id="user_tag_results-70234" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70234" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(70234, 70153);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                                    </div>
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                                                                                    </div>
+                                                            </div>
+                            
+                                                                                        <div id="b-single-idea__comment-expand-70189" class="b-single-idea__comment-expand-li">
+                                    <span class="b-single-idea__comment-expand" data-parent="70189">View all replies (2)</span>
+                                </div>
+                                                        
+
+                            </div>
+                        
+                                                <div class="mix b-single-idea__comments-list-item" id="comment-70193" data-posted="2014-10-22 17:43:52" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/70193',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/35813" onclick="popUp('/user/view/35813', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_35813_f3c9b83ff30c5dafc9fbaa16b8ee4ca0_20130626_212402_Android%206.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/35813" onclick="popUp('/user/view/35813', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Marcio Lincoln</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                                                    Oct 22, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>A exploração do negócio de transporte de pessoas através de passagens pessoais não traz benefício algum. Deveria haver contratos entre governos e empresas de transporte, onde o número de ônibus disponível deve ser proporcional a demanda, e nós pagaríamos o impostos por tais serviços em todo Estado, com isso, resolveríamos três problemas de uma só vez - transporte público " de graça", quem tem carro pensaria mais em utilizar o transporte público que já estaria pago (não dedutível do IPVA, porém, parcialmente resarcível no IR - sendo uma parcela maior para quem não têm automóveis privados) e maior número de linhas a todos os bairros. Nunca vi tal estudo, mas acredito que esta abordagem traria maior fluxo de transporte uma vez que o que teria benefício devido o número de linhas e não mais o número de passageiros. Por outro lado um contrato. A passagem ficaria a ser paga somente para os não residentes do Rio de Janeiro. Ao governo ficaria a responsabilidade da Fiscalização, ou seja, controlar a distribuição (pool contract) dos ônibus disponíveis e a performance, bem como o número de linhas mantendo a sustentabilidade ambiental e comercial.</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70193" style="display:none;">
+                                <form action="/post/addcomment/70153" method="post" id="commentForm-70193" class="commentForm commentForm-70193">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70193" value="" type="hidden">
+		<input name="post_immediateParent" value="70193" id="commentform_post_immediateParent-70193" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70193" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70193">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70193" id="user_tag_input-70193" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70193');
+            </script>
+			<div id="user_tag_results-70193" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70193" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(70193, 70153);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-2" id="comment-70232" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/70232',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--2" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                            Oct 22, 2014
+                                        </span>
+									</p>
+									<p><p>Olá Márcio, acho válida toda proposta para melhorar nosso transporte púlbico. Realmente ainda não vi nenhum estudo sobre a viabilidade do modelo descrito por você.</p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70232" style="display:none;">
+                                        <form action="/post/addcomment/70153" method="post" id="commentForm-70232" class="commentForm commentForm-70232">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--2">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70232" value="" type="hidden">
+		<input name="post_immediateParent" value="70232" id="commentform_post_immediateParent-70232" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70232" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70232">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70232" id="user_tag_input-70232" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70232');
+            </script>
+			<div id="user_tag_results-70232" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70232" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(70232, 70153);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                                                                                    </div>
+                            
+                                                                                    
+
+                            </div>
+                        
+                                                <div class="mix b-single-idea__comments-list-item" id="comment-70574" data-posted="2014-10-23 21:03:49" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/70574',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30679_0b49122ea5269dbc32ab5538933ae0ca_2014-09-30_15-56-49_488.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">marcel peres</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                                                    Oct 23, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>Vejo tantos onibus lotado, que parece faltar em todos os lugares, mas organizar com certeza melhoraria muito.</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70574" style="display:none;">
+                                <form action="/post/addcomment/70153" method="post" id="commentForm-70574" class="commentForm commentForm-70574">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70574" value="" type="hidden">
+		<input name="post_immediateParent" value="70574" id="commentform_post_immediateParent-70574" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70574" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70574">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70574" id="user_tag_input-70574" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70574');
+            </script>
+			<div id="user_tag_results-70574" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70574" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(70574, 70153);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-2" id="comment-70581" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/70581',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--2" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                            Oct 23, 2014
+                                        </span>
+									</p>
+									<p><p>Pois é, tem região que não é assim. Eu vejo vários ônibus vazios no Centro e na Zona Sul. No Centro então tem grandes engarrafamentos de ônibus, pois em vez de existir troncos principais que chegam no Centro, parece que cada bairro da região metropolitana tem vários ônibus com o Centro como destino. É muito irracional a malha.</p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70581" style="display:none;">
+                                        <form action="/post/addcomment/70153" method="post" id="commentForm-70581" class="commentForm commentForm-70581">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--2">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70581" value="" type="hidden">
+		<input name="post_immediateParent" value="70581" id="commentform_post_immediateParent-70581" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70581" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70581">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70581" id="user_tag_input-70581" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70581');
+            </script>
+			<div id="user_tag_results-70581" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70581" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(70581, 70153);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                                                                                    </div>
+                            
+                                                                                    
+
+                            </div>
+                        
+                                                <div class="mix b-single-idea__comments-list-item filter-author" id="comment-70583" data-posted="2014-10-23 21:12:42" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/70583',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                                                    Oct 23, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>Seria IMPORTANTE que as pessoas que votam contra a ideia expressem os pontos de discordância para que possamos explicar e debater. Sinceramente, não vejo sentido em ser contra uma malha rodoviária ser mais racional. Não se trata de reduzir ônibus, mas de organizar para que a mobilidade FLUA melhor.</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70583" style="display:none;">
+                                <form action="/post/addcomment/70153" method="post" id="commentForm-70583" class="commentForm commentForm-70583">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70583" value="" type="hidden">
+		<input name="post_immediateParent" value="70583" id="commentform_post_immediateParent-70583" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70583" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70583">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70583" id="user_tag_input-70583" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70583');
+            </script>
+			<div id="user_tag_results-70583" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70583" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(70583, 70153);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                                                    </div>
+                        
+                                                <div class="mix b-single-idea__comments-list-item filter-author" id="comment-70585" data-posted="2014-10-23 21:14:04" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/70585',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="04:48  - 22 Out 2014">
+                                                                    Oct 23, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>E lembrando que a proposta é decorrente de uma pesquisa séria! Não é achismo não...</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-70585" style="display:none;">
+                                <form action="/post/addcomment/70153" method="post" id="commentForm-70585" class="commentForm commentForm-70585">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-70585" value="" type="hidden">
+		<input name="post_immediateParent" value="70585" id="commentform_post_immediateParent-70585" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="RodrigoRJ" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-70585" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-70585">
+					<span>@</span>
+					<input type="text" name="user_tag_input-70585" id="user_tag_input-70585" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389934,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"2beb1440d7f3c0e156c960417d42efc688fe7ad6","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-70585');
+            </script>
+			<div id="user_tag_results-70585" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-70585" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(70585, 70153);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                                                                    </div>
+                                            					
+				</div>
+			</div>
+				
+		<script>
+                    
+            jQuery(".b-single-idea__comment-expand").on("click", function(e) {
+                //console.log("expand comments");
+                e.preventDefault();
+                var parent = jQuery(this).attr("data-parent");
+                jQuery("#comment-" + parent + " .b-single-idea__comment-hide").slideDown();
+                jQuery("#b-single-idea__comment-expand-" + parent).slideUp();
+
+            });
+
+		    jQuery(".b-single-idea__comments-menu a").on('click', function(e){
+		        e.preventDefault();
+	
+		        jQuery(".b-single-idea__comments-menu li").css({
+		            "font-weight": "normal"
+		        });
+	
+		        jQuery(this).closest("li").css({
+		            "font-weight": "bold"
+		        });
+	
+		        jQuery(".b-single-idea__comments-menu .line").animate({
+		            left: jQuery(this).closest("li").position().left + 20,
+		            width: jQuery(this).width()
+		        });
+                        
+		        var filter = jQuery(this).attr("data-target");
+                        
+                jQuery('.b-single-idea__comments-list').mixItUp('filter', filter);
+                        
+		        /*jQuery(".b-single-idea__comments-list ul li").fadeIn();
+		        if (filter != "all") {
+		            jQuery(".b-single-idea__comments-list ul li").each(function(){
+		                if (jQuery(this).attr("data-element") == filter) {
+		                    jQuery(this).fadeIn();
+		                } else {
+		                    jQuery(this).fadeOut();
+		                }
+		            });
+		        }
+                        */
+	
+		    });
+            
+            Comment.addVoteClickListeners();
+            Comment.addCommentFormOffClickListeners();
+		</script>
+		</div>
+		
+		<script>
+            jQuery(function() {
+			var userName = '';
+			var cache = [];
+			
+			jQuery('#user_tag_input').keyup(function(e) {
+
+				var key = 'which' in e ? e.which : e.keyCode;
+
+				userName = jQuery('#user_tag_input').val();
+				
+				if(cache[Comment.hashCode(userName)]) {
+					jQuery('#user_tag_results').html(cache[userName]).show();
+				} else {
+					if(userName.length > 2) {
+						jQuery.ajax('/user/solr_search', {
+							data: { q: userName, type: 'userTag' },
+							dataType: 'json',
+							success: function(data) {
+								cache[Comment.hashCode(userName)] = data.tpl;
+								
+								if(data.tpl == 'No users found') {
+									jQuery('#user_tag_results').html('').hide();
+								} else {	
+									jQuery('#user_tag_results').html(data.tpl).show();
+									
+									// bind "click" events to the newly created rows
+									jQuery('.b-single-idea__user-tag-result').each(function() {
+										jQuery(this).click(function() {
+											
+											var userId = jQuery(this).data('id');
+											
+											if(jQuery(this).hasClass('user-tag-selected')) {
+												jQuery('#comment_userTags').val(jQuery('#comment_userTags').val().replace(userId, ''));
+												jQuery(this).remove();
+											} else {
+												var userScreenname = jQuery(this).data('screenname');
+												
+												jQuery(this).addClass('user-tag-selected', 1);
+												
+												jQuery('.b-single-idea__new-comment-area-bottom div.clear').each(function() {
+													jQuery(this).remove();
+												});
+												
+												var clear = document.createElement('div');
+												jQuery(clear).addClass('clear');
+												
+												jQuery('#comment_userTags').val(jQuery('#comment_userTags').val() + ',' + userId);
+												jQuery('#comment_userScreennames').val(jQuery('#comment_userScreennames').val() + ',' + userScreenname);
+												jQuery('.b-single-idea__new-comment-area-bottom').append(this);
+												jQuery('.b-single-idea__new-comment-area-bottom').append(clear);
+												jQuery('#user_tag_input').val('');
+												jQuery('#user_tag_results').html('').hide();
+											}
+										});
+									});	
+								}
+							}
+						});
+					}	
+				}
+			});
+			
+            jQuery(function(){
+                // On first load, we let the comments be hidden, as they should,
+                // to prevent the wierd gliding effect as comments fly into
+                // position (if the layout changes from late-loading images)
+                jQuery(".b-single-idea__comments-list-item").addClass('mixHide');
+                Comment.resetCommentList();
+            });
+
+
+			jQuery('#commentForm').submit(function(e) {
+				e.preventDefault();
+				jQuery(this).find('.b-single-idea__new-comment-button').hide();
+				var ideaId = jQuery('#idea_id').val();
+				
+				jQuery.ajax('/post/addcomment/70153', {
+					data: jQuery('#commentForm').serialize(),
+					type: 'post',
+					success: function(data) {
+                        if (data.success == 1) {
+                            var newCommentId = data.post_id;
+                            jQuery('.b-single-idea__new-comment-button').show();
+                            Comment.commentsReload(ideaId, 0, newCommentId, newCommentId);
+                        } else {
+                            var message="";
+                            var errorList="";
+                            if (data.errors!=undefined){
+                                var errors=data.errors;
+                                for (var key in errors) {
+                                    if (errors.hasOwnProperty(key)) {
+                                        //alert(key + " -> " + p[key]);
+                                        errorList=errorList+errors[key]+". ";
+                                    }
+                                }
+                                message=errorList;
+                            } else {
+                                message = data.message;
+                            }
+                            jQuery('.b-single-idea__new-comment-button').show();
+                            alert(message);
+                        }
+					}
+				});
+				
+				return false;
+			});
+        });
+		
+		</script>
+
+		</div>
+	</div>
+	
+	<div class="l-grid__right">
+		<div id="sidebar_votebox">
+	
+
+    
+
+
+	    
+
+	<div class="b-single-idea__right b-single-idea__right-closed">
+		<div class="b-single-idea__voting--updown">
+            			<div class="b-single-idea__voting--votes" >
+									<span>0</span>
+					SCORE
+							</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+    <div class="b-single-idea__your-vote b-single-idea__your-vote-closed">
+            
+            Voting is not open in this phase
+        	</div>
+
+<script>
+	jQuery('.star-voting-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('span').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('star-active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('span').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('star-active');
+				}
+			});
+		});
+	});
+</script>
+</div>
+				<div id="sidebar_votebreakdown"><section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		<span>Idea Stats</span>
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+    
+        <div class="b-single-idea__stats-wrap">
+    
+				    	    	    	    	    	    
+	    	    		    	    
+	                
+	    	<div class="b-single-idea__stats-updown">
+	    		<div style="height:20px;">
+					<div class="b-single-idea__stats-up">
+						<span class="icon-thumbs-up3"></span>
+					</div>
+					<div class="b-single-idea__stats-progress" style="position:relative;top:2px;">
+						<div class="b-single-idea__stats-progress-bar" style="width:%"></div>
+					</div>
+					<div class="b-single-idea__stats-count" style="position:relative;top:2px;">0</div>
+				</div>
+				
+				<div style="height:20px;">
+					<div class="b-single-idea__stats-down">
+						<span class="icon-thumbs-down3"></span>
+					</div>
+					<div class="b-single-idea__stats-progress" style="position:relative;top:2px;">
+						<div class="b-single-idea__stats-progress-bar" style="width:%"></div>
+					</div>
+					<div class="b-single-idea__stats-count" style="position:relative;top:2px;">0</div>
+				</div>
+	    	</div>
+	    	
+	    		
+	
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-thumbs-up3"></span>
+		Total Votes
+	</div>
+	<div class="b-single-idea__stats-score">
+									0
+						</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-eye2"></span>
+		Views
+	</div>
+	<div class="b-single-idea__stats-score">
+		732
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-bubble8"></span>
+		Comentários
+	</div>
+	<div class="b-single-idea__stats-score">
+		9
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-users"></span>
+		Assinantes
+	</div>
+	<div class="b-single-idea__stats-score">
+		3
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-bubble8"></span>
+		Challenge Rank
+	</div>
+	<div class="b-single-idea__stats-score">
+		1	</div>
+        
+        </div>
+        
+</section></div>
+		<div id="sidebar_subscribers"><section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		Assinantes (3)
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+	
+	        <div class="b-single-idea__content-wrap">
+			<div class="b-single-idea__follower">
+		<a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" height="30" src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_30,h_30,c_fill/6aee79f1a18bba74dfcb4783953fa3a3" width="30"></a>
+			</div>
+				<div class="b-single-idea__follower">
+		<a  href="user/activity/35813" onclick="popUp('/user/view/35813', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" height="30" src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_30,h_30,c_fill/f3c9b83ff30c5dafc9fbaa16b8ee4ca0" width="30"></a>
+			</div>
+				<div class="b-single-idea__follower">
+		<a  href="user/activity/36629" onclick="popUp('/user/view/36629', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" height="30" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png" width="30"></a>
+			</div>
+			
+	<div class="b-single-idea__follow">
+					<a class="userInteraction" data-tip="Você receberá uma notificação por e-mail toda vez que um comentário for postado sobre esta ideia" href="#" onclick="Post.setFollow($('sidebar_subscribers'),70153,0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>
+			</div>
+        
+        </div>
+        
+</section></div>
+		<div id="sidebar_tags">	<section class="b-sidebar__section">
+		<h2 class="b-sidebar__section-title">
+			<span>Marcações</span>
+                        <a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+		</h2>
+                <div class="b-single-idea__content-wrap">
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[transporte]&qType=ideas">transporte</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[&#244;nibus]&qType=ideas">&#244;nibus</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[tr&#226;nsito]&qType=ideas">tr&#226;nsito</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[mobilidade]&qType=ideas">mobilidade</a>
+                                    </div>
+	</section>
+</div>
+	</div>
+</div>
+
+<div id="prevPostData" data-id="70163" data-title="MEU BAIRRO - EU AMO EU CUIDO" data-current-post-id="70153"></div>
+<div id="nextPostData" data-id="70099" data-title="Turistas Voluntários na Educação Olímpica" data-current-post-id="70153"></div>
+
+        <div id="postChallenge" data-id="2379" data-title=" Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?"></div>
+
+<script>
+	jQuery(function(){
+	    imageGallery.build();
+	});
+</script>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    var addthis_config=
+            {
+                data_track_addressbar: false,
+                data_track_clickback:false
+            }
+    var addthis_share =
+    {
+       url: "https://desafioagorario.crowdicity.com/post/70153",
+       title: "Racionalização das linhas de ônibus (vide estudo divulgado)",
+       description: " Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. ",
+    }
+    
+        if (typeof addthis !== "undefined") {
+            addthis.update('share', 'url', 'https://desafioagorario.crowdicity.com/post/70153');
+            addthis.update('share', 'title', 'Racionalização das linhas de ônibus (vide estudo divulgado)');
+            addthis.update('share', 'description', ' Há ônibus em excesso em algumas regiões e faltando em outras. É preciso rever a malha rodoviária do Rio de Janeiro. ');
+        }
+    
+</script>
+    
+<script>
+
+	/*History.Adapter.bind(window,'statechange',function(e){ // Note: We are using statechange instead of popstate
+	    var State = History.getState(); // Note: We are using History.getState() instead of event.state
+
+	    
+	    if(State.data.id) {
+	    	var id = State.data.id;
+	    } else {
+	    	var id = State.hash.replace('/post/', '')
+	    }
+	
+		
+		jQuery.ajax('/post/view/' + id + '?postType=newDesign', {
+			success: function(data) {
+				jQuery('#idea_lowerFold').fadeOut(500, function() {
+					jQuery('#idea_lowerFold').html(data);
+					jQuery('#idea_lowerFold').fadeIn(500, function() {
+						var prevPostId = jQuery('#prevPostData').data('id'),
+							prevPostTitle = jQuery('#prevPostData').data('title'),
+							nextPostId = jQuery('#nextPostData').data('id'),
+							nextPostTitle = jQuery('#nextPostData').data('title');
+					
+						console.log(prevPostTitle);
+						console.log(nextPostTitle);
+						
+						jQuery('#prevPostLink').data('id', nextPostId).data('title', nextPostTitle);
+						jQuery('#nextPostLink').data('id', prevPostId).data('title', prevPostTitle);
+						
+						$('nextPostLink').addTip('test', ttoptions);
+						
+						Tips.list[0].content = prevPostTitle;
+						Tips.list[1].content = nextPostTitle;
+					});
+				});
+			}
+		});
+		
+	});*/
+
+</script>
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('post');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

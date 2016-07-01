@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="activity-current-page  ">
+    <input type="hidden" id="currentPage" value="activity" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80ODMyOA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80ODMyOA==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80ODMyOA==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9hY3Rpdml0eS80ODMyOA==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>Rafael's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li class="selected">
+			<a href="/user/activity/48328">Atividade</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/following/48328">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/48328">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">Rafael M. F.'s Atividade</h2>
+
+<div id="activityTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	
+        <li class="selected"><a href="#" id="tab_myIdeas">Ideias</a></li>
+        <li ><a href="#" id="tab_myComments">Comentários</a></li>
+                <li ><a href="#" id="tab_myVotes">Votos</a></li>
+            </ul>
+</div>
+<div class="tabView">
+    
+    <div id="viewtab_myIdeas" class="viewtab_myIdeas">
+
+    	<div id="myIdeas_subContainer">
+    		<div class="b-single-challenge__ideas-list i-ideas-list" style="background:#f5f5f5;padding:10px;">
+    			<div class="b-row b-single-challenge__ideas-header">
+    				<div class="b-column b-column--6" style="flex-basis:50%;">
+    					<span>Exibindo:</span>
+    					<strong><span class="result-count">10</span> Results</strong>
+    				</div>
+    				
+    				<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:50%;">
+    					<div class="viewoptions-wrapper">
+							<select name="myIdeas_sort" id="myIdeas_sort" class="i-mix-sort">
+							        	<option value="newest" selected="selected">Mais novos</option>
+							        	<option value="hottest" >Destaques</option>
+							        	<option value="mostPopular" >Mais Votadas</option>
+							        	<option value="mostComments" >Mais comentadas</option>
+							        	<option value="adopted" >Escolhas</option>
+							        </select>
+    					</div>
+    					
+    					<div class="viewoptions-wrapper">
+    						<span>Ordenar por</span>
+    					</div>
+    				</div>
+    			</div>
+	    		<div id="results-container" class="b-row results-view-list">
+		            				        
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="6" data-randorder="1698745296" data-id="100736" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-BRT tag-VLT tag-Tijuca tag-Taquara tag-Madueira tag-CampoGrande tag-Transcarioca tag-Transoeste tag-PlanoDiretor tag-Subcentralidade tag-TransOlímpica tag-TransBrasil   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/100736" onclick="return postAJAXObj.display(100736,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/2b8d8da2bfc39402f40b5bc7044486da" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/100736" onclick="return postAJAXObj.display(100736,{  });">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/100736" onclick="return postAJAXObj.display(100736,{  });"> Conforme foi exposto anteriormente pelo usuário  jhmelman , a Lei Complementar 111 afirma no parágrafo 1º, do inciso V, do Artigo 33: 
+   “A organização espacial dos centros de comércio e serviços deverá contribuir para a redução da concentração das atividades econômicas na zona sul e na Barra da Tijuca e para o fortalecimento das concentrações de comércio e serviços da Tijuca, Madureira, Taquara e Campo Grande.”   
+ Baseado nisso, será desenvolvida a proposta a seguir. 
+ Os bairros de Campo...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="06:06  - 31 Mar 2015">Mar 31, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-100736" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:100736, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:100736, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-100736"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/100736">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>6</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="06:06  - 31 Mar 2015">Mar 31, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="1" data-randorder="1584549886" data-id="97856" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-Transcarioca tag-ViaCarioca tag-Integração tag-MetrôLinha2 tag-Supervia tag-VLT tag-BRT tag-Monotrilho   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/97856" onclick="return postAJAXObj.display(97856,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/337b67e5ec44bf7de01160b51756c468" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/97856" onclick="return postAJAXObj.display(97856,{  });">Monotrilho Olaria-Del Castilho</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/97856" onclick="return postAJAXObj.display(97856,{  });"> Na esteira da proposta de eixos transversais ( ver proposta: https://desafioagorario.crowdicity.com/post/97450  ), será apresentada a proposta de  Interligação Transversal Olaria-Del Castilho . 
+ Tal proposta visa prover acesso transversal ao proposto Centro Complementar ( ver proposta: https://desafioagorario.crowdicity.com/post/87643  ) desa forma buscando sua viabilização. 
+ Inicialmente concebida como BRT, a proposta foi modificada após a apresentação da   Via Carioca - Monotrilho no...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="08:34  - 24 Mar 2015">Mar 24, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-97856" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:97856, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:97856, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-97856"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/97856">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>1</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="08:34  - 24 Mar 2015">Mar 24, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="3" data-randorder="1017320349" data-id="97475" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-BRT tag-VLT tag-Monotrilho tag-Supervia tag-Metrô tag-Integração   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/97475" onclick="return postAJAXObj.display(97475,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/e6edac770e845aab81dbfb5ef159b26e" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/97475" onclick="return postAJAXObj.display(97475,{  });">BRT Jardim América-Pilares (TransMeriti)</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/97475" onclick="return postAJAXObj.display(97475,{  });"> Na esteira da proposta de eixos transversais complementares (ver proposta: https://desafioagorario.crowdicity.com/post/97450 ), será apresentada a proposta de  Interligação Transversal Jardim América-Pilares , ou  BRT TransMeriti . 
+ Tal proposta visa prover acesso transversal ao proposto Centro Complementar (ver proposta: https://desafioagorario.crowdicity.com/post/87643 ) desa forma buscando sua viabilização. 
+ Nesse caso, trata-se de uma via de 13 quilômetros de extensão que interligaria...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="10:05  - 23 Mar 2015">Mar 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-97475" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:97475, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:97475, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-97475"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/97475">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>3</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="10:05  - 23 Mar 2015">Mar 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="8" data-randorder="161431867" data-id="97450" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-Monotrilho tag-CorredoresTransversais tag-VLT tag-BRT   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/97450" onclick="return postAJAXObj.display(97450,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/52cb6c5f0552aedafef7fd563f0089a1" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/97450" onclick="return postAJAXObj.display(97450,{  });">Corredores transversais Zona Norte - propostas complementares</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/97450" onclick="return postAJAXObj.display(97450,{  });"> Acompanhando a proposta "Troncalização Zona Norte - Corredores Transversais" do usuário  Quero Metrô , venho apresentar uma proposta complementar. 
+ Nesse caso, serão apresentados três eixos:  
+ -   Ligação Realengo-Madureira-Cascadura (BRT TransIntendente)  , cujo traçado já foi objeto de proposta apresentada no Ágora ( https://desafioagorario.crowdicity.com/post/88386 ); 
+ -   Ligação Jardim América-Pilares por BRT, através da Av. Meriti (BRT TransMeriti)   (...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="08:58  - 23 Mar 2015">Mar 23, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-97450" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:97450, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:97450, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-97450"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/97450">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>8</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="08:58  - 23 Mar 2015">Mar 23, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="1" data-randorder="1071538947" data-id="96407" class="b-column b-idea__container filter-ready filter-active filter-2929 filter-default tag-ModalCiclovi&#225;rio tag-Acari tag-Pavuna tag-Esta&#231;&#227;oAcari] tag-Esta&#231;&#227;oMatr&#244;Acari tag-Esta&#231;&#227;oMetr&#244;Acari tag-Esta&#231;&#227;oMetr&#244;Eng.RubensPaiva tag-Esta&#231;&#227;oMetr&#244;Pavuna tag-Matr&#244;Rio tag-Metr&#244; tag-Ciclovia tag-Modaln&#227;o-motorizado   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/96407" onclick="return postAJAXObj.display(96407,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/0fde3a7f926b8e5798a7ce947861adbc" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/96407" onclick="return postAJAXObj.display(96407,{  });">Criação do Tronco Cicloviário Acari-Pavuna e reurbanização do entorno do trecho entre as estações Acari e Pavuna</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/96407" onclick="return postAJAXObj.display(96407,{  });"> Quem passa pela Av. Pastor Martin Luther King Jr. no trecho entre o Hospital Geral de Acari e a estação de metrô da Pavuna constata que é um lugar árido, sujo, pobremente iluminado, com sua urbanização se resumindo apenas ao calçamento e ao mosaicos cerâmicos que revestem as estações.  Mesmo com todos esses contras, a área é utilizada para práticas esportivas pela população local.  Notando que já há um uso por parte da população moradora da área - apesar da precariedade urbanística do trecho...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="06:57  - 21 Mar 2015">Mar 21, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-96407" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:96407, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:96407, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-96407"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/96407">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>1</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="06:57  - 21 Mar 2015">Mar 21, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="3" data-randorder="1111183937" data-id="88788" class="b-column b-idea__container filter-ready filter-active filter-2928 filter-default tag-BRS tag-Cal&#231;ad&#227;o tag-EstradadoPortela tag-RuaCarvalhodeSouza tag-Madureira   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/88788" onclick="return postAJAXObj.display(88788,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/f841164e3a3d75d7202162d4e8068d19" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/88788" onclick="return postAJAXObj.display(88788,{  });">Proposta de transformação de trecho das ruas Carvalho de Souza/Estrada do Portela em calçadão</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/88788" onclick="return postAJAXObj.display(88788,{  });"> A proposta consiste em transformar os trechos da Rua Carvalho de Souza/Estrada do Portela compreendido entre o Viaduto Negrão de Lima e a Rua Soares Caldeira em via pedonal - de forma análoga ao que está sendo feito na Av. Rio Branco. 
+ Como eixo viário alternativo, seria feito um novo PA iniciando na rua Francisco Batista, prosseguindo em paralelo com a via férrea e conectando com a Rua Soares Caldeira. 
+ Esse novo eixo viário seria de três pistas - duas para veículos e uma para BRS - dessa...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="02:39  -  5 Mar 2015">Mar 5, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-88788" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:88788, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:88788, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-88788"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/88788">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>3</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="02:39  -  5 Mar 2015">Mar 5, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="6" data-randorder="810685729" data-id="88386" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-Madureira tag-Realengo tag-Sulacap tag-VilaValqueire tag-Supervia tag-BRT   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/88386" onclick="return postAJAXObj.display(88386,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/37e19c9b54194abe38dd62470e07e254" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/88386" onclick="return postAJAXObj.display(88386,{  });">BRT Realengo-Madureira (TransIntendente)</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/88386" onclick="return postAJAXObj.display(88386,{  });"> Muito se reclama dos problemas de trânsito que afligem a área compreendida nos bairros de Realengo, Vila Valqueire e Sulacap. 
+ Isso se deve ao fato desses bairros estarem fora dos eixos principais de transporte coletivo, o que os tornam acessíveis apenas atravás de carro e ônibus municipal. 
+ A proposta a seguir compreende uma linha de BRT começando na R. Dr. Lessa (integrando com o Ramal Santa Cruz da Supervia) e percorrendo os principais eixos viários - Av. Mal. Fontenele/Estrada...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="04:46  -  4 Mar 2015">Mar 4, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-88386" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:88386, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:88386, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-88386"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/88386">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>6</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="04:46  -  4 Mar 2015">Mar 4, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="11" data-randorder="169631721" data-id="88358" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-VLT tag-História tag-Bonde tag-AltodaBoaVista tag-EstaçãoMetrôUruguai tag-RuaCondedeBonfim tag-Av.EdisonPassos   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/88358" onclick="return postAJAXObj.display(88358,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/491eb6fac5e35088a9bb366d3476c7f2" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/88358" onclick="return postAJAXObj.display(88358,{  });">(Re)Implementação da linha de VLT do Alto da Boa Vista</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/88358" onclick="return postAJAXObj.display(88358,{  });"> A proposta é baseada em algo que existiu no passado: O Bonde do Alto da Boa Vista, que operou de 1906 até 1967. 
+ A única alteração no traçado seria a sua extensão até à Rua Uruguai, de modo a integrar com a estação de metrô. O traçado original começava no bairro da Usina - na intereseção da Rua Conde de Bonfim com a Av. Edison Passos - e terminava contornando a Praça Afonso Viseu. 
+ Isso aumentaria sua extensão para 7,5 quilômetros. 
+ Seria traçado em via binária, com dupla função: turismo...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="03:23  -  4 Mar 2015">Mar 4, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-88358" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:88358, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:88358, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-88358"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/88358">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>11</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="03:23  -  4 Mar 2015">Mar 4, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="9" data-randorder="2054489609" data-id="88182" class="b-column b-idea__container filter-ready filter-active filter-2929 filter-default tag-Maracanã tag-Ciclovia tag-Tijuca   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/88182" onclick="return postAJAXObj.display(88182,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/31b84eea13f31356dde6b3bbab6b9ef7" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/88182" onclick="return postAJAXObj.display(88182,{  });">Canalização do Rio Maracanã para a implementação de praça linear e ciclovia arterial</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/88182" onclick="return postAJAXObj.display(88182,{  });"> O título já diz: a proposta é fazer a canalização do rio Maracanã com o objetivo de criar uma praça linear contendo uma linha cicloviária arterial. 
+ Essa artéria cicloviária teria início na altura da rua Mário de Alencar e terminaria na altura da rua Senador Furtado, percorrendo um total estimado de 4,12 km. 
+ Ao longo da ciclovia proposta há duas praças e cinco geradores de fluxo: Shopping Tijuca, Colégio Militar, CEFET-RJ, IFRJ/CEFETEQ e Universidade Veiga de Almeida. Cruza ainda com uma...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="06:05  -  4 Mar 2015">Mar 4, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-88182" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:88182, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:88182, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-88182"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/88182">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>9</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="06:05  -  4 Mar 2015">Mar 4, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+                            					                    					                                        
+                                                                
+															
+					
+					
+					
+																				
+					
+										
+															
+										
+															
+					
+										
+										
+																					
+					                  	
+                                        								
+										
+						<div data-removedorder="0" data-closedorder="0" data-adoptedorder="0" data-pendingorder="0" data-dateorder="" data-voteorder="0" data-replyorder="5" data-randorder="987132075" data-id="87643" class="b-column b-idea__container filter-ready filter-active filter-2931 filter-default tag-Campinho tag-Av.D.HélderCâmara tag-Méier tag-Cachambi tag-Madureira tag-QualidadedeVida tag-Baixada tag-MobilidadeUrbana tag-História tag-NovoCentro tag-VLT   filter-start mix  userActivityList ">
+
+							<article class="b-idea" style="height:180px;padding:10px;">
+								
+								
+																								
+			                    
+			                    
+			                    			                    
+								
+								
+			                    			                        			                    			                    
+			                    			                    
+						        						            						        			                    
+			                                                        <figure class="b-idea__thumbnail">
+                                        <a  href="/post/87643" onclick="return postAJAXObj.display(87643,{ forPhase:$F('selectedPhase') });"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_241,h_157,c_fill/2ddaf5b6066f30248e319f08d1109083" /></a>
+                                                                            </figure>
+                                                                            
+                                            
+                                            
+			                    
+			                    								
+								<div class="b-idea__list-wrap" style="width:300px;">
+									<section class="b-idea__details b-idea__details-hasimage">
+
+                                        <!-- labels -->
+
+                                        <div class="b-single-idea__label-wrap">
+                                                                                
+                                        
+                                        </div>
+
+                                        <!-- /labels -->
+
+                                        <h1 class="b-idea__title">
+											<p class="b-idea__title-link">
+												<a  href="/post/87643" onclick="return postAJAXObj.display(87643,{  });">Proposta de formação de um Centro Complementar na região compreendida entre a Grande Madureira e o Grande Méier, usando o VLT como agente indutor</a>
+											</p>
+										</h1>
+										<p class="b-idea__content">
+                                            <a  href="/post/87643" onclick="return postAJAXObj.display(87643,{  });">  (Para evitar que a proposta anterior ficasse muito extensa, resolvi abordar a proposta de criação de um centro complementar em outro texto. Para entender melhor o sistema de VLT proposto, favor acessar esse link:   https://desafioagorario.crowdicity.com/post/86419  )  
+ Ao observarmos a imagem 1, percebemos que na área compreendida entre os bairros de Madureira/Campinho há de certa forma uma convergência das linhas de ônibus que passam pela região em um local, formando um “X”. 
+ Tal...</a>
+										</p>
+									</section>
+                                                                    
+                                    <header class="b-idea__header">
+                                                                        	<div class="b-idea__avatars ">
+	                                        <figure class="b-avatar b-idea__avatar">
+	                                        	                                        	                                        <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+	                                        </figure>
+											                                        </div>
+
+                                            <div class="b-idea__author-info">
+                                                    <div class="b-idea__author-username">
+                                                            <span>por</span>
+                                                            <a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+                                                            <time data-tip="10:49  -  2 Mar 2015">Mar 2, 2015</time>
+                                                    </div>
+                                            </div>
+                                    </header>
+									
+									<footer class="b-idea__footer" id="votebox-87643" style="left:12px;">
+										
+
+        
+<div class="b-idea__vote-actions">
+			
+			        <div class="b-idea__vote-count ">
+            <strong class="b-idea__vote-count-value">0</strong>
+            <span>Votos</span>
+        </div>
+                            <div class="b-idea__vote-trigger">
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--up userInteraction " href="#" onclick="return Post.newVote({ id:87643, dir:'1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-up3"></span></a>
+                <a class="requireValidUser b-idea__vote-button b-idea__vote-button--down userInteraction " href="#" onclick="return Post.newVote({ id:87643, dir:'-1', ak:'428a2c042b2fa501ff4ed7019a21530dfc035d26', el:this, voteBoxOnly:true, challengeId: 2927 })"><span class="icon-thumbs-down3"></span></a>
+            </div>
+        		
+	
+</div>
+<div class="votePoint" id="votePoint-87643"><!--IE--></div>
+
+<a class="b-idea__comment-link" href="/post/87643">
+	<span><img src="https://resources.crowdworks.net/templates/common/images/CommentIcon.png" /></span>
+	<span>5</span>
+</a>
+
+<script>
+	jQuery('.star-vote-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('b-idea__vote-button--up active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('a').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('b-idea__vote-button--up active');
+				}
+			});
+		});
+	});
+</script>
+
+									</footer>
+								</div>
+								
+								<header class="b-idea__list-author" style="padding-top:10px;">
+									<figure class="b-avatar b-idea__avatar">
+							            							            							            <a  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://resources.crowdworks.net/templates/common/images/profile_counter60.png" alt="Rafael M. F." class="b-image--rounded" height="30" width="30" /></a>
+									</figure>
+									
+									<div class="b-idea__author-info">
+										<div class="b-idea__author-username">
+											<span>by</span>
+											<br>
+											<a class="b-idea__author-username-link"  href="user/activity/48328" onclick="popUp('/user/view/48328', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael M. F.</a><br />
+										</div>
+										<time data-tip="10:49  -  2 Mar 2015">Mar 2, 2015</time>
+									</div>
+								</header>
+								
+																
+							</article>
+						</div>
+
+        <script>
+        (function() {
+            var voteBoxes = document.getElementsByClassName('voteBox');
+            for(var i = 0; i < voteBoxes.length; i++) {
+                voteBoxes[i].onclick = function(e) {
+                    e.preventDefault();
+                }
+            }
+        })();
+    </script>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/48328?mode=posts&hubbub_id=206&startFrom=%7B%22post%22%3A%2287643%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%222015-03-02+22%3A49%3A59%22%7D',$(this).up());return false;">Carregar mais</a></div>
+    
+
+
+<script>
+    Category.opentipCloseOnClick();
+    Category.voteBoxClick();
+</script>
+		            	            </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewtab_myComments" style="display:none;">
+    	        	                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/88182">Canalização do Rio Maracanã para a implementação de praça linear e ciclovia arterial</a></h2>
+        <p><p>Mas o trecho do Rio Maracanã entre a R. Barão de Mesquita e a Rua Major Ávila não poderia receber uma laje e por cima desta uma praça linear com ciclovia?</p>
+<p>Pontos a favor:</p>
+<p>- Aquele trecho não possui qualquer arborização;<br />- Proporcionar uma integração segura entre a ciclofaixa do Shopping Tijuca, a Via Compartilhada da R. Visconde de Itamarati e a ciclofaixa da R. Major Ávila;<br />- Fornecer uma área de ocupação onde atualmente é apenas uma área de passagem;<br />- Interligar duas importantes áreas de concentração de pessoas - Shopping Tijuca e Pólo Gastronômico (odeio essa palavra...) da Pça. Varnhagem;</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 5, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/88182">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a></h2>
+        <p><p>Creio que uma duplicação poderia ser feita através de negociação entre a Prefeitura e o Governo federal. O Governo Federal cuidaria da duplicação e a prefeitura cuidaria da implementação da via do VLT</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Apr 3, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100736">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100931">Novo Terminal Madureira – o nascimento de uma centralidade</a></h2>
+        <p><p>No que você está correto.</p>
+<p>Centro da mancha urbana seria o mais adequado, uma vez que está uniformemente distante dos outros bairros (até Bangu, mais a oeste) e até mesmo de alguns municípios em um raio de até 15 km, conforme pode ser visto aqui: https://desafioagorario.crowdicity.com/post/87643</p>
+<p>Mister lembrar a região entre Madureira e Campinho, historicamente falando, era um entreposto e ponto de parada de tropas de viajantes - ou seja, aquela região já tinha características de centralidade muito antes de se urbanizar.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100931">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a></h2>
+        <p><p>Na verdade, o foco foi mais localizado nesses subcentros mesmo e na sua interligação com os modais mais próximos (existentes ou propostos), o que certamente não impede a criação de eixos de ligação direta entre eles.</p>
+<p>Quanto à Tijuca, realmente eu apenas mencionei duas propostas que podem se conectar. Queria mostrar mais coisas nesse mapa, mas a madrugada já avançava e eu já estava esgotado - fisica e mentalmente.</p>
+<p>Esqueci de mencionar vários eixos. O "inconveniente" das minhas propostas é que elas conectam a vários eixos propostos por outros usuários, e é muita informação para filtrar. Está sempre ficando algum coisa de lado...</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100736">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100931">Novo Terminal Madureira – o nascimento de uma centralidade</a></h2>
+        <p><p>Também tive o mesmo problema. Minhas idéias estão desenvolvidas de forma muito macro, exceto pelo meu VLT de Madureira, cujo material foi da minha pesquisa de TCC.</p>
+<p>Não esquece o Cachambi, que é uma das pontas do meu triângulo.</p>
+<p>Olhando geograficamente, o Triângulo Madureira-Méier-Cachambi é de fato o centro geográfico do Rio.</p>
+<p>E uma curiosidade: Madureira é um bairro que manteve suas características viárias básicas séculos antes do bairro surgir. Na verdade, isso vem desde antes do Descobrimento.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100931">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100931">Novo Terminal Madureira – o nascimento de uma centralidade</a></h2>
+        <p><p>Pretendem desenvolver proposta semelhante para o Méier?</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100931">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/100931">Novo Terminal Madureira – o nascimento de uma centralidade</a></h2>
+        <p><p>Como sempre: Pena que só posso votar uma vez!</p>
+<p>O único adendo que eu faria seria uma proposta que fiz de transformação de trecho da Carvalho de Souza/Estrada do Portela em calçadão ( https://desafioagorario.crowdicity.com/post/88788 ), com a criação de uma via alternativa de 3 pistas beirando o Ramal Belford Roxo e alargando a R. Soares Caldeira.</p>
+<p>O que vocês acham de cogitar o rebaixamento da estação Magno?</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 31, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/100931">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/98882">Projeto Av. Brasil Maravilha</a></h2>
+        <p><p>Excelente!</p>
+<p>Aquela região de fato precisa de uma intervenção urbana pesada, dado o nível de degradação.</p>
+<p>Pena que só posso votar uma vez.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 26, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/98882">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/97100">Via Carioca: Monotrilho no Caminho Imperial</a></h2>
+        <p><p>Olha, jamais teria essa idéia, a minha era muito mais simples: um mezanino ligando as estações de metrô e trem  bem no entroncamento entre a Linha 2 e o ramal Belford Roxo.</p>
+<p>Vou fazer o seguinte: Na próxima hora eu vou publicar minha proposta de monotrilho ligando Olaria a Del Castilho. Você pode desenvolver essa proposta intermodal em cima dos nossos traçados de monotrilho.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 24, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/97100">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/97450">Corredores transversais Zona Norte - propostas complementares</a></h2>
+        <p><p>Bom, aqui está meu email: rafaelmfurtado@gmail.com</p>
+<p>Esses dois eixos são importantíssimos e devem estar em evidência.</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 24, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/97450">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+                
+    <div class="commentActivityEntry">
+                        <h2><a href="/post/97477">TransBrasil nos trilhos: VLT na Avenida Brasil</a></h2>
+        <p><p>SENSACIONAL!</p>
+<p>E vou te dizer: 45.000 pax/h se considerar o Citadis. Se usar o Siemens Avenio de 8 carros (2,65 m), na mesma configuração (4 pass/m²), essa capacidade <strong>aumenta 85%</strong>!</p>
+<p>Pena que só posso votar uma vez!</p></p>
+        <div class="postResponseOptions">
+            <ul>
+                <li>Mar 23, 2015</li>
+                <li class="postResponseOptions like"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos favoráveis',ttoptions);"><span class="hidden">Votos favoráveis</span></div> 0</li>
+                <li class="postResponseOptions dislike"><div class="postResponseButton disabled" onmouseover="Tips.add(this,event,'Votos desfavoráveis',ttoptions);"><span class="hidden">Votos desfavoráveis</span></div> 0</li>
+                <li><a href="/post/97477">View thread</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear"><!-- IE --></div>
+
+    <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/48328?mode=comments&hubbub_id=206&start=2015-03-23 22:25:50',$(this).up());return false;">Carregar mais</a></div>
+
+            </div>
+        <div id="viewtab_myVotes" style="display:none;">
+    	        	            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                                                            um comentário na ideia <a href="/post/88182">Canalização do Rio Maracanã para a implementação de praça linear e ciclovia arterial</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                                                            um comentário na ideia <a href="/post/97534">10 a 30% de reservas para habitação social em novos empreendimentos no entorno da Transcarioca</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                                                            um comentário na ideia <a href="/post/99596">VLT Zona Sul – A volta dos bondes</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                                                            um comentário na ideia <a href="/post/100736">Proposta de linhas de VLT nos bairros de Campo Grande, Madureira, Taquara e Tijuca, com a finalidade de potencializar o desenvolvimento de subcentralidades</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/102591">Automoção do sistema de ônibus urbanos: tecnologia a serviço das pessoas</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/102557">BRT e Avenida Expressa TransLight</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/102552">VLT Madureira – a consolidação de uma centralidade pelos trilhos de bonde</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/102352">VLT ligando São Cristovão a Lagoa via Túnel Rebouças</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/102058">Novo Terminal Fundão – conectando a cidade</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                                                            um comentário na ideia <a href="/post/99596">VLT Zona Sul – A volta dos bondes</a>
+                    </div>
+            <div class="voteActivity">
+            <p>Rafael M. F. votou
+                            na ideia <a href="/post/84845">Aquavia Lagoa </a>
+                    </div>
+    
+            <div class="loadMore"><a href="#" onclick="loadMore($(this).up().up(),'/user/activity/48328?mode=votes&hubbub_id=206&start=2015-04-02 02:50:43',$(this).up());return false;">Carregar mais</a></div>
+    
+            </div>
+    </div>
+
+        <script type="text/javascript">
+        
+        	jQuery(function() {
+        		jQuery('#myIdeas_sort').change(function() {
+        			loadMore($('results-container'),'/user/activity/48328?mode=posts&hubbub_id=206&sortBy='+$('myIdeas_sort').getValue(), null, true);
+        		});
+        	});
+        
+        </script>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter230.png" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">Rafael M. F.</h2>
+                        <p>
+                            (Rafael Moreira Furtado)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(48328,0,{ 'user_id':48328, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            Rio de Janeiro, Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Fev  2, 2015</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                                        <p class="lightGrey">
+                            <b>Biografia</b> Arquiteto e Urbanista buscando se especializar na área de Mobilidade Urbana. Entusiasta do transporte sobre trilhos.
+                        </p>
+                        
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup48328" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">4</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">4367</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/48328">Ideias</a><span>11</span></li>
+                        <li><a href="/user/activity/48328?goTab=myVotes">Votos</a><span>50</span></li>
+                        <li><a href="/user/activity/48328?goTab=myComments">Comentários</a><span>53</span></li>
+            <li><a href="/user/following/48328">Seguidores</a><span>6</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/48328?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/48328?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/48328?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/48328">Assinaturas</a><span>21</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">7</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/47605" onclick="popUp('/user/view/47605', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><span>gpto</span></a>
+                                                                        <a  href="user/activity/49823" onclick="popUp('/user/view/49823', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_49823_e96a2cb04c1905652617341235dabb49_10897874_738155072928314_6255721028196966165_n.jpg.jpg);"><span>FelipeMendes</span></a>
+                                                                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><span>jhmelman</span></a>
+                                                                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><span>Bolanhos</span></a>
+                                                                        <a  href="user/activity/51166" onclick="popUp('/user/view/51166', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_51166_4cdf4efded492c3d2d963a4dea3ac4df_LOGOQM2.png.jpg);"><span>Quero Metrô</span></a>
+                                                                        <a  href="user/activity/51178" onclick="popUp('/user/view/51178', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_51178_aa2f78dcfc2b4ce27819a0af7a8069f2_avatarglobo.jpg.jpg);"><span>Pedro Geaquinto</span></a>
+                                                                        <a  href="user/activity/52437" onclick="popUp('/user/view/52437', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_52437_28f26b708427f4564274fae024e7ebc1_Fashion.jpg.jpg);"><span>Rodrjgw</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

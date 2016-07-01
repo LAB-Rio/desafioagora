@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content=" Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população? - Desafio Ágora Rio" />
+                <meta property="og:description" content=" Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos..." />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/category/2379" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_28422_252b7158c91d065dcbe5e00f9e4dd499_ponte_estaiada_AA-3671.jpg" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_28422_252b7158c91d065dcbe5e00f9e4dd499_ponte_estaiada_AA-3671.jpg">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content=" Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população? - Desafio Ágora Rio">
+                <meta name="twitter:description" content=" Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como...">
+                
+                        <meta name="description" content=" Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos..." />
+            <meta itemprop="description" content=" Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos..." />
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="category-current-page  ">
+    <input type="hidden" id="currentPage" value="category" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vY2F0ZWdvcnkvMjM3OQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vY2F0ZWdvcnkvMjM3OQ==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vY2F0ZWdvcnkvMjM3OQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vY2F0ZWdvcnkvMjM3OQ==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container l-grid__buffer"  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+                        <div class="community-banner" style="display:none;">
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" style="display:none;"><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="width:auto;">
+        <div id="ideaBrowser" class="ideaBrowser_container">
+    				<div id="overview_style_challenge_header" class="full_col_width">
+		    <input id="isOverviewMode" name="isOverviewMode" value="1" type="hidden" />
+		
+		    <div class="category_view_box" id="category_view_box">
+				<div class="b-single-challenge">
+			        <div class="b-single-challenge-subscribe">
+	<a data-follow-type="0" href="#" onclick="setCategoryFollow(this,2379,0,'428a2c042b2fa501ff4ed7019a21530dfc035d26', true, 'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vY2F0ZWdvcnkvMjM3OQ==', 'Assinar', 'Subscribed');return false;">Assinar</a>
+</div>
+
+
+            
+    <script type="text/javascript">
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/category/2379",
+           title: " Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população? - Desafio Ágora Rio",
+           description: " Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos...",
+        }
+
+    
+        if (typeof addthis !== "undefined") {
+            addthis.update('share', 'url', 'https://desafioagorario.crowdicity.com/category/2379');
+            addthis.update('share', 'title', ' Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população? - Desafio Ágora Rio');
+            addthis.update('share', 'description', ' Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos...');
+        }
+    
+    </script>
+
+
+<section class="b-single-challenge__intro">
+				
+				<h6 class="b-single-challenge__category">
+											Olímpicos de 2016									</h6>
+				<h1 class="b-single-challenge__title"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</h1>
+				
+				<div class="b-single-challenge__metrics">
+					<div class="b-challenge__metric l-inline">
+						<span class="icon-lamp7"></span>
+						<span class="b-single-challenge__metric-value">381</span>
+					</div>
+					<div class="b-challenge__metric l-inline" >
+						<span class="icon-thumbs-up3"></span>
+						<span class="b-single-challenge__metric-value">
+                                                    5926
+                        						</span>
+					</div>
+					<div class="b-challenge__metric l-inline">
+						<span class="icon-bubble8"></span>
+						<span class="b-single-challenge__metric-value">2547</span>
+					</div>
+					<div class="b-challenge__metric l-inline">
+						<span class="icon-users4"></span>
+						<span class="b-single-challenge__metric-value">
+															1179</span>
+												</div>
+				</div>
+				
+				<div class="b-single-challenge__intro-excerpt">
+                   	<p>
+                        <span>
+                            <p>Mais que uma cidade perfeita para sediar as Olimpíadas, estamos construindo um legado. Uma cidade que já está sediando o futuro. Sediar o maior evento esportivo do mundo e deixar, como legado, uma cidade melhor, mais integrada, competitiva internacionalmente e com bons serviços públicos. Construir esse futuro significa dar ao Rio um conjunto de serviços que se estenderão para além dos Jogos Olímpicos de 2016. Equipamentos de lazer, mobilidade, comunicação e cultura que, depois de prontos, farão diferença em todos os momentos do cotidiano da população e da gestão pública. <a href="/page/1130">Entenda melhor o legado!</a></p>
+<p>A Prefeitura quer ouvir de você <strong>quais as suas sugestões para ampliar os benefícios das Olimpíadas para os cariocas:</strong></p>
+<p>-<strong> Qual deve ser o principal legado para os cariocas?</strong></p>
+<p>- <strong>A partir dos projetos apresentados no Ágora Rio, como você acha que eles poderiam trazer ainda mais benefícios para a cidade e a população?</strong></p>
+<p>- <strong>Além dos projetos apresentados no Ágora Rio, que outra iniciativa você sugeriria para ampliar o Legado dos Jogos Rio 2016?</strong></p>
+<p><a href="/page/1130">Entenda melhor o legado</a> e participe do desafio!</p>
+                                                            <a data-id="2379" class="get-full-brief" id="get-full-brief" href="#">Mais &gt;</a>
+                                                    </span>
+                    </p>
+				</div>
+				<div id="fullbrief-container"></div>
+				
+				<script>
+					jQuery(function() {
+						var fullbriefLoaded = false;
+						
+						jQuery('#get-full-brief').click(function(e) {
+							e.preventDefault();
+							
+							jQuery(this).hide();
+							
+							if(!fullbriefLoaded) {
+								var id = jQuery(this).data('id');
+								
+								jQuery.ajax('/category/fullbrief/' + id, {
+									success: function(data) {
+										fullbriefLoaded = true;
+										jQuery('#fullbrief-container').html(data);
+										jQuery('.b-single-challenge__intro-full').slideDown();
+										jQuery('.b-single-challenge__close-bar a').click(function(e) {
+											e.preventDefault();
+											
+											jQuery('.b-single-challenge__intro-full').slideUp(function() {
+												jQuery('#get-full-brief').show();
+                                                                                                jQuery("html,body").scrollTop(0);
+											});
+											
+											return false;
+										});
+										
+										jQuery('.b-single-challenge__intro-full-close a').click(function(e) {
+											e.preventDefault();
+											
+											jQuery('.b-single-challenge__intro-full').slideUp(function() {
+												jQuery('#get-full-brief').show();
+                                                                                                jQuery("html,body").scrollTop(0);
+											});
+											
+											return false;
+										});
+										
+									}
+								});
+							} else {
+								jQuery('.b-single-challenge__intro-full').slideDown();
+							}
+							
+							return false;
+						});
+					});
+				</script>
+				
+				<div class="b-single-challenge__intro-actions lock">
+					                	<a style="background-color:#0F5CA8;" id="post-idea-trigger" class="requireValidUser b-button b-button--primary-background userInteraction" href="#" data-category-id="2379">
+                        <span>
+                        	                        		Post an Idea
+                        	                        </span>
+                    </a>
+                                    </div>
+			</section>
+			
+						<section class="b-video i-video b-single-challenge__hero parallax-scroll" style="background-image:url(https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_1024,h_237,c_fill/foto9_2_j3nnc1);">
+		
+			</section>
+			
+			        
+			        <div id="phaseOverviewContainer">
+			        			            <!--<div class="b-single-challenge__hero-divide"></div>-->
+
+<div class="b-single-challenge__timeline">
+    <input type="hidden" id="selectedPhase" value="6140" />
+    <input type="hidden" id="currentPhase" class="currentPhaseHolder" value="6140" />
+    
+        
+            
+                                    
+                        
+            <div data-phase-id="6135" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section b-single-challenge__timeline-section--passed">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Proposição
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    381 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>Queremos saber quais são as suas ideias,...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>Queremos saber quais são as suas ideias, sugestões e propostas para ampliar e melhorar o legado que os Jogos Olímpicos estão permitindo virar realidade!
+
+Muito já está sendo feito, mas para que ainda mais  seja realizado é fundamental que você participe!
+
+A fase de proposição acontecerá até o dia 27 de outubro! Aproveite esse tempo pra mandar as suas ideias e sugestões!</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar ">
+											<div class="b-progress-bar__progress" style="width:100%">
+							<i class="fa fa-check b-icon--phase-passed b-single-challenge__timeline-icon"></i>
+						</div>
+									</div>
+            </div>
+        
+                                    
+                        
+            <div data-phase-id="6136" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section b-single-challenge__timeline-section--passed">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Discussão
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    378 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>Com a sua ajuda estamos aumentando e melhorando...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>Com a sua ajuda estamos aumentando e melhorando o legado que os Jogos Olímpicos e Paralímpicos estão permitindo acontecer na cidade! 
+
+Nos últimos 40 dias , cidadãos  como você enviaram suas sugestões e propostas - agora é a hora de discutirmos para entender quais são as melhores propostas e como podemos levá-las a diante!
+
+Faça parte! A sua participação é fundamental para que o legado olímpico seja o melhor!</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar ">
+											<div class="b-progress-bar__progress" style="width:100%">
+							<i class="fa fa-check b-icon--phase-passed b-single-challenge__timeline-icon"></i>
+						</div>
+									</div>
+            </div>
+        
+                                    
+                        
+            <div data-phase-id="6137" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section b-single-challenge__timeline-section--passed">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Avaliação Cidadã
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    50 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>Estamos chegando ao final do nosso desafio!...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>Estamos chegando ao final do nosso desafio! 
+
+No dia 17 de novembro, segunda feira,  começaremos a produzir um documento online resumindo e compilando toda as discussões que aconteceram no Ágora, destacando as principais propostas dos cidadãos para melhorar o Legado da cidade. 
+
+Essa semana  é a última chance que você tem de votar nas ideias que você mais gostou! Lembre-se que você pode votar e curtir as sugestões e os comentários! Toda forma de participar e demonstrar sua opinião é muito importante!
+
+Conecte-se na semana que vem para fazer parte da produção do documento! Estaremos esperando por você!</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar ">
+											<div class="b-progress-bar__progress" style="width:100%">
+							<i class="fa fa-check b-icon--phase-passed b-single-challenge__timeline-icon"></i>
+						</div>
+									</div>
+            </div>
+        
+                                    
+                        
+            <div data-phase-id="6138" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section b-single-challenge__timeline-section--passed">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Documento
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    25 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>A partir de toda a discussão que tivemos nos...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>A partir de toda a discussão que tivemos nos últimos meses no Ágora Rio e nos espaços de encontro e debate, estamos produzindo um documento que será entregue ao Prefeito Eduardo Paes.
+
+A ideia desse documento é compilar a discussão e explicitar as propostas e sugestões que foram enviadas pelos cidadãos e discutidas com a sociedade e a própria prefeitura!
+
+Segunda feira dia 24 de novembro, entregaremos o documento pro prefeito, que terá 10 dias para discutir com seus secretários quais propostas podem ser adotadas e qual a melhor maneira disso acontecer. 
+
+No dia 04 de dezembro, às 20hs,  o prefeito participará de um hangout com a gente para comentar o documento e apresentar (ou não) seus novos compromissos!</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar ">
+											<div class="b-progress-bar__progress" style="width:100%">
+							<i class="fa fa-check b-icon--phase-passed b-single-challenge__timeline-icon"></i>
+						</div>
+									</div>
+            </div>
+        
+                                    
+                        
+            <div data-phase-id="6139" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section b-single-challenge__timeline-section--passed">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Análise da Prefeitura
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    0 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>O documento que produzimos juntos foi entregue...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>O documento que produzimos juntos foi entregue ao Prefeito Eduardo Paes, que terá 10 dias para estudá-lo e entender com as suas secretarias quais ideias e propostas podem ser levadas adiante! 
+
+Na quinta feira dia 04 de dezembro, participe do hangout com o prefeito, quando ele comentará o documento e fará (ou não) seus compromissos!
+</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar ">
+											<div class="b-progress-bar__progress" style="width:100%">
+							<i class="fa fa-check b-icon--phase-passed b-single-challenge__timeline-icon"></i>
+						</div>
+									</div>
+            </div>
+        
+                                    
+                                                    
+            <div data-phase-id="6140" data-category-id="2379" class="i-phase b-single-challenge__timeline-section i-single-challenge__timeline-section i-phase--active b-single-challenge__timeline-section--active">
+            	
+                                
+                
+                <div class="b-single-challenge__timeline-section-details">
+            		<span class="b-single-challenge__timeline-section-title">
+		                		                    Hangout
+		                            		</span>
+            		<span class="b-single-challenge__timeline-section-info">
+            			<span class="b-single-challenge__timeline-section-info-count">
+		                                                        
+                                                        
+                                                                                    0 ideias 
+                                                                                
+                                                                        
+            			</span>
+            			<div>
+            				<p class="b-excerpt">
+            					<span>Participe do Hangout com o prefeito no dia 04...</span>
+                                                                                                    <a class="b-link text timeline-readmore" href="#">Ler mais</a>
+                                                            				</p>
+            				<p class="b-full">
+            					<span>Participe do Hangout com o prefeito no dia 04 de dezembro, quinta feira,  onde o prefeito comentará o documento que produzimos a partir da discussão no Ágora e nos encontros e fará (ou não) seus compromissos em ampliar o Legado das Olimpíadas!</span>
+            					<a href="#" class="b-link text timeline-close">Close</a>
+            				</p>
+            			</div>
+            		</span>
+            	</div>
+            	
+            	            	            	
+            	                
+                                
+				<div class="b-single-challenge__timeline-section-progress b-progress-bar b-single-challenge__timeline-section-progress--active">
+											<div class="b-progress-bar__progress-default"></div>
+						<div id="b-progress-bar__progress--timer" class="b-progress-bar__progress" data-progress="100" data-deadline="2016-07-01 16:06:44" style="width:100%">
+						
+							<div id="b-progress-bar__progress--countdown" style="height:37px; padding-top: 22px;">
+								<span class="icon-clock4"></span>
+								<span class="time"></span>
+							</div>
+						</div>
+									</div>
+            </div>
+    </div>
+
+<script>
+
+</script>
+
+			        			        </div>
+			        <input type="hidden" id="viewMode" value="" />
+			        <input type="hidden" id="viewId" value="" />
+			        
+			        
+
+                
+<div id="main-challenge-container">
+
+	
+	<div class="b-single-challenge__ideas" >
+		<div class="b-row">
+						<input type="hidden" value="2379" name="challenge_id" id="challenge_id" />
+			<div class="b-sidebar b-sidebar--left">
+				<section class="b-sidebar__section">
+					<input type="text" name="keyword-search" id="keyword-search" placeholder="Search ideas" />
+				</section>
+				
+				<section class="b-sidebar__section">
+					<h2 class="b-sidebar__section-title b-sidebar__section-title-filters" >
+						<span>Filters</span>
+						<a class="b-sidebar__section-reset-button" href="#">
+							<span class="icon-cross3"></span>
+						</a>
+					</h2>
+					<div id="selected-filters"></div>
+				</section>
+				
+								
+				
+		<section class="b-sidebar__section">
+			<h2 class="b-sidebar__section-title">
+				<span>Qual deve ser o principal legado para os cariocas?</span>
+			    			    
+	            	                	            				<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+			</h2>
+                    <div>
+			<ul class="b-sidebar__section-list">
+																																				            			                			            					
+						<li>
+							<button class="filter filter-theme-item filter-2382" data-filter=".filter-2382">
+								Qual deve ser o principal legado para os cariocas?
+							</button>
+						</li>
+																							            			                			            					
+						<li>
+							<button class="filter filter-theme-item filter-2381" data-filter=".filter-2381">
+								Como você acha que os projetos do legado podem trazer ainda mais benefícios para a cidade e a população?
+							</button>
+						</li>
+																							            			                			            					
+						<li>
+							<button class="filter filter-theme-item filter-2380" data-filter=".filter-2380">
+								Além dos projetos já existentes, que outra iniciativa você sugeriria para ampliar o Legado dos Jogos Rio 2016?
+							</button>
+						</li>
+																																																				</ul>
+                    </div>
+		</section>
+
+				
+									<section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		<span>Marcações</span>
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+	<div id="tags-modal">
+		<div class="b-single-challenge__tags-modal-container">
+			<div class="b-single-challenge__tags-modal-inner">
+				<div class="b-single-challenge__tags-modal-title">Marcações</div>
+				<div class="b-single-challenge__tags-modal-list">
+					<ul class="b-sidebar__section-list">
+												<li><button class="filter tag-mobilidade" data-filter=".tag-mobilidade">mobilidade</button></li>
+												<li><button class="filter tag-transporte" data-filter=".tag-transporte">transporte</button></li>
+												<li><button class="filter tag-Educa&#231;&#227;o" data-filter=".tag-Educa&#231;&#227;o">Educa&#231;&#227;o</button></li>
+												<li><button class="filter tag-MOB&#73;L&#73;DADE" data-filter=".tag-MOB&#73;L&#73;DADE">MOB&#73;L&#73;DADE</button></li>
+												<li><button class="filter tag-bicicleta" data-filter=".tag-bicicleta">bicicleta</button></li>
+												<li><button class="filter tag-BRT" data-filter=".tag-BRT">BRT</button></li>
+												<li><button class="filter tag-ciclovia" data-filter=".tag-ciclovia">ciclovia</button></li>
+												<li><button class="filter tag-SUSTENTABILIDADE" data-filter=".tag-SUSTENTABILIDADE">SUSTENTABILIDADE</button></li>
+												<li><button class="filter tag-mobilidade urbana" data-filter=".tag-mobilidadeurbana">mobilidade urbana</button></li>
+												<li><button class="filter tag-TRANSITO" data-filter=".tag-TRANSITO">TRANSITO</button></li>
+											</ul>
+				</div>
+				<div class="b-single-challenge__tags-modal-buttons">
+					<span>
+						<a class="more-tags-cancel" href="#">Cancelar</a>
+					</span>
+					<span>
+						<a class="more-tags" href="#">Apply</a>
+					</span>
+				</div>
+			</div>
+		</div>
+			</div>
+</section>
+								
+                				    <section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		<span>Principais contribuidores</span>
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+	<ol class="b-sidebar__section-list b-sidebar__section-numeric">
+                				<li class="b-contributor">
+				<figure class="b-avatar b-contributor__avatar">
+					<a  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" height="30" width="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarSmaller_30679_0b49122ea5269dbc32ab5538933ae0ca_2014-09-30_15-56-49_488.jpg.jpg" alt="marcel peres" /></a>
+				</figure>
+				<div class="b-contributor__info">
+					<a class="b-contributor__username"  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">marcel peres</a>
+				</div>
+				<span class="b-contributor__points">
+					<span>10</span>
+					<span>pts</span>
+				</span>
+			</li>
+		        				<li class="b-contributor">
+				<figure class="b-avatar b-contributor__avatar">
+					<a  href="user/activity/31811" onclick="popUp('/user/view/31811', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" height="30" width="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarSmaller_31811_aa34b2382757184386321067d47e586c_Foto%20rosto.jpg.jpg" alt="Isabela Saramago" /></a>
+				</figure>
+				<div class="b-contributor__info">
+					<a class="b-contributor__username"  href="user/activity/31811" onclick="popUp('/user/view/31811', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Isabela...</a>
+				</div>
+				<span class="b-contributor__points">
+					<span>2</span>
+					<span>pts</span>
+				</span>
+			</li>
+			</ol>
+	<p class="b-sidebar__section-list-more"><a href="/hubbub/leaderboard" onclick="popUp('/hubbub/leaderboard?category_id=2379',{ popUpTitle:'Classificação',height:500 });return false;">Ver classificação</a></p>
+</section>
+
+                			</div>
+						
+			<div class="b-single-challenge__ideas-list i-ideas-list">
+				<div class="b-row b-single-challenge__ideas-header">
+					<div class="b-column b-column--6" style="visibility:hidden;flex-basis:30%;width:30%;max-width:30%;">
+						<span>Exibindo: </span>
+						<strong>
+							<span class="result-count">0</span>
+							Results
+						</strong>
+					</div>
+					<div class="b-column b-column--6 b-single-challenge__ideas-viewoptions" style="flex-basis:70%;width:70%;max-width:70%;">
+						<div class="viewoptions-wrapper">
+							<button id="toggle-grid" class="toggle-grid toggle-active"></button>
+							<button id="toggle-list" class="toggle-list"></button>
+						</div>
+						
+						<div class="viewoptions-wrapper" >
+                            <select id="results-sort" name="results-sort" tabindex="0" class="i-mix-sort">
+                                                                                                                                                                    <option  value="mostComments">Most Discussed</option>
+                                                                                                    <option  value="random">Aleatório</option>
+                                                                                                                            </select>
+
+						</div>
+						
+						<div class="viewoptions-wrapper" >
+							<span>Ordenar por</span>
+						</div>
+					</div>
+				</div>
+                            
+                            
+
+
+
+                            
+				
+				<div id="results-container" class="b-row">
+																														                    
+									</div>
+			
+				<div>
+			    			        <a href="#" id="loadMoreButton" onclick="loadMore($('results-container'),'/category/2379?sortBy=mostPopular&startFrom=%7B%22post%22%3A%22%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%22%22%7D&totalLoaded=10', $(this), false);return false;" class="form_button">Carregar mais</a>
+			        			        <script type="text/javascript">
+			            if ($('totalLoadedPosts')!=null)
+			            {
+			                $('totalLoadedPosts').setValue('10');
+			            }
+			
+			            if ($('loadMoreButton')!=null){
+			                document.stopObserving('scroll',loadMoreScrollHandler);
+			                document.observe('scroll',loadMoreScrollHandler);
+			            }
+			        </script>
+			        
+			        			        <input id="designVersion" type="hidden" value="2" />
+			        <input id="loadMoreAddress" type="hidden" value="/category/2379?sortBy=mostPopular&startFrom=%7B%22post%22%3A%22%22%2C%22count%22%3A%2210%22%2C%22date%22%3A%22%22%7D&totalLoaded=10" />
+			        <input id="loadedPosts" type="hidden" value="0" />
+			    				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="clear"><!--IE--></div>
+</div>
+
+<script>
+	jQuery(function() {
+		initSort(2379);
+	});
+    
+</script>
+
+<input id="active_tag_filters" type="hidden" value="" />
+<input id="active_theme_filters" type="hidden" value="" />
+
+		        </div>
+		    </div>
+		    
+		</div>
+    </div>
+
+<script>
+	jQuery(function() {
+            //startupNewUiAjax();
+		//initFilters();
+		//initChallengeListToggle();
+		initPhaseTimeline();
+                //document.fire("crowdworks:updateComplete");
+	});
+</script>
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('category');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

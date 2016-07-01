@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Transporte Individual Motorizado - Desafio Ágora Rio" />
+                <meta property="og:description" content="     
+  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/blogpost/79831" />
+                                                                                                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Transporte Individual Motorizado - Desafio Ágora Rio">
+                <meta name="twitter:description" content="     
+  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo...">
+                
+                        <meta name="description" content="     
+  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." />
+            <meta itemprop="description" content="     
+  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." />
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="-current-page  ">
+    <input type="hidden" id="currentPage" value="" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODMx" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODMx' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODMx" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODMx' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+            <div class="community-banner" >
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" ><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="">
+        <div id="blogHeader">
+    <div class="right">
+            <a href="#" class="form_button_actionStyle form_button_actionStyle_small caps" onclick="Blogcategory.setFollow($(this).up(),0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>    
+
+    </div>
+    <h1></h1>
+        <div class="blogCategoryHeader">Categorias</div>
+    <div class="clear"><!--IE--></div>
+    </div>
+
+<div id="category_col" class="leftBar">
+    <input type="hidden" class="category_id" name="category_id" id="categoryIdValue" value="2925" />
+    <input type="hidden" name="pageSortByState" id="pageSortByState" value="" />
+    <input type="hidden" name="searchQ" id="searchQ" value="" />
+    <input type="hidden" name="totalLoadedPosts" id="totalLoadedPosts" value="0" />
+	<div id="category_lists" >
+  		<div id="category_lists_container" class="blogCategoryList">
+            <div id="category_listsFirst">
+                	<div class="categoryHeadingTitleLineContainer">
+        <div class="categoryHeadingTitleLine selectedCategory">
+            <a id="catLink:0" href="/blog/category/" onclick="categoryNavObj.displayCategory(0,{address:'blog/'});return false;"><span>Todas as postagens</span></a>
+        </div>
+    </div>
+            <div class="categoryHeadingTitleLineContainer">
+            <div class="categoryHeadingTitleLine">
+                <a id="catLink:2925" href="/blog/category/2925" onclick="return categoryNavObj.displayCategory(2925,{address:'blog/'});"><span></span></a>
+                            </div>
+        </div>
+                <div class="categoryHeadingTitleLineContainer">
+            <div class="categoryHeadingTitleLine">
+                <a id="catLink:2761" href="/blog/category/2761" onclick="return categoryNavObj.displayCategory(2761,{address:'blog/'});"><span></span></a>
+                            </div>
+        </div>
+     
+            </div>
+            <div id="category_listsSecond">
+            </div>
+        </div>
+        
+        	</div>
+    
+    
+</div>
+
+
+<div id="content_col" class="content_col">
+    <div id="discuss_inner">
+        
+<div id="viewPost_sidebar_back"><a href="/blogcategory/2925" onclick="return categoryNavObj.displayCategory($F('categoryIdValue'), { address:'/blog',scrollToPost:79831 } );"><span class="leftArrow"><!--IE--></span>Voltar</a></div>
+
+<div class="blogPostViewBox" id="postViewBox">
+    <div class="postMainColumn">
+<div class="titleBox">
+	
+    
+    <div class="left form_button_marginRight">
+    	    	<a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+            <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg" alt="Ágora Rio" />
+        </a>
+    </div>
+
+        <div class="titleBox_text">
+        	            <h2 id="post_title:79831" class="post_title">Transporte Individual Motorizado</h2>
+            <div class="postedBy">
+                Postado por <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a> (Admin) Jan 18, 2015
+                <span>Postado em 
+                    <a href="/blogcategory/2925" onclick="return categoryNavObj.displayCategory(2925,{ address:'blog' });"></a>
+                                </span>
+            </div>
+        </div>
+	    <div class="clear"><!--IE--></div>
+	</div>
+                                            
+                
+    <p id="post_text:79831"><p dir="ltr"><span><img src="http://i.imgur.com/B8Mwkgc.png" alt="" width="650" height="288" /></span></p>
+<p dir="ltr"><span>O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de 43 minutos.</span></p>
+<p><span><span>Na próxima fase, você poderá discutir e contribuir com propostas para reduzir os congestionamentos na cidade, principalmente no sentido de reduzir o número de carros particulares no centro da cidade. As soluções podem envolver mudanças nas vias da cidade, no sistema de sinalização ou até mesmo nos estacionamentos públicos e privados.</span></span></p>
+<p><a href="http://bit.ly/documentostrasnporteindividualmotorizado" target="_blank"><strong><img src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/browser_28422_d78d4ba969be20cc3a1a9ef75747cef1_BOTAO-CONFIRA-DOCUMENTOS%20%281%29.png.jpg" alt="" width="244" height="68" /></strong></a></p>
+<p><strong>Lista de documentos do tema:</strong></p>
+<p>1- <a href="http://bit.ly/Volumedecarros">Volume de carros das principais vias da cidade - <strong>SMTR</strong></a></p>
+<p><a href="http://bit.ly/TermoDeReferenciaPMUS" target="_blank">2 - Termo de Referência - PMUS</a></p>
+<p><em>(Se tiver algum documento que você gostaria de ver aqui, comente dizendo qual é e marque o perfil da Prefeitura)</em></p></p>
+
+        
+    <div class="clear"><!--IE--></div>
+    
+        	            	<p class="small lightGrey">Esta postagem foi editada em Jan 29, 2015 por <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a></p>
+    
+        
+        <div class="viewPost_fileBox">
+            <div class="fileBox">
+                    <a href="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_cee07f2e559fb11a85a62d1807c1b967_VolumedasprinciaisviasdoRiodeJaneiro.pdf" class="fileBoxThumb" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/pdf.png);"  id="postImage:23957"></a>
+                <div class="fileBoxName" style="text-align:center;"><!--<a href="#" id="fileArea_fileRemove:23957" class="fileRemove">X</a>--> VolumedasprinciaisviasdoRiodeJaneiro.pdf</div>
+    </div>
+
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+    </div>
+
+</div>
+
+<div id="viewPost_sidebar_followBox" >
+        <div class="left form_button_marginRight">
+            <!-- AddThis Button BEGIN -->
+                    <script type="text/javascript">
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/blogpost/79831",
+           title: "Transporte Individual Motorizado",
+           description: "     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de...",
+        }
+
+        if (typeof addthis !== "undefined") {
+            addthis.update('share', 'url', 'https://desafioagorario.crowdicity.com/blogpost/79831');
+            addthis.update('share', 'title', 'Transporte Individual Motorizado');
+            addthis.update('share', 'description', '     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de...');
+        }
+    </script>
+    <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+    <a class="addthis_button_twitter" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte Individual Motorizado | Desafio Ágora Rio" addthis:description="     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79831"></a>
+    <a class="addthis_button_linkedin" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte Individual Motorizado - Desafio Ágora Rio" addthis:description="     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79831"></a>
+    <a class="addthis_button_facebook" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte Individual Motorizado - Desafio Ágora Rio" addthis:description="     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79831"></a>
+    <a class="addthis_button_google_plusone_share" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte Individual Motorizado - Desafio Ágora Rio" addthis:description="     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79831"></a>
+    <a class="addthis_button_yammer" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte Individual Motorizado - Desafio Ágora Rio" addthis:description="     \n  O desafio neste eixo é encontrar soluções para diminuir a circulação de veículos e motos na cidade, tornando a mobilidade urbana mais sustentável e eficiente. No Rio, cada veículo leva em média 1,4 pessoa (cerca de 50 vezes menos que um ônibus convencional) e emite gás carbônico equivalente a seis vezes mais que esses mesmos ônibus. Já o tempo médio de viagem entre casa e trabalho é de..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79831"></a>
+    <a class="addthis_button_compact"></a>
+    </div>
+    <!-- AddThis Button END -->
+
+    </div>
+<div class="left">
+            <a href="#" class="caps form_button_actionStyle form_button_actionStyle_small form_button_marginRight followAuthor userInteraction" onclick="Blogpost.setFollow($('viewPost_sidebar_followBox'),79831,0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>
+    </div>
+<div>Esta postagem tem <span class="colour">5</span> assinantes</div>
+
+<div class="clear"><!--IE--></div>
+
+</div>
+    
+<div class="postCommentsBox" id="viewPostComments">
+                    <h3>Comentários (36)</h3>
+        <div class="commentTitleDivider"><!-- IE --></div>
+                	<div id="postResponse:79900">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Jan 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Esse deve ser fortemente desencorajado, para dar lugar a meios coletivos de transporte sobre pneus ou trilhos.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('79900'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/79900',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:79900" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:79901">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Jan 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Os transportes coletivos devem ser fortemente melhorados para desencorajar o transporte individual.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('79901'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/79901',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:79901" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:80017">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>BRS, ônibus com ar condicionado (ainda não todos, infelizmente), novas composições da Supervia (ok, não é da prefeitura), novas barcas (idem), expansão do Metrô (idem) e BRTs já parecem um começo, não?</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80017'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80017',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80017" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:80455">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Jan 26, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Sim, é um "começo", mas o caminho é longo...</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80455'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80455',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80455" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:80459">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Jan 26, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Sou plenamente a favor do tranporte coletivo em substituição ao individual, só acho que o ponto de vista deve ser o de melhorar MUITO o transporte coletivo para que as pessoas prefiram naturalmente deixar o carro em casa. Não que eu seja contra as medidas desestimulantes ao carro que estão sendo adotadas, em especial no Centro do Rio, mas o principal é cobrarmos mais e mais dos governos um transporte público amplo, eficiente e confortável.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80459'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80459',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80459" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:80326">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 25, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Concordo plenamente. O transporte coletivo no Rio de Janeiro tem muito ainda que melhorar para comecar a parecer interessante. Qualquer um que desce na Central para pegar o metro para zona sul na hora do rush troca por seu carro na hora! Onibus sem ar, lotado, parado na Av. Brasil é desumano! Ainda mais que agora se sabe que nem toda frota sera climatizada.</p>
+<p>Quando transporte publico em TODA A CIDADE for no mínimo nao degradante, a migracao docarro para o mesmo sera natural, embora nao possa ser totalmente eliminado.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80326'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80326',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80326" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:80023">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="asleal" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">asleal</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Um GRANDE PASSO para começar a se solucionar este problema é NÃO CHAMAR o automóvel, pelo menos neste formato que se perpetuou, de TRANSPORTE INDIVIDUAL. Como está hoje, é um transporte para CINCO pessoas (o que é muito adequado para famílias e pequenos grupos de amigos). O fato de ser USADO e mesmo VENDIDO como transporte individual é um grande erro semântico que só é ACENTUADO cada vez que o chamamos de TRANSPORTE INDIVIDUAL.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80023'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80023',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80023" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80024">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="asleal" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">asleal</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Fazendo esta crítica, eu devo ao menos propor uma alternativa, mas é algo a ser mais discutido. Eu penso em chamar "transporte motorizado familiar" (para famílias ou grupos pequenos), ou "tranporte motorizado de médio porte" (sendo as motocicletas categorizadas como "pequeno porte", e os transportes coletivos rodoviários - ônibus, vans - como "grande porte"). Mas pode haver alternativas melhores.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80024'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80024',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80024" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80025">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="asleal" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30645" onclick="popUp('/user/view/30645', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">asleal</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Outro grande passo é não colocar automóvel e motocicleta no mesmo saco. A motocicleta, como transporte EFETIVAMENTE individual, tem um potencial MUITO maior de eficiência (e é efetivamente mais eficiente, tanto no consumo energético quanto na ocupação do espaço viário). Naturalmente há o problema da vulnerabilidade do motociclista, em especial quando em alta velocidade, e o alto custo social de saúde que o atual uso da motocicleta representa. Mas é algo que pode - e deve - ser resolvido ou melhorado de diversas formas.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80025'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80025',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80025" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81128">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30506" onclick="popUp('/user/view/30506', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30506_3ce7cc9b8fd41effc61aec54c3da2a56_eu.jpg.jpg" alt="pedroprio" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30506" onclick="popUp('/user/view/30506', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">pedroprio</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Apenas uma pequena correção, motos estão longe de serem eficientes energeticamente. Quando você considera que a moto só é capaz de transportar um passageiro, os 30 km/l que ela é capaz de fazer já não parecem tão eficazes assim.</p>
+<p>Aliás, os problemas dos nossos ciclomotores vão além disso: eles são extremamente poluentes, mesmo quando comparados com os carros. Como não possuem injeção eletrônica nem controle de emissões evaporativas, elas chegam a poluir até <strong>OITO</strong> vezes mais que os automóveis.</p>
+<p>(Fonte: <a href="http://www.cetesb.sp.gov.br/ar/documentos/Relatorio_de_Emissoes_Veiculares_no_Estado_de_Sao_Paulo_2011.pdf)" target="_blank">http://www.cetesb.sp.gov.br/ar/documentos/Relatorio_de_Emissoes_Veiculares_no_Estado_de_Sao_Paulo_2011.pdf)</a></p>
+<p>Deveríamos cada vez mais desestimular o uso da moto como temos nas nossas cidades hoje em dia. Motos não foram feitas para pegar via expressa, tipo Linha Vermelha ou Av. Brasil. No mundo inteiro as motos urbanas tem suas cilindradas e velocidades limitadas, de modo que se equiparar às bicicletas elétricas, sendo utilizadas apenas em deslocamentos locais e como alimentação aos modos de grande capacidade (em alguns países da Europa elas até possuem permissão para circular em ciclovias).</p>
+<p>Claro que as motos grandes, de viagem, poderiam continuar existindo, mas não como um meio de transporte da rotina do cidadão. Precisamos urgentemente acabar com essa infestação de motos inapropriadas, que são vendidas como a salvação da população sofrida, que passa a pilotar ziguezagueando nos corredores entre os carros diariamente, correndo sérios riscos de acidentes, como se os minutos ganhos significassem melhoria de qualidade de vida.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81128'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81128',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81128" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81261">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Muito bem observado, Pedro.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81261'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81261',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81261" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:80052">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47930" onclick="popUp('/user/view/47930', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="GeorginaS.S.Viana" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47930" onclick="popUp('/user/view/47930', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">GeorginaS.S.Viana</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Quanto menor for o número de automóveis nas ruas das cidades , será melhor para todos nós .  Ou por outro lado , que se alimente a idéia de sair de casa com o seu carro apenas nos finais de semana .  É fato , a cada ano , seguimos perdendo espaço nas calçadas para os pedestres e até mesmo , nas próprias pistas de rolagem , onde a fila de parada consegue estreitar as vias de mão dupla , isto representando um perigo enorme de circulação . Acredito ser mais do que urgente encontrar medidas de controle quanto à este derrame das fábricas no mercado . Daqui a muito pouco tempo , o único movimento que um motorista fará será o de sair da garagem da sua casa para a rua e entrar de volta , indo apenas para frente e para trás . O planeta não merece isto . </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80052'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80052',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80052" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80108">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Jan 22, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Me parece individual, é vendido como individual, "liberdade", "autonomia", etc. Infelizmente não achei informações para o Rio mas em SP a média de ocupação de 1,4 pessoas por carro, significa que a maioria dos carros normalmente não têm nem uma pessoa no carona. Em muitos casos, esse segundo ocupante é uma criança sendo levada ao colégio, alguém sendo conduzido por seu motorista, etc, situações que o uso de transporte coletivo (ainda que de ônibus executivos) seria melhor para a sociedade. Ainda bem que algumas pessoas são conscientes de fazer uso coletivo dos seus carros (carona para colegas de trabalho, etc), mas a eficiência dessa otimização, se comparada à retirada de todos os 5 carros da rua, e não apenas 4, é bem menos do que a adoção do transporte público. Mas um programa de carona solidária pode ser uma sugestão interessante, seria utópíco achar que todos migrariam para o transporte público.<br />Como melhoria para a segurança, fazendo frente às altas velocidades que aumentam o risco para todos, possivelmente a adoção de um limite de velocidade de 40km/h em toda a cidade seja a solução.<br />Já andei muito de carro no deslocamento para o meu trabalho (sempre sozinho, já que dificilmente coincidia destino/horário com o de outras pessoas), sempre alimentava a falsa impressão de que "dava pra dar um jeito" de diminuir o tempo, perdia tempo e dinheiro procurando e pagando estacionamento, achava que seria vantagem acelerar até 100km/h ou mais em trechos livres e que comportariam essa velocidade, mas, de certa forma, via que indo via transporte coletivo demorava mais ou menos o mesmo tempo e a média da velocidade (distância/tempo total de deslocamento) ficava sempre em torno de 30km/h.<br /><a href="http://oglobo.globo.com/brasil/sao-paulo-tem-media-de-14-ocupante-por-carro-2695421" target="_blank">http://oglobo.globo.com/brasil/sao-paulo-tem-media-de-14-ocupante-por-carro-2695421</a></p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80108'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80108',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80108" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80460">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Jan 26, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Pessoal do Ágora e CET-Rio, os dados de volume de tráfego disponibilizado é a média diária? Foi calculada utilizando qual período? O último ano, mês...? Os finais de semana estão incluídos no cálculo? No caso de vias de mão dupla (por exemplo, Linha Amarela), os valores já consideram o tráfego nos dois sentidos ou se referem somente a um sentido da via? </p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Ágora Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>CET-Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80460'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80460',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80460" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80875">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Jan 30, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Prezados, vocês já têm os esclarecimentos que solicitei relativo aos dados disponibilizados?</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Ágora Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>CET-Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80875'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80875',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80875" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81536">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg" alt="CET-Rio" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">CET-Rio</a> diz... Feb 6, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p><strong>Olá, Rodrigo. Muito obrigado pela participação!</strong><strong><br /><strong>Os dados já contemplam o volume diário de todos os veículos que passam, nos dois sentidos da via, independente da quantidade de pistas  que a via possua. Por exemplo, na Linha Vermelha, Km 5,5 (Maré) o volume de 118.684 veículos corresponde a quantidade média de veículos que passaram nos dois sentidos dessa via na altura do Km 5,5 e são relativos à média diária dos dias úteis do mês de setembro de 2014.</strong></strong></p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81536'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81536',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81536" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81000">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 1, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>...não se coloca o carro na frente dos bois. No dia em que a Prefeitura oferecer um transporte coletivo que não seja um martírio para os cidadãos e rodoviários estará moralmente justificada a dificultar a circulação de carros. Não antes.</p>
+<p>Pelo ritmo que vi até agora, na (remota) hipótese de a prefeitura oferecer transporte coletivo decente, seria o caso de reduzir radicalmente o número de estacionamentos pela cidade. A escassez deverá ser suficiente para encarecê-los. Não acho que faça sentido proibir o uso de carros; acho que faz mais sentido cobrar por ele.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29748_a6801984be0508b7c0aae40d10470c6e_logoGoverno3.jpg.jpg);"><a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Governo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81000'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81000',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81000" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81092">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Cobrar por estacionamento mais caros depois de haver opções de transporte públicos decentes, correto?</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81092'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81092',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81092" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81094">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Correto, Bolanhos, como eu disse no primeiro parágrafo: não antes da existência de um transporte público digno.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81094'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81094',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81094" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:81251">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Não "depois", paulatinamente. O transporte com poltrona reclinável, climatização individualizada, serviço de bordo, sem tráfego e de porta a porta nunca virá. E mesmo que viesse, ainda assim teria gente que pegaria carro para entupir as ruas.</p>
+<p>Muito antes disso devem ser tomadas iniciativas que encoragem a troca e sinalizem um aumento de demanda para que os investimentos de adequação possam ser feitos.</p>
+<p>Em um dos documentos disponibilizados em <a href="http://www.rj.gov.br/web/setrans/exibeconteudo?article-id=626280" target="_blank">http://www.rj.gov.br/web/setrans/exibeconteudo?article-id=626280</a> (só consegui abrir no Chrome) "Diagnóstico da Situação Atual" (tem que baixar as quatro partes e descompactar, essa informação está na página 223 do PDF, que é a 203 do documento), a abrangência dos trens da Supervia coloca sob sua área de influência (pessoas que moram a 800m das estações) cerca de 1,6 milhões de pessoas, enquanto transporta 580 mil por dia (34% desse total) (dados de 2012) O metrô abrange cerca de 800 mil pessoas e transporta 600 mil (também dados de 2012), 70% da população em sua área de abrangência. Eles certamente precisam ficar mais atrativos, com maior oferta de trens, melhor qualidade dos trens, redução de ocorrências de acidentes para atrair mais passageiros que já poderiam ser atendidos por eles e transportá-los com qualidade. Mas também deve-se dar um "empurrãozinho" na outra parte e já agora desencorajar o uso de carro, ao menos para o Centro da Cidade: trocar estacionamentos nas ruas por ciclovias, fechar trechos para carros de modo a privilegias pedestres, nas poucas vagas de rua que restarem, fazer parklets, etc.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81251'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81251',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81251" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:81265">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>...no acerto de contas entre o Estado prestador de serviços e o cidadão, frequentemente observo que o Estado anda devendo. Desencorajar o uso de carros agora, apesar de desejável, não me parece politicamente factível. Eu, por exemplo, não tenho carro e só uso coletivos ou táxi. Mas no ônibus há gente recuperando viciados ou vendendo bala aos gritos; no trem há rádio religiosa de audição compulsória; no metrô tem roda de samba, ou melhor, quadrado de samba, porque os caras tocam mal...é dentro dessas arapucas sonoras que queremos que os cidadãos entrem de livre e espontânea vontade?</p>
+<p>Como se convence uma pessoa a largar o carro se não há o mínimo de previsibilidade na qualidade do serviço de transporte coletivo? O trem vai funcionar hoje? Vamos ficar presos 20 minutos nos túneis do metrô esperando "a composição da frente" dar lugar na estação? O motorista do ônibus, por um ato discricionário de boa vontade, vai fazer o favor de parar no ponto e não ferir passageiros com arranques e freadas bruscas?</p>
+<p>Um carro evita todos essas dúvidas. Curiosamente, a devida regulação do serviço prestado também evitaria, mas a história recomenda não contar com isso. Logo...</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>jhmelman</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81265'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81265',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81265" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:81266">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Jhmelman, obrigado pela leitura do documento e por trazer algumas informações contidas nele. Essa informação sobre o uso do trem e de seu potencial (desperdiçado) é de lascar...</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>jhmelman</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81266'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81266',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81266" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:81277">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:120px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:480px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Nos documentos tem outras de lascar tb, algumas outras informações que, já que era um plano pra a partir de 2013, a gente já sabe que não se concretizaram ou que foram substituídas por outras "gambiarras"...</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81277'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81277',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81277" style="margin-left:150px;"></div>
+
+            </div>
+                	<div id="postResponse:81090">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Já estive nos dois extremos: Paris e NovaYork, cuja oferta de transporte coletivo é real, e em Los Angeles e Las Vegas, cidades cujo definidor do planejamento é o automóvel. O Rio de Janeiro não consegue se enquadrar em nenhum dos dois: Um transporte coletivo ineficiente, perigoso e mal gerenciado e uma estrutura voltada ao veiculo totalmente deficitária, onde até via expressa é privada, tem pedágio e não tem manutenção adequada .</p>
+<p> Acho que está claro aqui que não é o carro o inimigo e sim a falta de uma gestão séria da cidade: O carro continuará existindo mas deixará de lotar as ruas conforme o transporte publico evoluir para um modelo menos vexatório.</p>
+<p>Outro dia comparei chegar no aeroporto de Paris, pegar o RER e depois o metrô para chegar a "Ilha", com o que temos no Rio de pegar a Transcarioca e o Ramal Saracuruna (caminho mais curto, podem contar as estações - contar estações é o modelo lógico de distância e tempo) e chegar ao Centro do Rio, por isto a descrição de vexatório para o nosso sistema.</p>
+<p>A solução tem que ser de evolução gradativa neste caminho do transporte público, mas o que fazer até lá? Simples: Investir em planejamento viário. Não é abrir novas vias expressas, mas sim no modelo de gestão delas. Um exemplo que será postado aqui:</p>
+<p>Ao invés de gastar tufos de dinheiro com guardinhas orientando e call centers, subsidiar o uso de aplicativos como o Waze por exemplo, que faz a gestão e distribuição viária conforme os eventos nas ruas cariocas. Pagar por uma customatização deste aplicativo para o Rio onde a rede de dados para estas consultas de navegação sejam grátis, com a possibilidade de vincular informações como "Cuidado Buraco" ao aplicativo do 1746 na fila de "Obras e Reparos na Pavimentação", ou veiculo estacionado na via com o acionamento da Gurada Municipal, por exemplo.</p>
+<p>A informatização da gestão viária tem grandes benefícios a Prefeitura e aos cidadãos da Cidade</p>
+<p> </p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81090'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81090',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81090" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81095">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Bolanhos,</p>
+<p>não sei se já era do seu conhecimento, mas a Prefeitura do Rio já usa o Waze:</p>
+<p><a href="http://oglobo.globo.com/sociedade/tecnologia/prefeitura-comeca-usar-waze-no-centro-de-operacoes-rio-9152370" target="_blank">http://oglobo.globo.com/sociedade/tecnologia/prefeitura-comeca-usar-waze-no-centro-de-operacoes-rio-9152370</a></p>
+<p> </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81095'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81095',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81095" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81115">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A Prefeitura usa informações que os cidadãos pagam através do seu plano de dados no celular. Ela consulta como usuário e de forma manual repassa as estruturas operacionais (Guarda Munciipal, CET-Rio - Sec. de Conservação, etc).</p>
+<p>Uma gestão efetiva buscaria o máximo de contribuições quanto ao fluxo de veiculos e de informações de incidentes. Na propria plataforma mobile do Waze você consegue observar que poucos são os usuários contribuindo com informações, pelo volume de carros na rua e o volume de usuários próximos a você. Na Av. Brasil tem trechos com mais de 300 carros engarrafados e apenas 2 usuários do Waze para gerar massa de dados.</p>
+<p>O subsidio do pacote de dados aumentaria o número de contruibuintes de informação da plataforma e uma gestão mais efetiva dos componentes do trãnsito das ruas. Com a customização, poderia-se pegar os itens mais reclamados no próprio mapa e já integrar automaticamente com a plataforma 1746 de gestão da cidade.</p>
+<p>Este investimento tirararia tantos "cotovelos" da forma que usam.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81115'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81115',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81115" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:81269">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Bolanhos, você utilizou a palavra "subsídio". Quem pagaria por ele? As operadoras ou a prefeitura? Gostaria de entender melhor a sua ideia.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81269'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81269',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81269" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:81289">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:120px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:480px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Não sei se é do seu conhecimento, mas a Prefeitura do Rio, através da CET-RIO, está instalando postes, cameras e rede, enfim, toda infraestrutura necessária, para monitorar o fluxo de veiculos pelas ruas da cidade e ter um mapa atualizado do volume de veiculos em cada via. Colocar toda uma estrutura, a cada 300 metros, das pricipais vias da cidade, e depois fazer a manutenção de cada um destes postes, cameras e rede de dados não deve ser barato. Acredito ser mais barato a customização do Waze para uma rede gratuita de dados moveis. Pagar as operadoras de telefonia móvel para que trafego de dados especificamente neste aplicativo customizado não seja cobrado do usuário (como algums operadoras fazem com o Facebook e twitter).</p>
+<p>Porque Investir em toda uma infraestrutura de visões parciais do transito se por aplicação móvel teria-se uma visão mais completa e bidirecional, já que pode-se sugerir ao usuário trocar de trajeto durante o percurso organizando o transito?</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>CET-Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81289'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81289',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81289" style="margin-left:150px;"></div>
+
+            </div>
+                	<div id="postResponse:81290">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Bolanhos,</p>
+<p>obrigado pelo esclarecimento. Eu não sabia de nada disso. Você poderia me dizer qual é a origem dessa informação?</p>
+<p>De qualquer forma, essa sua ideia é muito interessante. Falta saber quem paga e quanto paga. Não faço ideia dos valores pagos pela prefeitura para monitorar o fluxo de veículos e muito menos de como precificariam o uso do Waze. Mas, financiamento à parte, sua ideia faria a cidade muito mais funcional.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30389_ebb96f5bbf981ffae5a935243ef316cb_logo%20cet-rio2.jpg.jpg);"><a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>CET-Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81290'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81290',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81290" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:81345">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 5, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Foi informacao coletada na fonte, com a CET-RIO, quando estavam instalando um poste com camera perto da minha casa.</p>
+<p>Nada obrigatoriamente vinula a ideia ao Waze, cabendo decisao ate de ter plataforma propria, mas onsiderando o potencial da redemovel e do GPS embarcado no smartphone, é uma solucao melhor.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81345'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81345',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81345" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:81338">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48290" onclick="popUp('/user/view/48290', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="LuccaRizzo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48290" onclick="popUp('/user/view/48290', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">LuccaRizzo</a> diz... Feb 5, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Bolanhos,</p>
+<p>A ideia do Waze é muito boa. Porém, como ela seria aplicada para os motoristas que não possuam o sistema de dados no telefone ou para aqueles que desconheçam o aplicativo ?</p>
+<p>Acredito que uma solução viável e barata para reduzir o número de veículos nas ruas, seria a de mobilizar as pessoas que tem o mesmo trajeto diário, em automóvel individual, a compartilharem os lugares do seu veículo. </p>
+<p>Escolas, faculdade e escritórios, quantas pessoas realizam o mesmo trajeto diáriamente ocupando apenas uma vaga do seu veículo? Muitas das vezes essas pessoas são conscientes de que essa não é a opção mais correta e sustentável para a estrutura da cidade, mas por causa do déficit dos transportes públicos (ar condicionado quebrado ou inexistente, excesso de passageiros, motorista impaciente e por aí vai...) acabam optando pelo prazer de um conforto inconsequente. </p>
+<p>A prefeitura deveria investir em comunicação no estímulo da carona e em uma plataforma que conecte a vontade dessas pessoas consciêntes na oferta e demanda por um lugar em um veículo privado. Algo semelhante ao Blablacar comumente utilizado na França (<a href="http://www.blablacar.fr)" target="_blank">www.blablacar.fr)</a>, site em que os usuários cadastrados (é necessário fornecer dados pessoais para o cadastro, o que garante a segurança da carona), publicam diáriamente o seu trajeto e o número de vagas disponíveis para reserva. </p>
+<p>Esse site é privado, então há cobranças de taxas por parte da empresa admnistradora do site. Nesse sentido, a prefeitura poderia inovar o serviço no Rio e criar uma plataforma totalmente gratuita, mediante um cadastro rígido para garantir a segurança. Podendo, é claro, ficar à critério e criatividade das partes envolvidas no transporte a estipulação de uma contraprestação (Preço/valor da gasolina/ rodízio do carro utilizado...)</p>
+<p> </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81338'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81338',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81338" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81346">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 5, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Ninguem é obrigado a interagir com tecnologia, mas o volume de adeptos ao Waze, por exemplo, mesmo pagando pelo pacote de dados, ja é grande. Com o subsidio destepacote de dados seria enorme.</p>
+<p>o unico experimento que eu vi dando certo para carona, foi em Los Angeles, onde carros com mais de um ocupante tinha faixa exclusiva, o que nao rola no Rio, com ruas tao estreitas.</p>
+<p>Caronas para desconhecidos, com o indice de criminalidade do Rio? nao sei se da certo. Dados falsos e documentos falsos é que nao faltam.</p>
+<p>como ja foi plenamente convencionado aqui: reducao de veiculos particulares, somente quando aumentarem a confiabilidade (nao usei conforto para nao ter manifestacoes) do transporte publico.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/48290" onclick="popUp('/user/view/48290', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>LuccaRizzo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81346'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81346',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81346" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81530">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_33061_6aee79f1a18bba74dfcb4783953fa3a3_Eu.jpg.jpg" alt="RodrigoRJ" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a> diz... Feb 6, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Prezados, vocês poderiam disponibilizar os dados sobre a concessão da Linha Amarela? Estudos, Notas Técnicas, Contratos, Relatórios, Planilhas, etc...</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Ágora Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29748_a6801984be0508b7c0aae40d10470c6e_logoGoverno3.jpg.jpg);"><a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Governo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29780_f9f4a50b1d1316e762e135ff337167f3_logo%20SMO%20para%20e-mail.PNG.jpg);"><a  href="user/activity/29780" onclick="popUp('/user/view/29780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Obras</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81530'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81530',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81530" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81916">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Feb 9, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Excelente pedido. É uma via importante de tráfego para a cidade e praticamente toda dedicada ao transporte individual.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81916'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81916',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81916" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:83690">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/32206" onclick="popUp('/user/view/32206', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_32206_052203c73dcb38d3887878a98b3b25ce_DSC07044.JPG.jpg" alt="Leovalente" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/32206" onclick="popUp('/user/view/32206', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Leovalente</a> diz... Feb 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Excelente sugestão, pois o volume de carros é realmente gigantesco e o pedágio nos dois sentidos é mais que o dobro da ponte intermunicipal Rio-Niteroi. Quando da construção o volume de carros previstos era de 50 mil veiculos e pedágio de R$ 1,00 (US$ 1.00) ... hoje 500 mil veiculos passam sobre a via, e quantos será que custeiam o pedágio. Acredito que a OAS já foi muito bem paga pelo serviço nesses 18 anos.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('83690'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/83690',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:83690" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:103533">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/53710" onclick="popUp('/user/view/53710', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="MarcoAndreAlves" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/53710" onclick="popUp('/user/view/53710', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">MarcoAndreAlves</a> diz... Apr 4, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A malha metroviária deveria ser atualizada, isso já está sendo discutido há muito tempo, para vascularizar mais a distribuição dos itinerários. Essa vascularização distribuirá o público diminuindo as aglomerações que hoje vemos no metro atual que é uma "tripa" linear e obriga todos a seguir pelo mesmo caminho mesmo não indo diretamente às estações do itinerário. Já que o metrô permite a construção subterrânea essas obras nunca irão sofrer com as ocupações irregulares que se fazem na superfície. Essas obras, apesar de demoradas podem ser feitas permanentemente durante anos e crescer continuamente contemplando sempre mais e mais usuários. Se no futuro algumas obras contemplarem andares no subsolo, esses andares poderão ser ligados diretamente às estações do metrô (como se vê na Alemanha). Esse tipo de transporte isola os usuários dos engarrafamentos, intempéries e eventos fortuitos à que a superfície está sujeita. Nesse modelo, tanto pode ser vascularizado horizontalmente, como verticalmente ou de maneira mista.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('103533'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/103533',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:103533" style="margin-left:30px;"></div>
+
+            </div>
+                    <div id="postResponseFormSlot:79831"></div>
+</div>
+
+    <a href="/user/signinform" class="userInteraction warning">Faça o login ou cadastre-se para participar da discussão</a>
+
+<script type="text/javascript">
+placeReplyForm('79831');
+</script>
+
+
+    </div>
+</div>
+
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

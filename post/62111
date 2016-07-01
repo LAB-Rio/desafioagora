@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Ônibus Olímpico - Desafio Ágora Rio" />
+                <meta property="og:description" content=" Transformar caminhões para transportar pessoas chamados de &quot;ônibus&quot; em ônibus de verdade " />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/post/62111" />
+                                                                                        <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_30403_9c5347c973971ca70ca23942b3a135a1_tran-thumb.jpg" />
+                            <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_30403_9c5347c973971ca70ca23942b3a135a1_tran-thumb.jpg">
+                                                                            
+
+                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Ônibus Olímpico - Desafio Ágora Rio">
+                <meta name="twitter:description" content=" Transformar caminhões para transportar pessoas chamados de &quot;ônibus&quot; em ônibus de verdade ">
+                
+
+                        <meta name="description" content=" Transformar caminhões para transportar pessoas chamados de &quot;ônibus&quot; em ônibus de verdade " />
+            <meta itemprop="description" content=" Transformar caminhões para transportar pessoas chamados de &quot;ônibus&quot; em ônibus de verdade " />
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="post-current-page  ">
+    <input type="hidden" id="currentPage" value="post" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container l-grid__buffer"  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+                        <div class="community-banner" style="display:none;">
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" style="display:none;"><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="width:auto;">
+        <div id="ideaBrowser" class="ideaBrowser_container">
+    <div id="idea_lowerFold">
+        
+			<script>
+	
+		jQuery(function() {
+			jQuery('.edit_idea_trigger').unbind();
+			
+			jQuery('.edit_idea_trigger').click(function(e) {
+				var currentCategoryId = 2379;
+				var isModerator = jQuery(this).data('moderator');
+				
+									var themeId = 0;
+								
+				jQuery(".b-single-post--underlay").fadeToggle();
+				
+		    	jQuery.ajax('/post/update/' + 62111, {
+		    		data: {
+		    			category_id: currentCategoryId
+		    		},
+		    		success: function(data) {
+		    	    	jQuery(".b-single-post--wrapper").html(data).fadeToggle();
+		    	    	
+		    	    	
+		    	    	jQuery('#custom_postfields').html('');
+		    	    	var postfields = jQuery('#postFields-' + currentCategoryId).clone();
+		    	    	
+		    	    	var postfieldsOuter = postfields.find('div.postfield-outer');
+		    	    	
+		    	    	jQuery('#custom_postfields').append(postfieldsOuter);
+		    	    	
+		    	    	jQuery('#custom_postfields .b-single-post--field textarea').each(function() {
+		    	    		jQuery(this).addClass('mceEditor');
+		    	    	});
+		    	    	
+		                // update the themes dropdown
+		                var themes = jQuery('#category_themes-' + currentCategoryId).clone();
+		                
+		                if(themes.length > 0) {
+		                	jQuery(".selected_category_themes-wrap").show();
+		                	jQuery('#selected_category_themes').html(themes);
+		                	
+		                	jQuery(themes).change(function() {
+		                		var selectedTheme = jQuery(this).find(':selected').val();
+		                		if(selectedTheme != 0) {
+		                			jQuery('#post_category').val(selectedTheme);
+		                		}
+		                	});
+		                	
+		                	jQuery(themes).attr('disabled', 1).css('background', '#eee').css('color', '#bbb');
+		                } else {
+		                	jQuery(".selected_category_themes-wrap").hide();
+		                }
+		                
+		                if(themeId) {
+		                	jQuery('#category_themes-' + currentCategoryId).val(themeId);
+		                }
+		    	    	
+		    	        tinyMCE.init({
+		    	            mode : "specific_textareas",
+		    	            editor_selector : "mceEditor",
+		    	            theme : "crowdworks",
+		    	            theme_crowdworks_buttons1 : "bold,italic,bullist,|,undo,redo",
+		    	            file_browser_callback : "cwMCEFileBrowser",
+		    	            language : "en",
+		    	            width: "537",
+		    	            height: "150",
+		    	            relative_urls : false,
+		    	            remove_script_host : false,
+		    	            convert_urls : false
+		    	        });
+		    	        
+		    	        document.fire("crowdworks:updateComplete");
+		    	    }
+		    	});
+		    	
+		    	return false;
+			});
+		});
+	
+	</script>
+	
+
+
+
+<div class="l-grid__wrapper">
+
+    
+	<div class="l-grid__left">
+            		<div class="b-single-idea__labels">
+		    		    
+            		    
+		    		    
+		    		</div>
+		
+		<div class="b-single-idea__content">
+                                        
+			<h1>Ônibus Olímpico</h1>
+			
+			<div class="b-single-idea__sub-heading">
+				<span>por</span>
+				<figure class="b-avatar b-idea__avatar" >
+										<a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="20" height="20" src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/446ad3d178cdbe0bd4b45609e5858e70" alt="azeitegallo" /></a>
+									</figure>
+				
+				<span><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a></span>
+				<span class="b-single-idea__sub-spacer">|</span>
+				<span data-tip="07:39  -  9 Set 2014">Sep 9, 2014</span>
+				<span class="b-single-idea__sub-spacer">|</span>
+				<span>
+                                        
+					em <a id="current-category-link" href="/category/2379" data-id="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</a>
+				</span>
+			</div>
+
+			<p>Transformar caminhões para transportar pessoas chamados de "ônibus" em ônibus de verdade</p>
+			
+											<h3>Explicando melhor</h3>
+                                                    <p>Quem aí já não foi quase atropelado por um "ônibus"? Quem aí não viu os motoristas de "ônibus" enfiarem o pé a mais de 100km/h no Aterro do Flamengo? Quem aí não foi jogado de um lado para outro dentro de um "ônibus"? Quem aí não foi vítima de uma "freada de arrumação" de um motorista de "ônibus"? Quem aí não ouviu motoristas de "ônibus" falando palavrões para pedestres, passageiros ou outros motoristas? Quem aí não ouviu um "ônibus" guinchando a altos decibéis quando freia? Quem aí nunca ouviu um motorista de "ônibus" parando o veículo para que ele mesmo ou o trocador fizesse um lanchinho no boteco? Quem aí nunca viu o motorista de "ônibus" passar por fora ou fingir que não viu o passageiro fazer sinal? Quem aí nunca viu o motorista de "ônibus" fingir que não viu os idosos fazerem sinal?</p>
+<p>Sabem que nunca viu, nem ouviu, nem nunca passou ou soube nada disso? O prefeito do Rio de Janeiro. E seu secretário de transportes nem para avisá-lo, coisa feia...ônibus de verdade, por favor.</p>
+                        									</div>
+		
+				
+									
+		<div class="b-gallery">
+			<div class="gallery main">
+                
+                				<div class="image gallery_image_landscape-large">
+					<a href="#">
+                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,c_fill/9c5347c973971ca70ca23942b3a135a1" data-gallery-image="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_710,h_500,b_rgb:000000,c_pad/9c5347c973971ca70ca23942b3a135a1" width="710" height="500" data-link="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/9c5347c973971ca70ca23942b3a135a1" data-id="1">
+					</a>
+				</div>
+                			</div>
+		</div>
+		
+				<div class="b-single-idea__other-content">
+                		</div>
+				
+		<div id="comments_outer">
+			                    <form id="commentForm" class="commentForm" method="post" action="/post/addcomment/62111">
+			<div class="b-single-idea__new-comment">
+			<input type="hidden" name="idea_id" value="62111" id="idea_id" />
+                        
+                        
+                        <div class="b-single-idea__comment-signin">
+                            <span>Sign in to comment</span>
+
+                            <div class="b-single-idea__comment-signin-buttons">
+                                <div class="b-header__action-item-signin-overlay">
+                                    <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==' });return false;">Register</a></div>
+                                    <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vcG9zdC82MjExMQ==' });return false;">Sign In</a></div>
+                                    <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                            </div>
+                        </div>
+
+                         
+                        
+			</div>
+		</form>
+
+		
+		<div id="comment_list_container">
+								<div class="b-single-idea__comments">
+				<div class="b-single-idea__comments-menu">
+					<ul>
+						
+                        <li><a href="#" data-target="all"><span class="icon-bubble8"></span> All Comments (4)</a></li>
+						<li><a href="#" data-target=".filter-admin">Moderator Comments</a></li>
+						<li><a href="#" data-target=".filter-author">Author Comments</a></li>
+                                                
+                        <li class="b-single-idea__comments-menu-sort">
+                            <select id="comments-sort" name="comments-sort" class="i-mix-sort b-single-idea__comments-sort">
+                                <option value="posted:asc">Oldest</option>
+                                <option value="posted:desc">Mais novos</option>
+                                <option value="votes:desc">Top Voted</option>
+                            </select>
+                        </li>
+
+					</ul>
+					<div class="line"></div>
+				</div>
+				<div class="b-single-idea__comments-list">
+
+                                                                                
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                        
+                                                <div class="mix b-single-idea__comments-list-item" id="comment-62372" data-posted="2014-09-10 20:27:58" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/62372',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Transportes</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="07:39  -  9 Set 2014">
+                                                                    Sep 10, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>Olá, Marcelo. Obrigado pela sua ideia!<br /><br /> Atualmente a frota de ônibus do Rio passa por três procedimentos para garantir uma circulação segura para todos:</p>
+<p> 1) Vistoria anual no Detran</p>
+<p> </p>
+<p>2) Vistoria anual obrigatória da Secretaria de Transportes, onde recebem o selo para poder operar </p>
+<p>3) Operações realizadas por fiscais nos terminais rodoviários (pontos finais). </p>
+<p> </p>
+<p>Além da fiscalização tradicional, a Secretaria faz o monitoramento da frota do Centro de Operações Rio, utilizando câmeras que controlam eletronicamente o serviço de ônibus da cidade. O monitoramento é em tempo real, 24 horas, visualizando a frota operante, frequência e itinerários dos coletivos urbanos. Com esses dados são feitos os ajustes operacionais.</p>
+<p> </p>
+<p>A renovação da frota segue um compromisso firmado pelos consórcios operadores com a Secretaria Municipal de Transportes por ocasião da licitação, em 2010.<br /><br /> Na frota urbana, 65% dos ônibus novos ou seminovos  contam com todos os equipamentos de acessibilidade, inclusive a plataforma elevatória e piso baixo. Os outros 35%, além dessas inovações, oferecem equipamentos modernos, como a campainha sonora diferenciada e piso antiderrapante. A previsão é que, até 2016, ano das Olimpíadas, toda a frota esteja renovada</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-62372" style="display:none;">
+                                <form action="/post/addcomment/62111" method="post" id="commentForm-62372" class="commentForm commentForm-62372">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-62372" value="" type="hidden">
+		<input name="post_immediateParent" value="62372" id="commentform_post_immediateParent-62372" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="azeitegallo" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-62372" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-62372">
+					<span>@</span>
+					<input type="text" name="user_tag_input-62372" id="user_tag_input-62372" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389862,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"1b295dd8f58eb9437e5bab3a99cc31d41c199224","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-62372');
+            </script>
+			<div id="user_tag_results-62372" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-62372" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(62372, 62111);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-2" id="comment-62474" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/62474',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--2" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="07:39  -  9 Set 2014">
+                                            Sep 11, 2014
+                                        </span>
+									</p>
+									<p><p> </p>
+<p> </p>
+<p>Legal. A assessoria de comunicação da smtr decidiu me esclarecer o que faz. Então, vou repassar a situação. O serviço de ônibus urbano da cidade do Rio de Janeiro é péssimo, horrível. Acredito que a smtr não discordaria disso. Em termos de legado, estamos preparadíssimos para oferecer o pior serviço de ônibus urbano em Jogos Olímpicos desde Seul, 1988. Ou melhor, Moscou, 1980. Não, desde Montreal, 1976. Pera lá...deixemos de modéstia: será o pior serviço de ônibus de todos os Jogos Olímpicos modernos!</p>
+<p>Para um serviço concedido ser tão ruim, não há como não se enquadrar em algumas possibilidades:</p>
+<p>i)                 Aconteceria o que se chama, na teoria da regulação econômica, de “captura”. A smtr foi capturada por quem devia por ela ser regulado. Assim, a Rio Ônibus faz o que quer, decide quais devem ser os parâmetros do serviço e quando prestar informação à sociedade. Entra na smtr sem marcar horário, bota os pés em cima da mesa, usa o banheiro de porta aberta, pega o último pote de iogurte da geladeira, muda o canal da televisão e arrota alto sem pedir desculpas. Neste caso, a smtr, por inútil, devia ser extinta e trocada por um joão-bobo.</p>
+<p>ii)                A smtr é capitaneada por alguém com séria dissonância cognitiva, que acha que vistorias anuais (!), e fiscalização de ponto final seriam capazes de manter um bom funcionamento do sistema.</p>
+<p>iii)               A smtr do Rio de Janeiro nunca ouviu falar em uma cidade chamada São Paulo, onde a arquitetura interna dos ônibus não pressupõe que passageiro é gado. Como a smtr não cumpre o que devia ser seu trabalho, permite ao regulado definir qual a arquitetura interna do “ônibus”. Naturalmente, o regulado escolherá aquela que lhe é mais lucrativa. Pronto: temos veículos com motor quente e ruidoso ao lado dos motoristas, causando-lhes, cumulativamente, danos físicos e psicológicos. A smtr é o capitão-do-mato dos rodoviários.</p>
+<p>iv)               A smtr pensa que não é de sua responsabilidade os mortos e feridos em acidentes com o serviço que devia regular, e confessa-se incapaz de neutralizar os danos à coletividade causados por motoristas despreparados. A instalação de limitador de velocidade sequer é cogitada por que acha que o tacógrafo (?) também serve para isso. Aí cria-se a tempestade perfeita: “ônibus” desconfortáveis que martirizam rodoviários sem treinamento estimulando o comportamento dos protopsicopatas que vão descontar tudo em quem sustenta economicamente a estrutura: os cidadãos que pagam os impostos e as tarifas. Não, mas esperem: a smtr controla a situação porque ela usa...câmeras.</p>
+<p>Sugestão ao conivente prefeito: acabe com a smtr e deixe a Comlurb administrar o serviço de ônibus. Competência e espírito público não fazem mal a ninguém.</p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        										                                                                                <div class="b-single-idea__comment-tags">
+										<p>Users tagged:</p>
+																									                                            <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);background-repeat:no-repeat;padding-left:25px;"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+																									                                            <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29700_0952229e1ea146fd98195cccad1b6838_Agora_SECONSERVA.jpg.jpg);background-repeat:no-repeat;padding-left:25px;"><a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria de Conservação</span></a></div>
+																									                                            <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30304_ea4aa562ef023450e0b623e6d2765907_1.png.jpg);background-repeat:no-repeat;padding-left:25px;"><a  href="user/activity/30304" onclick="popUp('/user/view/30304', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Cdurp - Porto Maravilha</span></a></div>
+											                                                                                </div>
+																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-62474" style="display:none;">
+                                        <form action="/post/addcomment/62111" method="post" id="commentForm-62474" class="commentForm commentForm-62474">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--2">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-62474" value="" type="hidden">
+		<input name="post_immediateParent" value="62474" id="commentform_post_immediateParent-62474" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="azeitegallo" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-62474" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-62474">
+					<span>@</span>
+					<input type="text" name="user_tag_input-62474" id="user_tag_input-62474" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389862,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"1b295dd8f58eb9437e5bab3a99cc31d41c199224","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-62474');
+            </script>
+			<div id="user_tag_results-62474" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-62474" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(62474, 62111);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                
+                                                                        
+                        
+
+                                                    </div>
+                        
+                                                <div class="b-single-idea__comments-list-item-reply b-single-idea__comment-reply-2" id="comment-62557" >
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	 
+                
+                                
+                	
+                                            <div class="b-single-idea__comment-hide">
+                                        
+                            <div class="b-single-idea__comment-options">
+                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                     <div class="b-single-idea__comment-dropdown-inner">
+                                     <ul>
+                                         <li>
+                                                                                     <a href="#" onclick="popUp('/report/form/62557',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                  </li>
+                                                                              </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                
+							<div class="b-single-idea__comment-response b-single-idea__comment-response--2" >
+								<div class="b-single-idea__comment-response-left">
+									<a  href="user/activity/30447" onclick="popUp('/user/view/30447', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="30" height="30" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="" /></a>
+								</div>
+								<div class="b-single-idea__comment-response-right">
+                                    									<p>
+										<span class="b-single-idea__comment-username">
+											<a  href="user/activity/30447" onclick="popUp('/user/view/30447', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">leocazes</a>										</span>
+                                        <span class="b-single-idea__comment-time" data-tip="07:39  -  9 Set 2014">
+                                            Sep 11, 2014
+                                        </span>
+									</p>
+									<p><p>Aproveitando a oportunidade para questionar diretamente a SMTR. Vamos a alguns pontos:</p>
+<p>- Os ônibus com piso rebaixado, motor traseiro e ar-condicionado (o único modelo que garante padrões mínimos de civilidade para rodoviários e passageiros) são minoria absoluta entre as linhas que circulam entre Zona Sul-Tijuca, Zona Sul-Centro e Barra-Centro. Chutaria algo entre 10-15% da frota. Posso falar porque ando em ônibus dessas linhas todos os dias. Há diversos ônibus aparentemente novos e até com ar-condicionado que continuam com motor dianteiro e piso elevado. Esse modelo, que é o padrão carioca desde sempre, provoca um barulho absurdo dentro e fora dos veículos. Ou seja, o ônibus pode ser novo, mas o seu modelo é antigo. Não resolve nenhum problema.</p>
+<p>- A irracionalidade na gestão do sistema se revela quando três ônibus da mesma linha andam juntos. Sim, isso acontece e não é raro. Acabei de ver na Lapa, há uma hora atrás. Copacabana, por exemplo, mesmo com o BRS, vive um engarrafamento de ônibus, provocado pela sobreposição de linhas (não foi feita nenhuma revisão dos itinerários). São várias linhas e dúzias de veículos indo para o mesmo lugar, fazendo o mesmo caminho. Não adianta segregar duas faixas de rolamento se não houver uma mudança da lógica de distribuição das linhas.</p>
+<p>Por fim, gostaria de saber em que ponto do edital de concessão das linhas de ônibus está determinado como deve ser a modernização da frota, assim como os prazos. Procurei nos documentos relativos ao edital e não encontrei.</p>
+<p> </p></p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                                        
+                                                                        																												
+                                     
+                                    
+									<p class="b-single-idea__comment-actions">
+									
+				                        				                        				                            
+				                        									
+																				
+									</p>
+									
+									
+									
+									<div class="b-single-idea__comment-reply-form" id="comment_reply_form-62557" style="display:none;">
+                                        <form action="/post/addcomment/62111" method="post" id="commentForm-62557" class="commentForm commentForm-62557">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--2">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-62557" value="" type="hidden">
+		<input name="post_immediateParent" value="62557" id="commentform_post_immediateParent-62557" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="azeitegallo" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-62557" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-62557">
+					<span>@</span>
+					<input type="text" name="user_tag_input-62557" id="user_tag_input-62557" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389862,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"1b295dd8f58eb9437e5bab3a99cc31d41c199224","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-62557');
+            </script>
+			<div id="user_tag_results-62557" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-62557" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+									</div>
+									
+									<script>
+
+                                        jQuery(function() {
+                                            Comment.setUpCommentForm(62557, 62111);
+                                        });
+									
+									</script>
+                                    								</div>
+							</div>
+                            
+                                                    </div>
+                                   	           	
+
+                        
+
+                        
+                    
+                                                
+						
+
+                                                                                                    
+                                                                        
+                        
+
+                                                                                    </div>
+                            
+                                                                                        <div id="b-single-idea__comment-expand-62372" class="b-single-idea__comment-expand-li">
+                                    <span class="b-single-idea__comment-expand" data-parent="62372">View all replies (2)</span>
+                                </div>
+                                                        
+
+                            </div>
+                        
+                                                <div class="mix b-single-idea__comments-list-item filter-author" id="comment-62564" data-posted="2014-09-11 17:27:28" data-votes="0">
+                        
+                                                
+                        			                                    											
+                                    
+                       		           	                
+           	           			                                
+                                
+                                                                                
+                                            
+                                                                                        <div class="b-single-idea__comment-options">
+                                                                                                 <i class="fa fa-angle-down b-single-idea__comment-options-trigger"></i>
+                                                 <div class="b-single-idea__comment-dropdown" style="display:none;">
+                                                     <div class="b-single-idea__comment-dropdown-inner">
+                                                     <ul>
+                                                         <li>
+                                                                                                                  	<a href="#" onclick="popUp('/report/form/62564',{'popUpTitle':'Report comment','width':400,'height':230,'showClose':0});return false;">Report this comment</a>
+                                                                                                                  </li>
+                                                                                                              </ul>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                                                                        
+                                                                                        
+                                            
+						<div class="b-single-idea__comment-left">
+							<a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img class="b-image--rounded" width="45" height="45" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="" /></a>
+						</div>
+						<div class="b-single-idea__comment-right">
+																				<p>
+								<span class="b-single-idea__comment-username">
+									<a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a>								</span>
+                                                                <span class="b-single-idea__comment-time" data-tip="07:39  -  9 Set 2014">
+                                                                    Sep 11, 2014
+                                                                </span>
+							</p>
+							<p>
+								<p>Leocazes,</p>
+<p>você quer saber onde na concessão tratam da renovação da frota mas está perguntando a quem não sabe responder: a smtr, que sequer tem o arquivo em pdf pra download. Nessas horas, não procure intermediários, trate direto com quem manda: a Rio Ônibus, que tem o arquivo aqui:</p>
+<p><a href="http://www.rioonibusinforma.com/transparencia/licitacao/" target="_blank">http://www.rioonibusinforma.com/transparencia/licitacao/</a></p>
+<p>Li na diagonal o edital e os anexos e não achei nada também.</p>
+							</p>
+                            <!-- Attachments Area Start -->
+                            <!-- File Attachments -->
+                            
+							<!-- Image Attachments -->
+                            
+							<div class="clear"><!--IE--></div>
+
+							<!-- Attachments Area End -->
+                                                        
+                                                                                                                							
+                                     
+                                                                
+                                                        
+							<p class="b-single-idea__comment-actions">
+							
+		                        		                        		                            
+		                                                                
+                                        
+                                                                
+																
+							</p>
+							
+							
+							
+							<!--  comment form for the first level -->
+							<div class="b-single-idea__comment-reply-form" id="comment_reply_form-62564" style="display:none;">
+                                <form action="/post/addcomment/62111" method="post" id="commentForm-62564" class="commentForm commentForm-62564">
+	<div class="b-single-idea__new-comment b-single-idea__new-comment--1">
+		<input name="post_user" value="0" type="hidden" />
+		<input name="comment_userTags" id="comment_userTags-62564" value="" type="hidden">
+		<input name="post_immediateParent" value="62564" id="commentform_post_immediateParent-62564" type="hidden" />
+		
+		<div class="b-single-idea__comment-left">
+						<img class="b-image--rounded" width="45" height="45" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="azeitegallo" />
+		</div>
+		
+		<div class="b-single-idea__comment-right">
+			<div class="b-single-idea__new-comment-area-outer msg_textrea_wrapper">
+				<textarea name="commentform_post_text" placeholder="Type your comment here" id="new-comment-62564" class="requireValidUser b-single-idea__new-comment-area"></textarea>
+				
+				<!--<div class="b-single-idea__new-comment-area-bottom" id="b-single-idea__new-comment-area-bottom-62564">
+					<span>@</span>
+					<input type="text" name="user_tag_input-62564" id="user_tag_input-62564" placeholder="Notify individual users" />
+				</div>
+				
+				<div class="requireValidUser b-single-idea__new-comment-button">
+					<button>
+						<span class="icon-bubble8">
+							<span>Postar</span>
+						</span>
+					</button>
+				</div>-->
+			</div>
+            <!-- Comments Upload -->
+            <div class="b-single-post--file b-single-post--filesInput">
+                <p class="label">Drag and drop or click button to attach files</p>
+                <p class="buttonContainer">
+                    <a class="non-ie89 buttonElement" onclick="jQuery(this).siblings('input.cloudinary-fileupload[type=file]').click(); return false;" href="#">Anexar arquivos</a>
+                    <input class='cloudinary-idea-files-upload cloudinary-fileupload' data-cloudinary-field='image_id' data-form-data='{"timestamp":1467389862,"callback":"https:\/\/desafioagorario.crowdicity.com\/\/cloudinary_cors.html","use_filename":"1","signature":"1b295dd8f58eb9437e5bab3a99cc31d41c199224","api_key":"126319567996721"}' data-url='https://api.cloudinary.com/v1_1/crowdicity-eu-cld/auto/upload' multiple='1' name='file' type='file'/>
+                </p>
+
+            </div>
+
+            <div class="b-single-post--file-list">
+                <div class="b-single-post--file-item templateItem" style="display:none;">
+                    <img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/filetypes/22/txt.png" />
+                    <div class="b-single-post--file-item-name">fileName.pdf</div>
+                    <a href="#" class="remove-file right" style="display:none;"><span class="icon-cross3"></span></a>
+                    <div class="b-single-post--file-item-bar"><!--IE--></div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript">
+                Post.initForm('commentForm-62564');
+            </script>
+			<div id="user_tag_results-62564" class="b-single-idea__user-tag-results"></div>
+            <div class="post_button_wrapper">
+                <div class="b-single-idea__new-comment-area-bottom">
+                    <span>@</span><input type="text" name="user_tag_input" class="user_tag_input" id="user_tag_input-62564" placeholder="Notify individual users" />
+                </div>
+                <div class="requireValidUser b-single-idea__new-comment-button"><!--Post Button-->
+                    <button>
+                        <span class="icon-bubble8">
+                            <span>Postar</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <input type="hidden" name="fileHashes[nonHeader]" value="" />
+
+            <!-- end Comments Upload -->
+			<div class="clear"></div>
+		</div>
+	</div>
+</form>
+							</div>
+							
+							<script>
+                                jQuery(function() {
+                                    Comment.setUpCommentForm(62564, 62111);
+                                });                      
+							</script>
+							
+						                                                
+                                                
+                                                
+                     </div> <!--b-single-idea__comment-right -->
+                                                
+           	           	
+
+                        
+
+                        
+                    
+                                                                                                    </div>
+                                            					
+				</div>
+			</div>
+				
+		<script>
+                    
+            jQuery(".b-single-idea__comment-expand").on("click", function(e) {
+                //console.log("expand comments");
+                e.preventDefault();
+                var parent = jQuery(this).attr("data-parent");
+                jQuery("#comment-" + parent + " .b-single-idea__comment-hide").slideDown();
+                jQuery("#b-single-idea__comment-expand-" + parent).slideUp();
+
+            });
+
+		    jQuery(".b-single-idea__comments-menu a").on('click', function(e){
+		        e.preventDefault();
+	
+		        jQuery(".b-single-idea__comments-menu li").css({
+		            "font-weight": "normal"
+		        });
+	
+		        jQuery(this).closest("li").css({
+		            "font-weight": "bold"
+		        });
+	
+		        jQuery(".b-single-idea__comments-menu .line").animate({
+		            left: jQuery(this).closest("li").position().left + 20,
+		            width: jQuery(this).width()
+		        });
+                        
+		        var filter = jQuery(this).attr("data-target");
+                        
+                jQuery('.b-single-idea__comments-list').mixItUp('filter', filter);
+                        
+		        /*jQuery(".b-single-idea__comments-list ul li").fadeIn();
+		        if (filter != "all") {
+		            jQuery(".b-single-idea__comments-list ul li").each(function(){
+		                if (jQuery(this).attr("data-element") == filter) {
+		                    jQuery(this).fadeIn();
+		                } else {
+		                    jQuery(this).fadeOut();
+		                }
+		            });
+		        }
+                        */
+	
+		    });
+            
+            Comment.addVoteClickListeners();
+            Comment.addCommentFormOffClickListeners();
+		</script>
+		</div>
+		
+		<script>
+            jQuery(function() {
+			var userName = '';
+			var cache = [];
+			
+			jQuery('#user_tag_input').keyup(function(e) {
+
+				var key = 'which' in e ? e.which : e.keyCode;
+
+				userName = jQuery('#user_tag_input').val();
+				
+				if(cache[Comment.hashCode(userName)]) {
+					jQuery('#user_tag_results').html(cache[userName]).show();
+				} else {
+					if(userName.length > 2) {
+						jQuery.ajax('/user/solr_search', {
+							data: { q: userName, type: 'userTag' },
+							dataType: 'json',
+							success: function(data) {
+								cache[Comment.hashCode(userName)] = data.tpl;
+								
+								if(data.tpl == 'No users found') {
+									jQuery('#user_tag_results').html('').hide();
+								} else {	
+									jQuery('#user_tag_results').html(data.tpl).show();
+									
+									// bind "click" events to the newly created rows
+									jQuery('.b-single-idea__user-tag-result').each(function() {
+										jQuery(this).click(function() {
+											
+											var userId = jQuery(this).data('id');
+											
+											if(jQuery(this).hasClass('user-tag-selected')) {
+												jQuery('#comment_userTags').val(jQuery('#comment_userTags').val().replace(userId, ''));
+												jQuery(this).remove();
+											} else {
+												var userScreenname = jQuery(this).data('screenname');
+												
+												jQuery(this).addClass('user-tag-selected', 1);
+												
+												jQuery('.b-single-idea__new-comment-area-bottom div.clear').each(function() {
+													jQuery(this).remove();
+												});
+												
+												var clear = document.createElement('div');
+												jQuery(clear).addClass('clear');
+												
+												jQuery('#comment_userTags').val(jQuery('#comment_userTags').val() + ',' + userId);
+												jQuery('#comment_userScreennames').val(jQuery('#comment_userScreennames').val() + ',' + userScreenname);
+												jQuery('.b-single-idea__new-comment-area-bottom').append(this);
+												jQuery('.b-single-idea__new-comment-area-bottom').append(clear);
+												jQuery('#user_tag_input').val('');
+												jQuery('#user_tag_results').html('').hide();
+											}
+										});
+									});	
+								}
+							}
+						});
+					}	
+				}
+			});
+			
+            jQuery(function(){
+                // On first load, we let the comments be hidden, as they should,
+                // to prevent the wierd gliding effect as comments fly into
+                // position (if the layout changes from late-loading images)
+                jQuery(".b-single-idea__comments-list-item").addClass('mixHide');
+                Comment.resetCommentList();
+            });
+
+
+			jQuery('#commentForm').submit(function(e) {
+				e.preventDefault();
+				jQuery(this).find('.b-single-idea__new-comment-button').hide();
+				var ideaId = jQuery('#idea_id').val();
+				
+				jQuery.ajax('/post/addcomment/62111', {
+					data: jQuery('#commentForm').serialize(),
+					type: 'post',
+					success: function(data) {
+                        if (data.success == 1) {
+                            var newCommentId = data.post_id;
+                            jQuery('.b-single-idea__new-comment-button').show();
+                            Comment.commentsReload(ideaId, 0, newCommentId, newCommentId);
+                        } else {
+                            var message="";
+                            var errorList="";
+                            if (data.errors!=undefined){
+                                var errors=data.errors;
+                                for (var key in errors) {
+                                    if (errors.hasOwnProperty(key)) {
+                                        //alert(key + " -> " + p[key]);
+                                        errorList=errorList+errors[key]+". ";
+                                    }
+                                }
+                                message=errorList;
+                            } else {
+                                message = data.message;
+                            }
+                            jQuery('.b-single-idea__new-comment-button').show();
+                            alert(message);
+                        }
+					}
+				});
+				
+				return false;
+			});
+        });
+		
+		</script>
+
+		</div>
+	</div>
+	
+	<div class="l-grid__right">
+		<div id="sidebar_votebox">
+	
+
+    
+
+
+	    
+
+	<div class="b-single-idea__right b-single-idea__right-closed">
+		<div class="b-single-idea__voting--updown">
+            			<div class="b-single-idea__voting--votes" >
+									<span>0</span>
+					SCORE
+							</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+    <div class="b-single-idea__your-vote b-single-idea__your-vote-closed">
+            
+            Voting is not open in this phase
+        	</div>
+
+<script>
+	jQuery('.star-voting-trigger').each(function() {
+		jQuery(this).hover(function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('span').each(function(i) {
+				if(i < order) {
+					jQuery(this).addClass('star-active');
+				}
+			});
+		}, function() {
+			var order = jQuery(this).data('order'),
+				parent = jQuery(this).parent();
+			
+			parent.find('span').each(function(i) {
+				if(i < order && !jQuery(this).data('force-active')) {
+					jQuery(this).removeClass('star-active');
+				}
+			});
+		});
+	});
+</script>
+</div>
+				<div id="sidebar_votebreakdown"><section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		<span>Idea Stats</span>
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+    
+        <div class="b-single-idea__stats-wrap">
+    
+				    	    	    	    	    	    
+	    	    		    	    
+	                
+	    	<div class="b-single-idea__stats-updown">
+	    		<div style="height:20px;">
+					<div class="b-single-idea__stats-up">
+						<span class="icon-thumbs-up3"></span>
+					</div>
+					<div class="b-single-idea__stats-progress" style="position:relative;top:2px;">
+						<div class="b-single-idea__stats-progress-bar" style="width:%"></div>
+					</div>
+					<div class="b-single-idea__stats-count" style="position:relative;top:2px;">0</div>
+				</div>
+				
+				<div style="height:20px;">
+					<div class="b-single-idea__stats-down">
+						<span class="icon-thumbs-down3"></span>
+					</div>
+					<div class="b-single-idea__stats-progress" style="position:relative;top:2px;">
+						<div class="b-single-idea__stats-progress-bar" style="width:%"></div>
+					</div>
+					<div class="b-single-idea__stats-count" style="position:relative;top:2px;">0</div>
+				</div>
+	    	</div>
+	    	
+	    		
+	
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-thumbs-up3"></span>
+		Total Votes
+	</div>
+	<div class="b-single-idea__stats-score">
+									0
+						</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-eye2"></span>
+		Views
+	</div>
+	<div class="b-single-idea__stats-score">
+		131
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-bubble8"></span>
+		Comentários
+	</div>
+	<div class="b-single-idea__stats-score">
+		4
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-users"></span>
+		Assinantes
+	</div>
+	<div class="b-single-idea__stats-score">
+		0
+	</div>
+	
+	<div class="b-single-idea__stats-row">
+		<span class="icon-bubble8"></span>
+		Challenge Rank
+	</div>
+	<div class="b-single-idea__stats-score">
+		1	</div>
+        
+        </div>
+        
+</section></div>
+		<div id="sidebar_subscribers"><section class="b-sidebar__section">
+	<h2 class="b-sidebar__section-title">
+		Assinantes (0)
+		<a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+	</h2>
+	
+	        <div class="b-single-idea__content-wrap">
+		
+	<div class="b-single-idea__follow">
+					<a class="userInteraction" data-tip="Você receberá uma notificação por e-mail toda vez que um comentário for postado sobre esta ideia" href="#" onclick="Post.setFollow($('sidebar_subscribers'),62111,0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>
+			</div>
+        
+        </div>
+        
+</section></div>
+		<div id="sidebar_tags">	<section class="b-sidebar__section">
+		<h2 class="b-sidebar__section-title">
+			<span>Marcações</span>
+                        <a class="b-sidebar__section-expand-button b-icon--caret-down i-sidebar__section-expand-button" href="#"></a>
+		</h2>
+                <div class="b-single-idea__content-wrap">
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[&#244;nibus]&qType=ideas">&#244;nibus</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[protopsicopatas]&qType=ideas">protopsicopatas</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[fetranspor]&qType=ideas">fetranspor</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[rio onibus]&qType=ideas">rio onibus</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[fic&#231;&#227;o sobre rodas]&qType=ideas">fic&#231;&#227;o sobre rodas</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[carro&#231;as]&qType=ideas">carro&#231;as</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[passageiros]&qType=ideas">passageiros</a>
+                                            <a class="b-single-idea__tag" href="/category/2379?q=[experi&#234;ncia de quase morte por apenas 3 reais]&qType=ideas">experi&#234;ncia de quase morte por apenas 3 reais</a>
+                                    </div>
+	</section>
+</div>
+	</div>
+</div>
+
+<div id="prevPostData" data-id="62116" data-title="Vivendo e aprendendo a jogar" data-current-post-id="62111"></div>
+<div id="nextPostData" data-id="62109" data-title="Meu esporte é na escola" data-current-post-id="62111"></div>
+
+        <div id="postChallenge" data-id="2379" data-title=" Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?"></div>
+
+<script>
+	jQuery(function(){
+	    imageGallery.build();
+	});
+</script>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    var addthis_config=
+            {
+                data_track_addressbar: false,
+                data_track_clickback:false
+            }
+    var addthis_share =
+    {
+       url: "https://desafioagorario.crowdicity.com/post/62111",
+       title: "Ônibus Olímpico",
+       description: " Transformar caminhões para transportar pessoas chamados de \"ônibus\" em ônibus de verdade ",
+    }
+    
+        if (typeof addthis !== "undefined") {
+            addthis.update('share', 'url', 'https://desafioagorario.crowdicity.com/post/62111');
+            addthis.update('share', 'title', 'Ônibus Olímpico');
+            addthis.update('share', 'description', ' Transformar caminhões para transportar pessoas chamados de \"ônibus\" em ônibus de verdade ');
+        }
+    
+</script>
+    
+<script>
+
+	/*History.Adapter.bind(window,'statechange',function(e){ // Note: We are using statechange instead of popstate
+	    var State = History.getState(); // Note: We are using History.getState() instead of event.state
+
+	    
+	    if(State.data.id) {
+	    	var id = State.data.id;
+	    } else {
+	    	var id = State.hash.replace('/post/', '')
+	    }
+	
+		
+		jQuery.ajax('/post/view/' + id + '?postType=newDesign', {
+			success: function(data) {
+				jQuery('#idea_lowerFold').fadeOut(500, function() {
+					jQuery('#idea_lowerFold').html(data);
+					jQuery('#idea_lowerFold').fadeIn(500, function() {
+						var prevPostId = jQuery('#prevPostData').data('id'),
+							prevPostTitle = jQuery('#prevPostData').data('title'),
+							nextPostId = jQuery('#nextPostData').data('id'),
+							nextPostTitle = jQuery('#nextPostData').data('title');
+					
+						console.log(prevPostTitle);
+						console.log(nextPostTitle);
+						
+						jQuery('#prevPostLink').data('id', nextPostId).data('title', nextPostTitle);
+						jQuery('#nextPostLink').data('id', prevPostId).data('title', prevPostTitle);
+						
+						$('nextPostLink').addTip('test', ttoptions);
+						
+						Tips.list[0].content = prevPostTitle;
+						Tips.list[1].content = nextPostTitle;
+					});
+				});
+			}
+		});
+		
+	});*/
+
+</script>
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('post');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

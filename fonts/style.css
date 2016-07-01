@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?q4vzjl');
+    src:    url('fonts/icomoon.eot?q4vzjl#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?q4vzjl') format('truetype'),
+        url('fonts/icomoon.woff?q4vzjl') format('woff'),
+        url('fonts/icomoon.svg?q4vzjl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-radio-unchecked:before {
+    content: "\e90a";
+}
+.icon-radio-checked:before {
+    content: "\e90b";
+}
+.icon-star-full:before {
+    content: "\e908";
+}
+.icon-star-empty:before {
+    content: "\e909";
+}
+.icon-pencil:before {
+    content: "\e907";
+}
+.icon-cross:before {
+    content: "\e903";
+}
+.icon-box:before {
+    content: "\e904";
+}
+.icon-download:before {
+    content: "\e905";
+}
+.icon-circle-left:before {
+    content: "\e902";
+}
+.icon-youtube:before {
+    content: "\e900";
+}
+.icon-youtube2:before {
+    content: "\e901";
+}
+.icon-publish:before {
+    content: "\e906";
+}
+.icon-caret-right:before {
+    content: "\e600";
+}
+.icon-caret-left:before {
+    content: "\e601";
+}
+.icon-pen2:before {
+    content: "\e91f";
+}
+.icon-clock4:before {
+    content: "\ea50";
+}
+.icon-undo2:before {
+    content: "\eabc";
+}
+.icon-bubble8:before {
+    content: "\ead5";
+}
+.icon-users:before {
+    content: "\eaf5";
+}
+.icon-users4:before {
+    content: "\eb09";
+}
+.icon-rocket:before {
+    content: "\ebda";
+}
+.icon-lamp7:before {
+    content: "\ebf6";
+}
+.icon-glasses-3d2:before {
+    content: "\ec21";
+}
+.icon-racing:before {
+    content: "\ec40";
+}
+.icon-more2:before {
+    content: "\ec59";
+}
+.icon-grid6:before {
+    content: "\ec5f";
+}
+.icon-menu:before {
+    content: "\ec67";
+}
+.icon-menu3:before {
+    content: "\ec6a";
+}
+.icon-flag3:before {
+    content: "\eca3";
+}
+.icon-eye2:before {
+    content: "\ecaf";
+}
+.icon-star-half:before {
+    content: "\ece1";
+}
+.icon-star-full2:before {
+    content: "\ece2";
+}
+.icon-thumbs-up3:before {
+    content: "\ecf5";
+}
+.icon-thumbs-down3:before {
+    content: "\ecf6";
+}
+.icon-cross3:before {
+    content: "\ed6b";
+}
+.icon-checkmark3:before {
+    content: "\ed6e";
+}
+.icon-arrow-up4:before {
+    content: "\edb7";
+}
+.icon-arrow-down4:before {
+    content: "\edbf";
+}
+.icon-arrow-right5:before {
+    content: "\edc5";
+}
+.icon-arrow-left5:before {
+    content: "\edc7";
+}
+.icon-new-tab:before {
+    content: "\eec6";
+}
+.icon-google-plus:before {
+    content: "\eee4";
+}
+.icon-facebook2:before {
+    content: "\eee9";
+}
+.icon-twitter:before {
+    content: "\eeed";
+}
+.icon-linkedin2:before {
+    content: "\ef25";
+}
+

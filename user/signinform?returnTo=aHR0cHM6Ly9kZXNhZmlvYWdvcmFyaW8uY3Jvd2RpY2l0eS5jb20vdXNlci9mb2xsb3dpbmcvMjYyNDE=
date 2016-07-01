@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba" type="text/css" media="screen" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var httpMode='https';var base='desafioagorario.crowdicity.com';
+            var outputDevice='desktop';
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1&returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjYyNDE=';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?&returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjYyNDE=';
+            var languages=['es_ES','pt_PT'];            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects"></script>
+        
+        <script type="text/javascript" data-app-id="podCFvakCivvIbN5QVwn9g" src="https://c64.assets-yammer.com/assets/platform_js_sdk.js"></script>
+
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+                
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+                <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+            </head>
+	<body id="docBody" class="logonBody">
+    <!--[OTHER_DATA]-->
+	<div id="loginContainer">
+    	<div id="loginContainerMiddle">
+        	<div class="inner">
+		        
+    <div id="signinContainer" class="signinContainer">
+        <div id="signInBanner">
+                        <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                        <h2>Desafio Ágora Rio</h2>
+        </div>
+
+                <div class="leftSide">
+            <p class="heading">Como deseja fazer o login?</p>
+            <ul class="signInSelector" id="signInSelector">
+                                                                                                            <li id="socialOpt" onclick="User.signInTabSelect('socialLogin', this); $('registrationFooter').hide();"><span class="icon social"><!--IE--></span><span class="label">Conta de rede social</span></li>
+                                                                                                                                                                                                <li class="active" id="ccOpt" onclick="User.signInTabSelect('cwLogin', this); $('registrationFooter').show();"><span class="icon crowdicity"><!--IE--></span><span class="label">Crowdicity account</span></li>
+                                                                                                                                                                                                                                                                                                                        </ul>
+        </div>
+        <div id="loginFormsContainer" class="loginFormsContainer">
+            <div id="cwLogin" class="signInScreen">
+    
+    <p class="heading">faça login</p>
+    <form action="https://desafioagorario.crowdicity.com/user/login" method="post" id="register_form" onsubmit="$('popUpForm_submit').disable();">
+        <div>
+        <label for="user_email" style="display:none;">Endereço de e-mail</label>
+        <input type="text" name="user_email" class="signInStyle" id="user_email" value="" />
+
+        <label for="user_password" style="display:none;">Senha</label>
+        <input type="password" autocomplete="off" name="user_password" id="user_password" class="signInStyle" />
+    </div>
+    <!--<input type="hidden" name="responseMode" value="json" />-->
+        <input type="hidden" name="returnTo" value="aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjYyNDE=" />
+    
+    <div class="right"><input type="submit" value="Entrar" class="signInButtonStyle" id="popUpForm_submit" /></div>
+    <div class="rememberMe"><input type="checkbox" name="remember" value="1" checked="checked" /> Lembrar-se de mim</div>
+    <a href="/user/forgotpasswordform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjYyNDE=" class="">Esqueceu sua senha?</a>
+
+    </form>
+    <script type="text/javascript">
+    textBox_addDefaultText('user_email','Meu e-mail é');
+    textBox_addDefaultText('user_password','XXXXXXXX');
+    </script>
+
+    <script type="text/javascript">
+        </script>
+</div>
+<div class="clear"><!--IE--></div>
+
+            <div id="socialLogin" class="signInScreen">
+    
+    <p class="heading">faça login usando uma dessas contas</p>
+    <div id="rpxLogin" style="display:none;">
+        <div id="janrainEngageEmbed"></div>
+        <div class="rememberMe"><input type="checkbox" name="remember" id="rpxRememberCheckBox" value="1" checked="checked" onclick="if ($(this).checked==true){ janrain.settings.tokenUrl = tokenUrlRememberOn; }else{ janrain.settings.tokenUrl = tokenUrlRememberOff; }" /> Lembrar-se de mim neste computador</div>
+    </div>
+</div>
+
+            
+            
+            
+        </div>
+        <div class="clear"><!--IE--></div>
+        <div id="registrationFooter" class="requestAccessFooter">
+            <p class="heading left">
+                                    Registre uma conta para participar desta comunidade?
+                            </p>
+
+            <a href="/user/registerform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjYyNDE=" class="registerButtonStyle right">Registrar</a>
+        </div>
+    <div class="clear"><!--IE--></div>
+            </div>
+
+    <script type="text/javascript">
+        if($('yammerOpt')) {
+            $('yammerOpt').observe('click', function() {
+                activateYammerLogin()
+            });
+        }
+        
+                    User.signInTabSelect('socialLogin', $('socialOpt'));
+            </script>
+
+    
+<div class="clear"><!-- IE --></div>
+
+
+        	</div>
+    	</div>
+	</div>
+	<div class="signInCWBadge">
+        <a href="http://www.crowdicity.com/" target="_blank" ><span>Powered by Crowdicity</span></a>                    <a href="" target="_blank" class="footerCWBadgePartner">
+                <img src="https://resources.crowdworks.net/partnerlogos/9.png" />
+                <span>Rio Prefeitura</span>
+            </a>
+                    </div>
+
+    <!--[TRACKING]-->
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      
+  ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+    
+     
+  ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+
+        
+	</body>
+</html>

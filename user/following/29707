@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Desafio Ágora Rio" />
+                <meta property="og:description" content="" />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                    <meta name="twitter:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png">
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Desafio Ágora Rio">
+                <meta name="twitter:description" content="">
+                
+                        
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="-current-page  ">
+    <input type="hidden" id="currentPage" value="" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjk3MDc=" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjk3MDc=' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjk3MDc=" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vdXNlci9mb2xsb3dpbmcvMjk3MDc=' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    <div class="main_content_profile">
+	    <div id="profileLeft_col">
+            <div><a href=""><span class="leftArrow"><!--IE--></span>Voltar para Desafio Ágora Rio</a></div>                        	<h1>SMDS's profile</h1>            
+                        <div id="adminTabs" class="leftColumnWidth">
+	<ul>
+		
+		        		
+		        		
+		        		<li >
+			<a href="/user/activity/29707">Atividade</a>
+		</li>
+        		
+		        		<li class="selected">
+			<a href="/user/following/29707">Seguindo</a>
+		</li>
+        		
+		        		<li >
+			<a href="/user/subscriptions/29707">Assinaturas</a>
+		</li>
+        		
+		        		
+		        		
+		        		
+			</ul>
+</div>
+
+            <div id="adminTabs_view" style="width:662px;">
+            <h2 class="profileActivityHeader">Seguindo</h2>
+
+<div id="followingTabs" class="bigTabs crowdworksTabs">
+	<ul>
+    	<li class="selected"><a href="#" id="tab_following">Seguindo</a></li>
+        <li ><a href="#" id="tab_followers">Seguidores</a></li>
+    </ul>
+</div>
+<div class="tabView">
+    <div id="viewtab_following">
+                            		<div class="following_user" id="followingUserEntry:26241">
+    <div class="userPic">
+                <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/36f63e21755f9a52696c724c7a43a6cc" alt="Ágora Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(26241,0,{ 'user_id':26241, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Jul 21, 2014</span>    <span class="score">150 points</span>
+    <span class="ranking">
+                Classificado 87
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:28297">
+    <div class="userPic">
+                <a  href="user/activity/28297" onclick="popUp('/user/view/28297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/e84fd1da23e32164b0315788033fc2ba" alt="Priscylla Almawy" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(28297,0,{ 'user_id':28297, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/28297" onclick="popUp('/user/view/28297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Priscylla Almawy</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Ago 23, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 26
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:28320">
+    <div class="userPic">
+                <a  href="user/activity/28320" onclick="popUp('/user/view/28320', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/028a2b6923f2b7797e6473f68d68c05d" alt="Luti Guedes" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(28320,0,{ 'user_id':28320, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/28320" onclick="popUp('/user/view/28320', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Luti Guedes</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Ago 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 25
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:28422">
+    <div class="userPic">
+                <a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/9ab6ca99f1889fe28a131b92d9270a35" alt="Prefeitura do Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(28422,0,{ 'user_id':28422, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Prefeitura do Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Ago 26, 2014</span>    <span class="score">5 points</span>
+    <span class="ranking">
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29700">
+    <div class="userPic">
+                <a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/0952229e1ea146fd98195cccad1b6838" alt="Secretaria de Conservação" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29700,0,{ 'user_id':29700, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria de Conservação</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">10 points</span>
+    <span class="ranking">
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29711">
+    <div class="userPic">
+                <a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/7e32adabc5b92d13b5baf1418809df0e" alt="Secretaria Municipal de Cultura" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29711,0,{ 'user_id':29711, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Cultura</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 602
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29717">
+    <div class="userPic">
+                <a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/1455c40871453b99864f6055c4f8ebb2" alt="Sec. Desenvolvimento Econômico Solidário" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29717,0,{ 'user_id':29717, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Sec. Desenvolvimento Econômico Solidário</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 600
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29719">
+    <div class="userPic">
+                <a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/791999a0cb378bee4a1514671dde83f0" alt="MultiRio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29719,0,{ 'user_id':29719, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">MultiRio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 154
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29732">
+    <div class="userPic">
+                <a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a2b8dcf0f30a41df98f1dfeee05d0e75" alt="Centro de Operações Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29732,0,{ 'user_id':29732, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Centro de Operações Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 584
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29738">
+    <div class="userPic">
+                <a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/0a3c6cfaac1b54eae0b0af4476279422" alt="Empresa Olímpica Municipal" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29738,0,{ 'user_id':29738, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Empresa Olímpica Municipal</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 158
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29744">
+    <div class="userPic">
+                <a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/4fdb739a2d3a3f4aee9d3b8a9b4ee2f4" alt="Secretaria Municipal de Transportes" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29744,0,{ 'user_id':29744, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Transportes</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">130 points</span>
+    <span class="ranking">
+                Classificado 108
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29746">
+    <div class="userPic">
+                <a  href="user/activity/29746" onclick="popUp('/user/view/29746', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/cf02410789f484d30b57fed9eed69e7a" alt="Secretaria de Defesa do Consumidor" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29746,0,{ 'user_id':29746, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29746" onclick="popUp('/user/view/29746', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria de Defesa do Consumidor</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">5 points</span>
+    <span class="ranking">
+                Classificado 430
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29748">
+    <div class="userPic">
+                <a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a6801984be0508b7c0aae40d10470c6e" alt="Secretaria Municipal de Governo" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29748,0,{ 'user_id':29748, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Governo</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 290
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29749">
+    <div class="userPic">
+                <a  href="user/activity/29749" onclick="popUp('/user/view/29749', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/2833eeedc4d8204f8cda73c8eb215b3a" alt="Guarda Municipal (GM-Rio)" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29749,0,{ 'user_id':29749, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29749" onclick="popUp('/user/view/29749', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Guarda Municipal (GM-Rio)</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 94
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29754">
+    <div class="userPic">
+                <a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f292a1baf2ecfdd7eed148dfd909627b" alt="Riotur" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29754,0,{ 'user_id':29754, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Riotur</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 771
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29755">
+    <div class="userPic">
+                <a  href="user/activity/29755" onclick="popUp('/user/view/29755', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/6a7f0762977bff7e573cb3fa284b77db" alt="Secretaria Municipal da Administração" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29755,0,{ 'user_id':29755, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29755" onclick="popUp('/user/view/29755', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal da Administração</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 603
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29761">
+    <div class="userPic">
+                <a  href="user/activity/29761" onclick="popUp('/user/view/29761', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/79397e36b650248a4ed81a23e12d5079" alt="Secretaria da Pessoa com Deficiência" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29761,0,{ 'user_id':29761, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29761" onclick="popUp('/user/view/29761', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria da Pessoa com Deficiência</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 448
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29764">
+    <div class="userPic">
+                <a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f4f3c1b111bef73ceff5a490b4805bd3" alt="Defesa Civil Municipal" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29764,0,{ 'user_id':29764, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Defesa Civil Municipal</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">5 points</span>
+    <span class="ranking">
+                Classificado 432
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29765">
+    <div class="userPic">
+                <a  href="user/activity/29765" onclick="popUp('/user/view/29765', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/9e9827c139681bf5e25970faea776f75" alt="Subprefeitura da Ilha do Governador" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29765,0,{ 'user_id':29765, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29765" onclick="popUp('/user/view/29765', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Subprefeitura da Ilha do Governador</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 618
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29766">
+    <div class="userPic">
+                <a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/b2606c443e4511200aadf37ce4a5ac18" alt="Instituto Pereira Passos - IPP Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29766,0,{ 'user_id':29766, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Instituto Pereira Passos - IPP Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 156
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29808">
+    <div class="userPic">
+                <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/ded5c3e478b1f247af178f13091abdbf" alt="Secretaria Municipal de Meio Ambiente" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29808,0,{ 'user_id':29808, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Meio Ambiente</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">130 points</span>
+    <span class="ranking">
+                Classificado 115
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29879">
+    <div class="userPic">
+                <a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a84f6305e40ad9af01545a6f60bccb80" alt="IPLANRIO" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29879,0,{ 'user_id':29879, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">IPLANRIO</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  2, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 626
+                
+    </span>    </p>
+</div>
+
+
+                        </div>
+    <div id="viewtab_followers" style="display:none;">
+                            		<div class="following_user" id="followingUserEntry:26330">
+    <div class="userPic">
+                <a  href="user/activity/26330" onclick="popUp('/user/view/26330', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/fca682b05e24e542e24213879c3f861d" alt="Bruno Henrique" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(26330,0,{ 'user_id':26330, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/26330" onclick="popUp('/user/view/26330', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bruno Henrique</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Jul 22, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 11
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:28297">
+    <div class="userPic">
+                <a  href="user/activity/28297" onclick="popUp('/user/view/28297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/e84fd1da23e32164b0315788033fc2ba" alt="Priscylla Almawy" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(28297,0,{ 'user_id':28297, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/28297" onclick="popUp('/user/view/28297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Priscylla Almawy</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Ago 23, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 26
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29700">
+    <div class="userPic">
+                <a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/0952229e1ea146fd98195cccad1b6838" alt="Secretaria de Conservação" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29700,0,{ 'user_id':29700, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria de Conservação</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">10 points</span>
+    <span class="ranking">
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29711">
+    <div class="userPic">
+                <a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/7e32adabc5b92d13b5baf1418809df0e" alt="Secretaria Municipal de Cultura" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29711,0,{ 'user_id':29711, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Cultura</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 602
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29717">
+    <div class="userPic">
+                <a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/1455c40871453b99864f6055c4f8ebb2" alt="Sec. Desenvolvimento Econômico Solidário" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29717,0,{ 'user_id':29717, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Sec. Desenvolvimento Econômico Solidário</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 600
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29719">
+    <div class="userPic">
+                <a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/791999a0cb378bee4a1514671dde83f0" alt="MultiRio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29719,0,{ 'user_id':29719, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">MultiRio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 154
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29720">
+    <div class="userPic">
+                <a  href="user/activity/29720" onclick="popUp('/user/view/29720', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/deab952380d3e6bf71f57c0013a8da1a" alt="Coordenadoria de Transporte Complementar" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29720,0,{ 'user_id':29720, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29720" onclick="popUp('/user/view/29720', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Coordenadoria de Transporte Complementar</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 590
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29721">
+    <div class="userPic">
+                <a  href="user/activity/29721" onclick="popUp('/user/view/29721', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/5527bad49f698f4290997c5e66e8b2ef" alt="Ordem Pública (SEOP)" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29721,0,{ 'user_id':29721, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29721" onclick="popUp('/user/view/29721', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ordem Pública (SEOP)</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 589
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29732">
+    <div class="userPic">
+                <a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a2b8dcf0f30a41df98f1dfeee05d0e75" alt="Centro de Operações Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29732,0,{ 'user_id':29732, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Centro de Operações Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 584
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29737">
+    <div class="userPic">
+                <a  href="user/activity/29737" onclick="popUp('/user/view/29737', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="Laura Machado" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29737,0,{ 'user_id':29737, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29737" onclick="popUp('/user/view/29737', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Laura Machado</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 579
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29738">
+    <div class="userPic">
+                <a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/0a3c6cfaac1b54eae0b0af4476279422" alt="Empresa Olímpica Municipal" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29738,0,{ 'user_id':29738, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Empresa Olímpica Municipal</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 158
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29744">
+    <div class="userPic">
+                <a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/4fdb739a2d3a3f4aee9d3b8a9b4ee2f4" alt="Secretaria Municipal de Transportes" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29744,0,{ 'user_id':29744, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Transportes</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">130 points</span>
+    <span class="ranking">
+                Classificado 108
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29745">
+    <div class="userPic">
+                <a  href="user/activity/29745" onclick="popUp('/user/view/29745', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/ba6f94d142f02ab20c92f88d0782d2f9" alt="Secretaria Municipal de Habitação" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29745,0,{ 'user_id':29745, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29745" onclick="popUp('/user/view/29745', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Habitação</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 552
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29748">
+    <div class="userPic">
+                <a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a6801984be0508b7c0aae40d10470c6e" alt="Secretaria Municipal de Governo" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29748,0,{ 'user_id':29748, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Governo</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 290
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29749">
+    <div class="userPic">
+                <a  href="user/activity/29749" onclick="popUp('/user/view/29749', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/2833eeedc4d8204f8cda73c8eb215b3a" alt="Guarda Municipal (GM-Rio)" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29749,0,{ 'user_id':29749, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29749" onclick="popUp('/user/view/29749', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Guarda Municipal (GM-Rio)</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 94
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29754">
+    <div class="userPic">
+                <a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f292a1baf2ecfdd7eed148dfd909627b" alt="Riotur" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29754,0,{ 'user_id':29754, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Riotur</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 771
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29755">
+    <div class="userPic">
+                <a  href="user/activity/29755" onclick="popUp('/user/view/29755', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/6a7f0762977bff7e573cb3fa284b77db" alt="Secretaria Municipal da Administração" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29755,0,{ 'user_id':29755, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29755" onclick="popUp('/user/view/29755', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal da Administração</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 603
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29761">
+    <div class="userPic">
+                <a  href="user/activity/29761" onclick="popUp('/user/view/29761', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/79397e36b650248a4ed81a23e12d5079" alt="Secretaria da Pessoa com Deficiência" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29761,0,{ 'user_id':29761, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29761" onclick="popUp('/user/view/29761', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria da Pessoa com Deficiência</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 448
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29764">
+    <div class="userPic">
+                <a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f4f3c1b111bef73ceff5a490b4805bd3" alt="Defesa Civil Municipal" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29764,0,{ 'user_id':29764, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Defesa Civil Municipal</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">5 points</span>
+    <span class="ranking">
+                Classificado 432
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29765">
+    <div class="userPic">
+                <a  href="user/activity/29765" onclick="popUp('/user/view/29765', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/9e9827c139681bf5e25970faea776f75" alt="Subprefeitura da Ilha do Governador" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29765,0,{ 'user_id':29765, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29765" onclick="popUp('/user/view/29765', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Subprefeitura da Ilha do Governador</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 618
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29766">
+    <div class="userPic">
+                <a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/b2606c443e4511200aadf37ce4a5ac18" alt="Instituto Pereira Passos - IPP Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29766,0,{ 'user_id':29766, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Instituto Pereira Passos - IPP Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 156
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29795">
+    <div class="userPic">
+                <a  href="user/activity/29795" onclick="popUp('/user/view/29795', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/4c8663913cebe7a3211efba8867b9c0c" alt="Secretaria Municipal de Saúde" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29795,0,{ 'user_id':29795, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29795" onclick="popUp('/user/view/29795', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Saúde</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  1, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 560
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29879">
+    <div class="userPic">
+                <a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/a84f6305e40ad9af01545a6f60bccb80" alt="IPLANRIO" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29879,0,{ 'user_id':29879, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">IPLANRIO</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  2, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 626
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29907">
+    <div class="userPic">
+                <a  href="user/activity/29907" onclick="popUp('/user/view/29907', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/b97341932d9a7d19c8d839f60b52700c" alt="Comitê Rio450" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29907,0,{ 'user_id':29907, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29907" onclick="popUp('/user/view/29907', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Comitê Rio450</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  2, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 98
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:29917">
+    <div class="userPic">
+                <a  href="user/activity/29917" onclick="popUp('/user/view/29917', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/e5e07b24f4fea6bb7ac3ab3c421bf959" alt="teresa.pcrj" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(29917,0,{ 'user_id':29917, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/29917" onclick="popUp('/user/view/29917', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">teresa.pcrj</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  2, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 630
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30002">
+    <div class="userPic">
+                <a  href="user/activity/30002" onclick="popUp('/user/view/30002', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/1a1d77442ddc3ea592e52a06b7cfb353" alt="RioSaúde" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30002,0,{ 'user_id':30002, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30002" onclick="popUp('/user/view/30002', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RioSaúde</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  3, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 92
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30156">
+    <div class="userPic">
+                <a  href="user/activity/30156" onclick="popUp('/user/view/30156', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/372646356752e68eb7b87ceda20ce169" alt="Fernanda Salem" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30156,0,{ 'user_id':30156, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30156" onclick="popUp('/user/view/30156', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fernanda Salem</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  4, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 149
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30208">
+    <div class="userPic">
+                <a  href="user/activity/30208" onclick="popUp('/user/view/30208', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/bebeab24cdd34ebea840614af7aed283" alt="Fernu" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30208,0,{ 'user_id':30208, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30208" onclick="popUp('/user/view/30208', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Fernu</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  5, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 74
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30297">
+    <div class="userPic">
+                <a  href="user/activity/30297" onclick="popUp('/user/view/30297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/9aca2707badba7125651f7b5ce1c5bd6" alt="LeandroRavaglia" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30297,0,{ 'user_id':30297, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30297" onclick="popUp('/user/view/30297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">LeandroRavaglia</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  8, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 642
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30304">
+    <div class="userPic">
+                <a  href="user/activity/30304" onclick="popUp('/user/view/30304', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/ea4aa562ef023450e0b623e6d2765907" alt="Cdurp - Porto Maravilha" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30304,0,{ 'user_id':30304, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30304" onclick="popUp('/user/view/30304', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Cdurp - Porto Maravilha</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  8, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 89
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30389">
+    <div class="userPic">
+                <a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/ebb96f5bbf981ffae5a935243ef316cb" alt="CET-Rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30389,0,{ 'user_id':30389, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30389" onclick="popUp('/user/view/30389', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">CET-Rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  9, 2014</span>    <span class="score">15 points</span>
+    <span class="ranking">
+                Classificado 208
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30392">
+    <div class="userPic">
+                <a  href="user/activity/30392" onclick="popUp('/user/view/30392', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/e623f9c243e044db02f361d0fde7b766" alt="Luciana Barcellos" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30392,0,{ 'user_id':30392, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30392" onclick="popUp('/user/view/30392', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Luciana Barcellos</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  9, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 87
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30398">
+    <div class="userPic">
+                <a  href="user/activity/30398" onclick="popUp('/user/view/30398', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/12a08bbc7c306823d1338c5e04a60333" alt="EixoRio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30398,0,{ 'user_id':30398, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30398" onclick="popUp('/user/view/30398', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EixoRio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  9, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 502
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30422">
+    <div class="userPic">
+                <a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/903d2b0b30df4b7eaff3b1287bccb66b" alt="João Ferraz Fernandes de Mello" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30422,0,{ 'user_id':30422, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30422" onclick="popUp('/user/view/30422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Ferraz Fernandes de Mello</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  9, 2014</span>    <span class="score">392 points</span>
+    <span class="ranking">
+                Classificado 49
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30480">
+    <div class="userPic">
+                <a  href="user/activity/30480" onclick="popUp('/user/view/30480', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/81a15179b4d16cb2384c070d1edaadaf" alt="FranciscoVelasquez" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30480,0,{ 'user_id':30480, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30480" onclick="popUp('/user/view/30480', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">FranciscoVelasquez</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set  9, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 719
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30679">
+    <div class="userPic">
+                <a  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/0b49122ea5269dbc32ab5538933ae0ca" alt="marcel peres" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30679,0,{ 'user_id':30679, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30679" onclick="popUp('/user/view/30679', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">marcel peres</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 10, 2014</span>    <span class="score">10 points</span>
+    <span class="ranking">
+                Classificado 1
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30722">
+    <div class="userPic">
+                <a  href="user/activity/30722" onclick="popUp('/user/view/30722', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/686a12b12923376a65745c1ed9abcaf9" alt="Paulafiorito" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30722,0,{ 'user_id':30722, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30722" onclick="popUp('/user/view/30722', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Paulafiorito</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 10, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 90
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30857">
+    <div class="userPic">
+                <a  href="user/activity/30857" onclick="popUp('/user/view/30857', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f18b00824e4898bf88e6752cec544a8b" alt="Rio+Social" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30857,0,{ 'user_id':30857, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30857" onclick="popUp('/user/view/30857', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rio+Social</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 11, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 905
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30893">
+    <div class="userPic">
+                <a  href="user/activity/30893" onclick="popUp('/user/view/30893', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/bf40bcbcafbd4da431c7bcf8b7bb7d0c" alt="João Pedro Rocha" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30893,0,{ 'user_id':30893, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30893" onclick="popUp('/user/view/30893', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">João Pedro Rocha</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 11, 2014</span>    <span class="score">70 points</span>
+    <span class="ranking">
+                Classificado 176
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30983">
+    <div class="userPic">
+                <a  href="user/activity/30983" onclick="popUp('/user/view/30983', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/00c54eb81746dd271d16b0707f0a2b32" alt="Carlos Menezes" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30983,0,{ 'user_id':30983, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30983" onclick="popUp('/user/view/30983', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Carlos Menezes</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 12, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 147
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:30985">
+    <div class="userPic">
+                <a  href="user/activity/30985" onclick="popUp('/user/view/30985', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/bca8dda8f83d85fa1cca4cdd400fff25" alt="AlinePina" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(30985,0,{ 'user_id':30985, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/30985" onclick="popUp('/user/view/30985', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">AlinePina</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 12, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 151
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31118">
+    <div class="userPic">
+                <a  href="user/activity/31118" onclick="popUp('/user/view/31118', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/eaf60aa6bc58b9c93b925b22b9548e60" alt="ViniciusValentim" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31118,0,{ 'user_id':31118, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31118" onclick="popUp('/user/view/31118', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">ViniciusValentim</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 14, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 178
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31233">
+    <div class="userPic">
+                <a  href="user/activity/31233" onclick="popUp('/user/view/31233', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/d93c638456399bf8cc01a956099ec90b" alt="Cdd Acontece" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31233,0,{ 'user_id':31233, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31233" onclick="popUp('/user/view/31233', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Cdd Acontece</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 15, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 893
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31420">
+    <div class="userPic">
+                <a  href="user/activity/31420" onclick="popUp('/user/view/31420', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/7b90a559f717dbf7cd6a9242924a1163" alt="William Junior" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31420,0,{ 'user_id':31420, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31420" onclick="popUp('/user/view/31420', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">William Junior</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 16, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 203
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31458">
+    <div class="userPic">
+                <a  href="user/activity/31458" onclick="popUp('/user/view/31458', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/ea4cc7dbe0a2a6c86662ab5d0cca0b75" alt="Secretaria Municipal de Esportes e Lazer" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31458,0,{ 'user_id':31458, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31458" onclick="popUp('/user/view/31458', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Esportes e Lazer</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 16, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 277
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31559">
+    <div class="userPic">
+                <a  href="user/activity/31559" onclick="popUp('/user/view/31559', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/75a0af78b10f7261527d6e4e2db6251c" alt="DilsonRamos" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31559,0,{ 'user_id':31559, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31559" onclick="popUp('/user/view/31559', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DilsonRamos</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 17, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 271
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31627">
+    <div class="userPic">
+                <a  href="user/activity/31627" onclick="popUp('/user/view/31627', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="ECarloAguayo" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31627,0,{ 'user_id':31627, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31627" onclick="popUp('/user/view/31627', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">ECarloAguayo</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 17, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 1140
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31692">
+    <div class="userPic">
+                <a  href="user/activity/31692" onclick="popUp('/user/view/31692', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="EduardoRua" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31692,0,{ 'user_id':31692, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31692" onclick="popUp('/user/view/31692', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EduardoRua</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 18, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 285
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31706">
+    <div class="userPic">
+                <a  href="user/activity/31706" onclick="popUp('/user/view/31706', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/8c1fbf9ac0e0311c548d89947e292c5b" alt="RobertoRaposo" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31706,0,{ 'user_id':31706, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31706" onclick="popUp('/user/view/31706', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RobertoRaposo</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 18, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 293
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:31805">
+    <div class="userPic">
+                <a  href="user/activity/31805" onclick="popUp('/user/view/31805', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/f161db6bc08d894e800b007bbf475ce3" alt="Jamylli" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(31805,0,{ 'user_id':31805, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/31805" onclick="popUp('/user/view/31805', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Jamylli</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 19, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 486
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:32205">
+    <div class="userPic">
+                <a  href="user/activity/32205" onclick="popUp('/user/view/32205', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/abc09588ae28c0f95483aa3bb10ad5df" alt="CChantre" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(32205,0,{ 'user_id':32205, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/32205" onclick="popUp('/user/view/32205', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">CChantre</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 24, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 426
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:32249">
+    <div class="userPic">
+                <a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/c7ea82fd29b5941e176032940e37fb28" alt="DIEL" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(32249,0,{ 'user_id':32249, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/32249" onclick="popUp('/user/view/32249', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DIEL</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 403
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:32422">
+    <div class="userPic">
+                <a  href="user/activity/32422" onclick="popUp('/user/view/32422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="Wagner do rio" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(32422,0,{ 'user_id':32422, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/32422" onclick="popUp('/user/view/32422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Wagner do rio</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 26, 2014</span>    <span class="score">25 points</span>
+    <span class="ranking">
+                Classificado 36
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:32642">
+    <div class="userPic">
+                <a  href="user/activity/32642" onclick="popUp('/user/view/32642', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/4c1e60629474263c81244a075b43ad61" alt="Rafael Sousa - Grande Méier" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(32642,0,{ 'user_id':32642, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/32642" onclick="popUp('/user/view/32642', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Rafael Sousa - Grande Méier</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Set 27, 2014</span>    <span class="score">360 points</span>
+    <span class="ranking">
+                Classificado 51
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:33061">
+    <div class="userPic">
+                <a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/6aee79f1a18bba74dfcb4783953fa3a3" alt="RodrigoRJ" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(33061,0,{ 'user_id':33061, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/33061" onclick="popUp('/user/view/33061', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">RodrigoRJ</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out  1, 2014</span>    <span class="score">1855 points</span>
+    <span class="ranking">
+                Classificado 13
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:33398">
+    <div class="userPic">
+                <a  href="user/activity/33398" onclick="popUp('/user/view/33398', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="AlejandroEstanislaoKarpowicz" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(33398,0,{ 'user_id':33398, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/33398" onclick="popUp('/user/view/33398', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">AlejandroEstanislaoKarpowicz</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out  6, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 539
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:34247">
+    <div class="userPic">
+                <a  href="user/activity/34247" onclick="popUp('/user/view/34247', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/c8e95a72dc8534b4b30926c8857b0e71" alt="Vila Kennedy" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(34247,0,{ 'user_id':34247, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/34247" onclick="popUp('/user/view/34247', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Vila Kennedy</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 11, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 1563
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:34500">
+    <div class="userPic">
+                <a  href="user/activity/34500" onclick="popUp('/user/view/34500', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_43,h_43,c_fill/c519530c5c0d45bb961526342149af56" alt="Caroltapajos" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(34500,0,{ 'user_id':34500, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/34500" onclick="popUp('/user/view/34500', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Caroltapajos</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 13, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 1619
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36198">
+    <div class="userPic">
+                <a  href="user/activity/36198" onclick="popUp('/user/view/36198', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="ivan castro" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36198,0,{ 'user_id':36198, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36198" onclick="popUp('/user/view/36198', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">ivan castro</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 23, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 1864
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36641">
+    <div class="userPic">
+                <a  href="user/activity/36641" onclick="popUp('/user/view/36641', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="glaycecarvalho" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36641,0,{ 'user_id':36641, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36641" onclick="popUp('/user/view/36641', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">glaycecarvalho</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 858
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36649">
+    <div class="userPic">
+                <a  href="user/activity/36649" onclick="popUp('/user/view/36649', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="adrianarodrigues" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36649,0,{ 'user_id':36649, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36649" onclick="popUp('/user/view/36649', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">adrianarodrigues</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 861
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36651">
+    <div class="userPic">
+                <a  href="user/activity/36651" onclick="popUp('/user/view/36651', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jussarasurcin" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36651,0,{ 'user_id':36651, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36651" onclick="popUp('/user/view/36651', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jussarasurcin</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 862
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36653">
+    <div class="userPic">
+                <a  href="user/activity/36653" onclick="popUp('/user/view/36653', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="rodrigosurcin" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36653,0,{ 'user_id':36653, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36653" onclick="popUp('/user/view/36653', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">rodrigosurcin</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 863
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36654">
+    <div class="userPic">
+                <a  href="user/activity/36654" onclick="popUp('/user/view/36654', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="cinthiasurcin" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36654,0,{ 'user_id':36654, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36654" onclick="popUp('/user/view/36654', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">cinthiasurcin</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 864
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36658">
+    <div class="userPic">
+                <a  href="user/activity/36658" onclick="popUp('/user/view/36658', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="alexsurcin" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36658,0,{ 'user_id':36658, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36658" onclick="popUp('/user/view/36658', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">alexsurcin</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 25, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 866
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36937">
+    <div class="userPic">
+                <a  href="user/activity/36937" onclick="popUp('/user/view/36937', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="rafaelaantunes" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36937,0,{ 'user_id':36937, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36937" onclick="popUp('/user/view/36937', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">rafaelaantunes</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 27, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 931
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:36958">
+    <div class="userPic">
+                <a  href="user/activity/36958" onclick="popUp('/user/view/36958', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="rafaelfonseca" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(36958,0,{ 'user_id':36958, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/36958" onclick="popUp('/user/view/36958', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">rafaelfonseca</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 27, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 945
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:37977">
+    <div class="userPic">
+                <a  href="user/activity/37977" onclick="popUp('/user/view/37977', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="luizvascaino.dss" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(37977,0,{ 'user_id':37977, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/37977" onclick="popUp('/user/view/37977', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">luizvascaino.dss</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Out 29, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 2078
+                
+    </span>    </p>
+</div>
+
+
+                    		<div class="following_user" id="followingUserEntry:41541">
+    <div class="userPic">
+                <a  href="user/activity/41541" onclick="popUp('/user/view/41541', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><img src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="MatheusVargas" /></a>
+    </div>
+    <div class="buttons">
+        <div class="form_button">
+                    <a href="#" class="followAuthor button_add" onclick="setUserFollow(41541,0,{ 'user_id':41541, 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                </div>
+    </div>
+    <h3><a  href="user/activity/41541" onclick="popUp('/user/view/41541', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">MatheusVargas</a></h3>
+            	        <p>
+    <span class="date">Solucionador desde Nov  7, 2014</span>    <span class="score">0 points</span>
+    <span class="ranking">
+                Classificado 1032
+                
+    </span>    </p>
+</div>
+
+
+                        </div>
+</div>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div id="profileRight_col">
+        	<div id="solverRankContainer">
+				<div id="viewProfile" >
+                    <div id="profileDetailsContainer">
+                        <div class="userPic">
+                                                        <img src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/w_230,h_230,c_fill/a87faa22caf3025ed95dbeb606ec1de6" />
+                        </div>
+		                                        <h2 style="margin-bottom:0px;padding-bottom:0px;">Desenvolvimento Social RJ</h2>
+                        <p>
+                            (SMDS RJ)</p>
+                                                <div style="margin:4px 0px;">
+                            <div class="form_button">
+                                                                    <a href="#" class="followAuthor userInteraction button_add" onclick="setUserFollow(29707,0,{ 'user_id':29707, 'updateMode':'', 'updateElement':$(this).up()},'428a2c042b2fa501ff4ed7019a21530dfc035d26', 'User followed');return false;">Seguir</a>    
+                                                            </div>
+                            <div class="clear"><!--IE--></div>
+                        </div>
+                                                <div class="clear"><!--IE--></div>
+                        <p>
+                                            
+        
+                            rio de janeiro, Brazil
+                                                </p>
+                        <p class="veryLightGrey">Cadastrado nesta comunidade em Set  1, 2014</p>
+        
+                        <div class="clear"><!--IE--></div>
+                        
+                        <p>
+                                                    </p>
+
+                        <div id="user-badges" class="user-badges" style="margin-bottom:20px;">
+                                                        <div class="clear"></div>
+                        </div>
+                                                                        <p class="lightGrey">
+                            <b>Biografia</b> A SMDS executa hoje a gestão plena na Assistência Social, já estando estruturada de acordo com as novas classificações de programas e serviços da Política Nacional de Assistência Social. Para estar adequada com a nova Política Nacional de Assistência Social, a secretaria está conseguindo unificar ações, profissionalizar as formas de gestão dos programas nacionais, buscar metodologias para qualificação dos profissionais da área, rever nomenclaturas, criar novos critérios de partilha de recursos da verba a ser dividida e repassada aos municípios, e ampliar o atendimento à população em situação de vulnerabilidade social.
+                        </p>
+                        
+                        
+                        
+                                            </div>
+                                        <h3>Sua reputação na classificação</h3>
+                                        
+    <div id="viewtab_rankThisGroup29707" class="solverRankingBox ">
+
+                    <div class="rankInfo rankInfo_left">
+                <span class="caps">Classificação</span>
+                                    <div class="bigRank">583</div>
+                            </div>
+            <div class="rankInfo rankInfo_right">
+                <span class="caps">Pontos</span>
+                <div class="bigScore">0</div>
+            </div>
+                <div class="clear"><!--IE--></div>
+        <h4>Estatísticas</h4>
+        <ul class="solverRankList left solverRankList_left">
+            <li><a href="/user/activity/29707">Ideias</a><span>0</span></li>
+                        <li><a href="/user/activity/29707?goTab=myVotes">Votos</a><span>0</span></li>
+                        <li><a href="/user/activity/29707?goTab=myComments">Comentários</a><span>0</span></li>
+            <li><a href="/user/following/29707">Seguidores</a><span>50</span></li>
+        </ul>
+        <ul class="solverRankList right solverRankList_right">
+            <li><a href="/user/activity/29707?sortBy=underConsideration">Em análise</a><span>0</span></li>
+            <li><a href="/user/activity/29707?sortBy=partiallyAdopted">Parcialmente...</a><span>0</span></li>
+            <li><a href="/user/activity/29707?sortBy=adopted">Adotado</a><span>0</span></li>
+            <li><a href="/user/subscriptions/29707">Assinaturas</a><span>0</span></li>
+        </ul>
+        <div class="clear"><!--IE--></div>
+    </div>
+    
+
+
+                    <div class="clear"><!--IE--></div>
+                    <div id="viewPost_sidebar_followBox">
+                        <h3>Seguindo</h3>
+                        <p><span class="colour">22</span> nesta comunidade</p>
+                        <div id="userFollowing">
+                                                                        <a  href="user/activity/29749" onclick="popUp('/user/view/29749', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29749_2833eeedc4d8204f8cda73c8eb215b3a_390663_224777244268075_1075873108_n.jpg.jpg);"><span>Guarda Municipal (GM-Rio)</span></a>
+                                                                        <a  href="user/activity/29700" onclick="popUp('/user/view/29700', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29700_0952229e1ea146fd98195cccad1b6838_Agora_SECONSERVA.jpg.jpg);"><span>Secretaria de Conservação</span></a>
+                                                                        <a  href="user/activity/29732" onclick="popUp('/user/view/29732', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29732_a2b8dcf0f30a41df98f1dfeee05d0e75_Logo%20COR%20-%20Centro%20de%20Operacoes%20Rio-peq.jpg.jpg);"><span>Centro de Operações Rio</span></a>
+                                                                        <a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><span>Prefeitura do Rio</span></a>
+                                                                        <a  href="user/activity/29711" onclick="popUp('/user/view/29711', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29711_7e32adabc5b92d13b5baf1418809df0e_logo%20smc.jpg.jpg);"><span>Secretaria Municipal de Cultura</span></a>
+                                                                        <a  href="user/activity/29755" onclick="popUp('/user/view/29755', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29755_6a7f0762977bff7e573cb3fa284b77db_logo%20sma%20agora5.JPG.jpg);"><span>Secretaria Municipal da Administração</span></a>
+                                                                        <a  href="user/activity/29717" onclick="popUp('/user/view/29717', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29717_1455c40871453b99864f6055c4f8ebb2_245_x_213_pixel.jpg.jpg);"><span>Sec. Desenvolvimento Econômico Solidário</span></a>
+                                                                        <a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><span>Secretaria Municipal de Transportes</span></a>
+                                                                        <a  href="user/activity/29719" onclick="popUp('/user/view/29719', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29719_791999a0cb378bee4a1514671dde83f0_3LGW63I-_400x400.jpeg.jpg);"><span>MultiRio</span></a>
+                                                                        <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><span>Ágora Rio</span></a>
+                                                                        <a  href="user/activity/28297" onclick="popUp('/user/view/28297', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28297_e84fd1da23e32164b0315788033fc2ba_image.jpg.jpg);"><span>Priscylla Almawy</span></a>
+                                                                        <a  href="user/activity/29754" onclick="popUp('/user/view/29754', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29754_f292a1baf2ecfdd7eed148dfd909627b_pacucar.jpg.jpg);"><span>Riotur</span></a>
+                                                                        <a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29748_a6801984be0508b7c0aae40d10470c6e_logoGoverno3.jpg.jpg);"><span>Secretaria Municipal de Governo</span></a>
+                                                                        <a  href="user/activity/29746" onclick="popUp('/user/view/29746', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29746_cf02410789f484d30b57fed9eed69e7a_Defesa%20do%20Consumidor.3.png.jpg);"><span>Secretaria de Defesa do Consumidor</span></a>
+                                                                        <a  href="user/activity/29764" onclick="popUp('/user/view/29764', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29764_f4f3c1b111bef73ceff5a490b4805bd3_%C3%81gora_logo%20site_DC.jpg.jpg);"><span>Defesa Civil Municipal</span></a>
+                                                                        <a  href="user/activity/29766" onclick="popUp('/user/view/29766', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29766_b2606c443e4511200aadf37ce4a5ac18_Instituto%20Pereira%20Passos.jpg.jpg);"><span>Instituto Pereira Passos - IPP Rio</span></a>
+                                                                        <a  href="user/activity/29765" onclick="popUp('/user/view/29765', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29765_9e9827c139681bf5e25970faea776f75_ilha%20do%20governador.jpg.jpg);"><span>Subprefeitura da Ilha do Governador</span></a>
+                                                                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><span>Secretaria Municipal de Meio Ambiente</span></a>
+                                                                        <a  href="user/activity/29879" onclick="popUp('/user/view/29879', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29879_a84f6305e40ad9af01545a6f60bccb80_logoiplan.png.jpg);"><span>IPLANRIO</span></a>
+                                                                        <a  href="user/activity/28320" onclick="popUp('/user/view/28320', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28320_028a2b6923f2b7797e6473f68d68c05d_DSC_1043.JPG.jpg);"><span>Luti Guedes</span></a>
+                                                                        <a  href="user/activity/29738" onclick="popUp('/user/view/29738', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29738_0a3c6cfaac1b54eae0b0af4476279422_EOM_face_perfil-02.jpg.jpg);"><span>Empresa Olímpica Municipal</span></a>
+                                                                        <a  href="user/activity/29761" onclick="popUp('/user/view/29761', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;" class="smallAvatarLink" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29761_79397e36b650248a4ed81a23e12d5079_pessoa%20com%20deficiencia2.png.jpg);"><span>Secretaria da Pessoa com Deficiência</span></a>
+                                                </div>
+        
+                        <div class="clear"><!--IE--></div>
+                    </div>
+                </div>
+            </div>        </div>
+	    <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>

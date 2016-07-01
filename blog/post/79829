@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" class="flexbox generatedcontent">
+	<head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Muli&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="https://desafioagorario.crowdicity.com/touch-favicon.png" />
+		<title>Desafio Ágora Rio - Desenvolvido por Crowdicity</title>
+		<base href="https://desafioagorario.crowdicity.com/" />
+		
+        <link rel="stylesheet" href="https://desafioagorario.crowdicity.com/style.php?id=206&amp;key=62d853fc9304de35ad9f90179b26f2cd&amp;dkey=5e8df3eead0e3487f9210249a1e8c7ba&amp;designVer=2.0" type="text/css" media="screen" />
+
+				<!--[if lt IE 9]>
+    			<script src="/js/html5shiv.js"></script>
+  			<![endif]-->
+
+        <!--  The following three need to be added to style.php when on production -->
+
+        <!--
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/normalize.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/shared.css" />
+        <link rel="stylesheet" href="https://resources.crowdworks.net/templates/desktop/design-2.0.css" />
+        -->
+
+        <link rel="stylesheet" href="/fonts/style.css" />
+
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://desafioagorario.crowdicity.com/favicon.ico" />
+		<!--[if lte IE 8]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie6&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+        <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="https://desafioagorario.crowdicity.com/style.php?spec=ie7&id=206&key=62d853fc9304de35ad9f90179b26f2cd&dkey=5e8df3eead0e3487f9210249a1e8c7ba" /> <![endif]-->
+		<!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="https://resources.crowdworks.net/templates/desktop/ie9-.css" /> <![endif]-->
+
+        <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/min/g=libs,jquery,legacy,extras,objects,mvc,cloudinary,newui"></script>
+        <!--[if gte IE 9]><!--><script type="text/javascript" src="/min/g=widget"></script><!--<![endif]-->
+        
+        
+        <script type="text/javascript">
+            var jrLang='pt';
+            var serverName='crowdworks.net';
+            var widgetDomain='widget.crowdicity.com';
+            var communityUrl='https://desafioagorario.crowdicity.com/';
+						var communityName='Desafio Ágora Rio';
+						var linkColor='#628038';
+            var httpMode='https';
+            var outputDevice='desktop';
+
+						var buttonBackgroundColor='0F5CA8';
+						var buttonTextColor='ffffff';
+
+            var tokenUrlRememberOn='https://desafioagorario.crowdicity.com/user/loginexternal?remember=1';
+            var tokenUrlRememberOff='https://desafioagorario.crowdicity.com/user/loginexternal?';
+            var languages=['es_ES','pt_PT'];            $j.cloudinary.config({ environment:  'live',
+                                  platform:     'desktop',
+                                  cloud_name:   'crowdicity-eu-cld',
+                                  api_key:      'tORqtPJCepwIVtmh9zj_xbJRK9A',
+                                  upload_preset:'mobile-signed'});
+            var cdnUrl = 'https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/';
+            var geoUrl='g.crowdicity.com';
+        </script>
+        <script type="text/javascript" src="/js/widget/widget-generator.js"></script>
+
+        
+		
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- Google Charts API -->
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1.0', {
+              'packages':['corechart']
+            });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            //google.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart(options) {
+
+              // Create the data table.
+              var overviewData = new google.visualization.DataTable();
+              overviewData.addColumn('string', '');
+              overviewData.addColumn('number', 'Event');
+              overviewData.addRows(options.overview.rows);
+
+              // Instantiate and draw our chart, passing in some options.
+              var overviewChart = new google.visualization.BarChart(document.getElementById('overview_chart_div_' + options.id));
+              overviewChart.draw(overviewData, options.overview);
+
+              var linksData = new google.visualization.DataTable();
+              linksData.addColumn('string', '');
+              linksData.addColumn('number', 'Link');
+              linksData.addRows(options.links.rows);
+
+              var linksChart = new google.visualization.PieChart(document.getElementById('links_chart_div_' + options.id));
+              linksChart.draw(linksData, options.links);
+            }
+        </script>
+        <!-- Google Charts End -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        		<script type="text/javascript">var notLoggedIn=true;</script>
+        
+        <!--SHARING STUFF -->
+                                    <meta property="og:title" content="Transporte não-motorizado - Desafio Ágora Rio" />
+                <meta property="og:description" content="   
+ Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. 
+   Na fase de Proposição,..." />
+                <meta property="og:url" content="https://desafioagorario.crowdicity.com/blogpost/79829" />
+                                    <meta property="og:image" content="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/raw_26241_841e6bc04c33b52af53c00e1cade0d6c_mande-sua-proposta-quadrada.png" />
+                                <!-- Twitter Card data -->
+                <meta name="twitter:card" content="summary">
+                
+                <meta name="twitter:title" content="Transporte não-motorizado - Desafio Ágora Rio">
+                <meta name="twitter:description" content="   
+ Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de...">
+                
+                        <meta name="description" content="   
+ Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. 
+   Na fase de Proposição,..." />
+            <meta itemprop="description" content="   
+ Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. 
+   Na fase de Proposição,..." />
+        
+        <!-- END SHARING STUFF -->
+
+        
+        
+        
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = { "message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/hubbub/privacypolicy?ncc=1#c","theme":"dark-bottom" };
+        </script>
+
+        
+        <!-- End Cookie Consent plugin -->
+        
+	</head>
+	<body id="docBody" class="-current-page  ">
+    <input type="hidden" id="currentPage" value="" />
+    <div id="fullContainer" >
+
+    
+        <header class="b-header b-header--fixed i-header" data-visible="1">
+
+        <div class="b-header--menu-wrap">
+
+            <div class="b-header--menu-moderator">
+                
+            </div>
+
+            <div class="b-header--menu-inner-wrap">
+
+            <div class="b-logo l-inline i-logo">
+                                <a href="/" id="taskBar_logo">
+                    <img  src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/logo_26241_fa63564dccc3ec3828057642d070f18b_LOGO-DESAFIO-AGORA.jpg.jpg" alt="Desafio Ágora Rio" />
+
+
+                </a>
+                            </div>
+
+            <nav class="b-header__main-navigation i-navigation b-navigation l-inline b-navigation--compressed" role="navigation" style="max-width:1225px;width:1225px;">
+                <ul class="b-header__main-nav-menu menu flex">
+                                                                                            
+                                                <li>
+                                                        <a href="/">Início</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2409">Sobre a Curadoria</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/category/browse">Propostas recebidas</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1944">Conheça as fases</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1945">Eixos Temáticos</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2043">Relembre o Primeiro Desafio</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/1175">Termos de Uso e FAQ</a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/blog/view"></a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2369"> </a>
+                                                    </li>
+                                                                                                                    
+                                                <li>
+                                                            <a href="/page/view/2520"> </a>
+                                                    </li>
+                                                            </ul>
+            </nav>
+
+            <nav class="b-header__side-navigation i-side-navigation">
+                <form action="#" class="b-search b-header__search" method="post" id="global_search_form">
+                    <button class="b-search__button i-search__button ico-search" type="submit"></button>
+                    <input class="b-search__input i-search__input" placeholder="Search Crowdicity..." type="search" style="width:0px;" />
+                            <div class="b-search__advanced-button">
+                                <span><a onclick="return false;" href="#">In Ideas <span class="icon-arrow-down4"></span></a></span>
+                                <div class="b-search__advanced">
+                                    <div class="b-search__advanced-inner">
+
+                                        <div class="b-search__advanced--row">
+                                            <span>Search in</span>
+                                            <div class="b-search__advanced--type b-search__advanced--type-active" data-type="ideas"><a href="#">Ideias</a></div>
+                                            <div class="b-search__advanced--type" data-type="people"><a href="#">Pessoas</a></div>
+                                        </div>
+                                        <div class="b-search__advanced--divide"></div>
+
+                                        <div id="advanced_search_challenge">
+                                            <div class="b-search__advanced--row">
+                                                <span>Search by challenge</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <select>
+                                                    <option value="0">Todos os desafios</option>
+                                                                                                                                                                        <option value="2927">Mobilidade Urbana </option>
+                                                                                                                                                                                                                                <option value="2379"> Como os Jogos Rio 2016 podem trazer ainda mais benefícios para a cidade e a população?</option>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
+                                            </div>
+                                                                                        <div class="b-search__advanced--row">
+                                                <span>Marcações Populares</span>
+                                            </div>
+                                            <div class="b-search__advanced--row">
+                                                <div class="b-search__advanced--tags">
+                                                                                                        <a class="b-search__advanced--tag" href="#">BRT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">VLT</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">mobilidade</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">bicicleta</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ciclovia</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">metrô</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">ônibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">transporte</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">&#244;nibus</a>
+                                                                                                        <a class="b-search__advanced--tag" href="#">integra&#231;&#227;o</a>
+                                                                                                    </div>
+                                            </div>
+                                                                                    </div>
+
+                                    </div>
+                                    <div class="b-search__advanced-foot"></div>
+
+                                </div>
+
+                            </div>
+                    <button class="b-search__button i-search__button i-search__button-close" type="submit" style="display:none;">
+                                <span class="icon-cross3"></span>
+                    </button>
+                </form>
+                <ul class="b-header__actions">
+                    <li class="b-header__action-item l-inline">
+                        <div class="b-header__action-social">
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--twitter" href="https://twitter.com/_labrio">
+                                <span class="icon-twitter"></span>
+                            </a>
+                            </span>
+                                                                                                        <span>
+                            <a target="_blank" class="b-link b-header__social-icon-link b-social-icon b-social-icon--facebook" href="https://facebook.com/http://facebook.com/labrj">
+                                <span class="icon-facebook2"></span>
+                            </a>
+                            </span>
+                                                                                                </div>
+                                            </li>
+
+                                    
+                                            <!-- sign in -->
+                        <li class="b-header__action-item l-inline b-header__action-item-signin">
+                                <div class="b-header__action-item-signin-overlay">
+                            <div class="b-header__action-item-signin-button"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODI5" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODI5' });return false;">Registrar</a></div>
+                            <div class="b-header__action-item-signin-button rightSide"><a href="/user/signinform?returnTo=aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODI5" onclick="popUp('/user/signinform',{ 'width':870, 'height':550, 'returnTo':'aHR0cHM6Ly9kZXNhZmlvYWdvcmFyaW8uY3Jvd2RpY2l0eS5jb20vYmxvZy9wb3N0Lzc5ODI5' });return false;">Sign In</a></div>
+                            <div class="b-header__action-item-signin-circle">or</div>
+                                </div>
+                        </li>
+                        <!-- /sign in -->
+                    
+                    </li>
+                    <!-- /user profile -->
+                    <li class="b-header__action-item l-inline b-header__action-item-help" onclick="window.open('http://help.crowdicity.com'); return false;">
+                        <div class="b-header__action-item-helpcircle-button">
+                            ?
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+
+        </div>
+
+        
+
+        
+
+        
+        <div class="b-header--menu-sub" id="ideaNextPreviousBar" style="display:none;">
+            <div class="l-grid__container">
+                <div class="b-header--menu-sub-left">
+                    <a href="#" id="backToChallengeLink"><span class="icon-circle-left"> </span>Voltar para <strong><span id="backToChallengeName"></strong></a>
+                </div>
+                <div class="b-header--menu-sub-right">
+                    <div><a href="#" id="nextPostLink" data-id="" data-title="" data-current-post-id="">Next idea</a></div>
+                    <div><a href="#" id="prevPostLink" data-id="" data-title="" data-current-post-id="">Previous idea</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </header>
+    
+    
+    <!--[OTHER_DATA]-->
+	<div class="b-wrapper l-grid__container "  >
+                <div id="main">
+    
+    <div id="announcementsBar" style="display:none;">
+                <div class="announcement_read">
+                            <a onclick="clearAnnouncements();return false;"><span class="hidden">OK</span></a>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        function clearAnnouncements() {
+            $('announcementsBar').hide();
+            new Ajax.Request('/user/updatelastannouncement',{
+                onComplete:function(){
+
+                }
+            });
+        }
+    </script>
+    
+            <div class="community-banner" >
+        <div class="text">
+            <h1 style="display:none;">Desafio Ágora Rio</h1>
+            <div class="subtitle" >
+                <p></p>
+            </div>
+            <p><!--[IG_INTROTEXT]--></p>
+        </div>
+    </div>
+    <div id="logo_box_shadow" ><!--IE--></div>
+    <!--margin-top:30px;-->
+    <div class="main_content" style="">
+        <div id="blogHeader">
+    <div class="right">
+            <a href="#" class="form_button_actionStyle form_button_actionStyle_small caps" onclick="Blogcategory.setFollow($(this).up(),0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>    
+
+    </div>
+    <h1></h1>
+        <div class="blogCategoryHeader">Categorias</div>
+    <div class="clear"><!--IE--></div>
+    </div>
+
+<div id="category_col" class="leftBar">
+    <input type="hidden" class="category_id" name="category_id" id="categoryIdValue" value="2925" />
+    <input type="hidden" name="pageSortByState" id="pageSortByState" value="" />
+    <input type="hidden" name="searchQ" id="searchQ" value="" />
+    <input type="hidden" name="totalLoadedPosts" id="totalLoadedPosts" value="0" />
+	<div id="category_lists" >
+  		<div id="category_lists_container" class="blogCategoryList">
+            <div id="category_listsFirst">
+                	<div class="categoryHeadingTitleLineContainer">
+        <div class="categoryHeadingTitleLine selectedCategory">
+            <a id="catLink:0" href="/blog/category/" onclick="categoryNavObj.displayCategory(0,{address:'blog/'});return false;"><span>Todas as postagens</span></a>
+        </div>
+    </div>
+            <div class="categoryHeadingTitleLineContainer">
+            <div class="categoryHeadingTitleLine">
+                <a id="catLink:2925" href="/blog/category/2925" onclick="return categoryNavObj.displayCategory(2925,{address:'blog/'});"><span></span></a>
+                            </div>
+        </div>
+                <div class="categoryHeadingTitleLineContainer">
+            <div class="categoryHeadingTitleLine">
+                <a id="catLink:2761" href="/blog/category/2761" onclick="return categoryNavObj.displayCategory(2761,{address:'blog/'});"><span></span></a>
+                            </div>
+        </div>
+     
+            </div>
+            <div id="category_listsSecond">
+            </div>
+        </div>
+        
+        	</div>
+    
+    
+</div>
+
+
+<div id="content_col" class="content_col">
+    <div id="discuss_inner">
+        
+<div id="viewPost_sidebar_back"><a href="/blogcategory/2925" onclick="return categoryNavObj.displayCategory($F('categoryIdValue'), { address:'/blog',scrollToPost:79829 } );"><span class="leftArrow"><!--IE--></span>Voltar</a></div>
+
+<div class="blogPostViewBox" id="postViewBox">
+    <div class="postMainColumn">
+<div class="titleBox">
+	
+    
+    <div class="left form_button_marginRight">
+    	    	<a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+            <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg" alt="Ágora Rio" />
+        </a>
+    </div>
+
+        <div class="titleBox_text">
+        	            <h2 id="post_title:79829" class="post_title">Transporte não-motorizado</h2>
+            <div class="postedBy">
+                Postado por <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a> (Admin) Jan 18, 2015
+                <span>Postado em 
+                    <a href="/blogcategory/2925" onclick="return categoryNavObj.displayCategory(2925,{ address:'blog' });"></a>
+                                </span>
+            </div>
+        </div>
+	    <div class="clear"><!--IE--></div>
+	</div>
+    
+                
+    <p id="post_text:79829"><p dir="ltr"><img src="http://i.imgur.com/myPlxpS.png" alt="" width="651" height="254" /></p>
+<p dir="ltr">Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas.</p>
+<p><span><span>Na fase de Proposição, você poderá sugerir formas de incentivar o uso das bicicletas na cidade, sugerindo, por exemplo, pontos de integração com o transporte público ou melhorias em pontos inseguros na infra-estrutura existente.</span></span></p>
+<p> <a href="http://bit.ly/DocumentosTransporteNaoMotorizado" target="_blank"><img dir="ltr" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/browser_28422_d78d4ba969be20cc3a1a9ef75747cef1_BOTAO-CONFIRA-DOCUMENTOS%20%281%29.png.jpg" alt="" width="244" height="68" /></a></p>
+<p><strong>Lista de documentos do tema:</strong></p>
+<p>1- <a href="http://bit.ly/PlanejamentoCicloviario" target="_blank">Planejamento das ciclovias - <strong>SMAC</strong></a></p>
+<p>2- <a href="http://bit.ly/MalhaCicloviaria2005" target="_blank">Malha cicloviária 2005 - <strong>Armazém de Dados</strong></a></p>
+<p>3- <a href="http://bit.ly/MalhaCicloviaria2014" target="_blank">Malha cicloviária 2014 -<strong> SMAC </strong></a><strong><strong><br /></strong></strong></p>
+<p>4- <a href="http://bit.ly/ProjetosCicloviarios20152016" target="_blank">Relação de projetos cicloviários para a cidade 2015/2016 -<strong>SMAC</strong><em> novo</em></a></p>
+<p>5- <a href="http://bit.ly/PlanoDeAcaoCicloviario2015" target="_blank">Plano de ação do projeto cicloviário 2015 - <strong>SMAC</strong><em> novo</em></a></p>
+<p><a href="http://bit.ly/TermoDeReferenciaPMUS" target="_blank">6 - Termo de Referência - PMUS</a></p>
+<p><em>(Se tiver algum documento que você gostaria de ver aqui, comente dizendo qual é e marque o perfil da Prefeitura)</em></p></p>
+
+        
+    <div class="clear"><!--IE--></div>
+    
+        	            	<p class="small lightGrey">Esta postagem foi editada em Jan 29, 2015 por <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a></p>
+    
+        
+    
+    </div>
+
+</div>
+
+<div id="viewPost_sidebar_followBox" >
+        <div class="left form_button_marginRight">
+            <!-- AddThis Button BEGIN -->
+                    <script type="text/javascript">
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/blogpost/79829",
+           title: "Transporte não-motorizado",
+           description: "   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,...",
+        }
+
+        if (typeof addthis !== "undefined") {
+            addthis.update('share', 'url', 'https://desafioagorario.crowdicity.com/blogpost/79829');
+            addthis.update('share', 'title', 'Transporte não-motorizado');
+            addthis.update('share', 'description', '   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,...');
+        }
+    </script>
+    <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+    <a class="addthis_button_twitter" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte não-motorizado | Desafio Ágora Rio" addthis:description="   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79829"></a>
+    <a class="addthis_button_linkedin" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte não-motorizado - Desafio Ágora Rio" addthis:description="   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79829"></a>
+    <a class="addthis_button_facebook" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte não-motorizado - Desafio Ágora Rio" addthis:description="   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79829"></a>
+    <a class="addthis_button_google_plusone_share" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte não-motorizado - Desafio Ágora Rio" addthis:description="   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79829"></a>
+    <a class="addthis_button_yammer" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" addthis:title="Transporte não-motorizado - Desafio Ágora Rio" addthis:description="   \n Outro eixo temático deste Desafio é o transporte não-motorizado na cidade do Rio, que já conta com uma malha cicloviária de 380km, a maior da América Latina. Nesta fase de Engajamento, você poderá conhecer melhor a distribuição desta malha e conhecer o planejamento da Prefeitura para sua expansão até 2016, juntamente com as ciclofaixas e faixas compartilhadas. \n   Na fase de Proposição,..." addthis:url="https://desafioagorario.crowdicity.com/blogpost/79829"></a>
+    <a class="addthis_button_compact"></a>
+    </div>
+    <!-- AddThis Button END -->
+
+    </div>
+<div class="left">
+            <a href="#" class="caps form_button_actionStyle form_button_actionStyle_small form_button_marginRight followAuthor userInteraction" onclick="Blogpost.setFollow($('viewPost_sidebar_followBox'),79829,0,'428a2c042b2fa501ff4ed7019a21530dfc035d26');return false;">Assinar</a>
+    </div>
+<div>Esta postagem tem <span class="colour">4</span> assinantes</div>
+
+<div class="clear"><!--IE--></div>
+
+</div>
+    
+<div class="postCommentsBox" id="viewPostComments">
+                    <h3>Comentários (33)</h3>
+        <div class="commentTitleDivider"><!-- IE --></div>
+                	<div id="postResponse:79865">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Fica nítido neste mapa um grande "buraco" na Zona Norte do Rio de Janeiro, principalmente na zona da Leopoldina. Em termos de Projetos na relação anexa, nada expressivo para estimular a mobilidade nesta região.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('79865'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/79865',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:79865" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80523">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Obrigado a Prefeitura do Rio por incluir de última hora um plano sobre a zona da Leopoldina, O documento inserido CICLOVIAS, CICLOFAIXAS E FAIXAS COMPARTILHADAS: obras e projetos 2015/16 cita no item 24 uma proposta inexequível de ciclofaixa compartilhada (pintura no chão) nas Ruas Leopoldina Rego e Cardoso de Morais e Emílio Zaluar. As duas primeiras devido ao seu histórico e conhecido estreitamento, já que é uma via aberta no inicio do seculo XX e seu trafego pesado de caminhóes e onibus, e a última pelo estreitamento causado pela implantação da Transcarioca em uma rua residencial sem nenhuma desapropriação. Não é necessário um grande técnico para observar a inviabilidade deste traçado, mas alguém com potencial básico de ver figuras no Google Street View. Sugiro a Prefeitura do Rio que aguarde a fase de proposta deste desafio, e não gaste mais dinheiro com "profissionais" neste planejamento.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80523'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80523',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80523" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:80559">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Segue a previa da ideia que proporei nesta plataforma: Ciclovias arteriais do Rio de Janeiro, aproveitando calçadas e áreas pouco utilizadas que margeiam os ramais da Supervia e o Metrô na linha 2:</p>
+<p><a href="http://youtu.be/A1Y95NtmbXQ" target="_blank">http://youtu.be/A1Y95NtmbXQ</a></p>
+<p> </p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80559'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80559',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80559" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:80563">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="DouglasEngle" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DouglasEngle</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Gostei. Já fui várias vezes da Tijuca a Bangú, de bike, e percebi que teria como fazer ciclovia/faixa que seque a linha do trem, ramal Sta. Cruz. Também percebi que foram retiradas as linhas de ferro, em várias linhas da Supervia, deixando um espaço enorme, suficiente para ciclovias pelo menos.</p>
+<p> </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80563'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80563',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80563" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:80685">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:120px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:480px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 28, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>E acompanha também a Av. Dom Helder Camara, através do ramal Belford Roxo. Ontem passei por esta avenida entre o Norte Shopping e o templo da universal, e vi estas vagas que você cita no seu plano: no canteiro central, Relamente um absurdo. Caberia uma ciclovia fácil neste trecho, que pode-se conectar a que margearia o ramal Belford Roxo como via complementar alternativa.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>DouglasEngle</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80685'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80685',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80685" style="margin-left:150px;"></div>
+
+            </div>
+                	<div id="postResponse:80869">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg" alt="Arlindo Pereira" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Arlindo Pereira</a> diz... Jan 30, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A parte triste é que o trecho que você se refere FAZIA parte de um plano cicloviário da região, mas por motivos que nunca foram esclarecidos, o canteiro central foi deturpado e virou estacionamento, ao invés de ser ciclovia.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80869'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80869',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80869" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:80868">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:120px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg" alt="Arlindo Pereira" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:480px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Arlindo Pereira</a> diz... Jan 30, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Por dentro da faixa de domínio, você diz? Terreno estadual, fora da alçada da prefeitura.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80868'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80868',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80868" style="margin-left:150px;"></div>
+
+            </div>
+                	<div id="postResponse:80916">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 31, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>a calcada que margeia os muros não sao do estado, e se fossem, faz parte da negociacao entre as esferas, assim como o metro e o trem são concessoes estaduais e fazem parte do plano de mobilidade.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg);"><a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Arlindo Pereira</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80916'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80916',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80916" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:80919">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg" alt="Arlindo Pereira" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Arlindo Pereira</a> diz... Jan 31, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Pela calçada, perfeito. É possível e a prefeitura já fez, ao longo dos muros da SuperVia pelos bairros de Bangu, Campo Grande e Santa Cruz. Esse modelo poderia ser extendido ao longo de toda a malha ferroviária.</p>
+<p>Infelizmente por dentro dos muros não é possível, por diversos motivos - nem acho que seja necessário nesse contexto.</p>
+<p>[]s</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80919'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80919',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80919" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:81110">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Esta ideia é antiga. Achei estes videos no youtube onde alguém já defendia isto na zona da Leopoldina:</p>
+<p><a href="https://www.youtube.com/channel/UColIWg_Faz2hvX2S5_Jm2fw" target="_blank">https://www.youtube.com/channel/UColIWg_Faz2hvX2S5_Jm2fw</a></p>
+<p> </p>
+<p>Sobre dentro dos muros, acredito que substituir os muros por grades, além do aspecto urbanistico e de paisagismo, ainda permitiria em alguns lugares aumentar a largura da calçada em 40 / 50cm. Tem áreas que margeiam os trilhos que estão completamente abandonadas e que só servem como criadouro de mosquitos (ultima foto na apresentação do estado atual das calçadas e a foto do canal do Youtube). Retirar o muro e colocar a grade 40 cm para dentro da faixa de dominio, tirando o matagal, já resolve.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg);"><a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Arlindo Pereira</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81110'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81110',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81110" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:81116">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:150px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_48260_698c801ca6a3386f5b1c1cd8c5b546c9_foto-3x4.jpg.jpg" alt="Arlindo Pereira" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:450px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48260" onclick="popUp('/user/view/48260', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Arlindo Pereira</a> diz... Feb 2, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A ideia é boa, mas infelizmente não é competência da prefeitura, pois as faixas de domínio das ferrovias são terreno do governo do estado. Por outro lado, caso este ceda esse pequeno espaço, a prefeitura poderia executar o projeto, numa parceria da SMAC (Secretaria Municipal de Meio Ambiente) com a SETRANS (Secretaria de Estado de Transportes).</p>
+<p>(As ciclovias da cidade ficam na pasta da SMAC.)</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81116'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81116',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81116" style="margin-left:180px;"></div>
+
+            </div>
+                	<div id="postResponse:79883">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30513" onclick="popUp('/user/view/30513', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30513_5b30714162635bb7e8bdc1e54a0b805f_face.png.jpg" alt="André Ribeiro" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30513" onclick="popUp('/user/view/30513', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">André Ribeiro</a> diz... Jan 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>É de se lamentar que no bairro com maior número de usuários de bicicleta (Santa Cruz), segundo estudo da Coppe UFRJ, não possua uma malha cicloviária que atenda à população. De fato um bairro carente de políticas publicas que mantenha e estimule ainda mais o hábito prazeroso que o morador daqui tem de andar de bicicleta.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg);"><a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Ágora Rio</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29780_f9f4a50b1d1316e762e135ff337167f3_logo%20SMO%20para%20e-mail.PNG.jpg);"><a  href="user/activity/29780" onclick="popUp('/user/view/29780', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Obras</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_28422_9ab6ca99f1889fe28a131b92d9270a35_prefeitura%20logo.jpg.jpg);"><a  href="user/activity/28422" onclick="popUp('/user/view/28422', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Prefeitura do Rio</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('79883'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/79883',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:79883" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81204">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg" alt="Secretaria Municipal de Meio Ambiente" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Meio Ambiente</a> diz... Feb 3, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            Prezado, <br />
+ <br />
+agradecemos a sua participação. Aproveitamos para informar que a zona oeste possui a maior rede cicloviária da cidade, com 119,01 km - o que corresponde a 31,2 % do total de ciclovias do município. E mais vias estão previstas para a região. <br />
+ <br />
+Entre 2009 e 2014, foram disponibilizados em Santa Cruz aproximadamente 20 km de ciclovias e 7 projetos estão em andamento para disponibilizar mais 28 km de rotas cicláveis em 2015 e 2016.<br />
+ <br />
+Trabalhamos para  melhorar a qualidade de vida da população e oferecer formas seguras para o uso da bicicleta como modal de transporte.<br />
+ <br />
+Se possível, disponibilize o estudo da Coppe UFRJ conosco para que possamos ter as informações desta demanda.
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81204'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81204',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81204" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:80016">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47930" onclick="popUp('/user/view/47930', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="GeorginaS.S.Viana" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47930" onclick="popUp('/user/view/47930', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">GeorginaS.S.Viana</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Quando saio a pé , de onibus ou de carro particular pelo Rio de Janeiro , tudo o que sempre vejo é a mais absoluta falta de condições para que o ciclista realize o seu percurso , seja ele a trabalho ou por lazer . Primeiro , a idéia de que uma bicicleta pode ser muito mais do que um brinquedo nunca foi discutida dentro das escolas , públicas ou particulares . Como professora , posso garantir que isto nunca foi feito , então , posso dizer que "falo de cadeira" . A despeito das informações e transformações político sociais acontecidas fora das nossas fronteiras - Hollanda , por exemplo - , a sociedade civil brasileira sempre comportou-se segundo as diretrizes comerciais naturais do sitema Capitalista quanto ao brinquedo chamado bicicleta : comprar para dar ao seu filho como um "presente" , simplesmente , proporcionando à ele uma "atividade lúdica diferente" . E dentro desse quadro não poderia haver , mesmo , quaisquer fomentações positivas das adminsitrações . Segundo , em não podendo mais negar a ocorrência de mudanças no conceito Mobilidade Urbana , as administrações "resolveram" desenhar , planejar e aplicar a malha cicloviária . Mas que malha é essa , minha gente boa , que perpassa e muito mal , por entre as pistas de rolagem submetendo o ciclista a episódios dramáticos de acidente ? Não se vê mais o recuo , lada a lado , no asfalto ; as calçadas ficaram , por muitos anos , estreitas até mesmo n</p>
+<p>a passagem de pedestres e , se repararmos bem , ainda estão assim em muitos lugares ; os movimentos de construção urbana de ciclovias , ciclo-faixas , só acontecem na Zona Sul da cidade , coisa que eu não consigo entender nem aceitar  porque ainda assim todas vem sendo construídas sem qualquer lógica de funcionalidade urbana . Sinceramente ? Acredito que os engenheiros desse projeto nunca andaram de bicicleta , ou pior , nunca souberam o quê é uma bicicleta . Se andarmos pela Ilha do Governador , por exemplo , poderemos verificar o que estou dizendo.</p>
+<p>Buscam-se espaços para a construção de mais Shoppings , de mais rodovias , mas não se apuram em oferecer aos cidadãos a tranquilidade , o tremendo prazer que é andar de bicicleta , podendo ir até o seu trabalho , a sua escola , faculdade , enfim . Poder pedalar , além de poder dirigir o seu automóvel , é fazer com que o cidadão viva com mais saúde , melhore o seu humor , exercite a sua paciência - que nem precisa ser chinesa - , a cordialidade - que passaria a ser gratuita , no dia a dia - , o senso crítico - porque pedalando , observa-se melhor o mundo que nos cerca e logo , apontar as necessidades daqui e acolá seria ,e sim , muito mais fácil - , promova a educação urbana , tão essencial ás cidades , cada dia mais superlotadas e complicadas de funcionar .</p>
+<p>Não vejo , com extrema verdade , qualquer movimento administrativo sério na implantação das bicicletas como sendo mais um veículo a trafegar na cidade do Rio de Janeiro ... Eu tenho cincoenta e quatro anos de idade , ando de bicicleta desde os meus seis anos e ainda não parei , apesar da minha cidade fazer força contra mim nessa empreitada . Se eu ando de bicicleta na calçada ? Claro ! Sei que é uma transgressão mas como não fazer isso se não me oferecem uma via segura , respeitada , sinalizada com responsabilidade para trafegar ? Ora , não pretendo cometer suicídio .   </p>
+<p>Resumindo , antes de quaisquer esforços técnicos administrativos que sugerem , e sim , objetivos eleitoreiros , é imprescindível que se faça educar a população e de maneira forte , quanto ao uso da bicicleta na cidade . Não bastam leis para "permitirem o seu uso sob delimitação de área , horário , equipamentos" . E também , é preciso não permitir que as empresas super faturem o produto , no afã de venderem , posto que foi tornado "especial" aos olhos do mercado . </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80016'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80016',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80016" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80058">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/31031" onclick="popUp('/user/view/31031', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="JubemarJuba" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/31031" onclick="popUp('/user/view/31031', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">JubemarJuba</a> diz... Jan 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A bicicleta hoje é vista muito mais relacionada ao lazer do que a meio de transporte. Para essa mudança de visão, é necessário que as empresas estimulem esse tipo de transporte (incluindo a própria prefeitura). Trabalho em um órgão da Prefeitura, há cerca de 7Km da minha residência, distância que poderia ser feita tranquilamente de bicicleta. Porém, considerando o clima de nossa cidade, é inviável se locomover de bicicleta, chegar no trabalho e não ter vestiário. A própria Prefeitura poderia criar em seus órgãos estrutura (vestiário e bicicletário) estimulando assim o uso de bicicletas como meio de transporte. </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80058'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80058',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80058" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80299">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="DouglasEngle" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">DouglasEngle</a> diz... Jan 24, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Referente à ciclovias da Zona Norte, fiz uma apresentação "Projeto Corredor Cicloviário da Zona Norte, RJ" que gostaria de ver realizado. Inclue trechos de uma ciclovia anúnciada em 2012, mas substituida por vagas de estacionamento de carros, na Av. Don Helder Cámera. Pode ver a apresentação no seguinte link <a href="http://youtu.be/XCIMOETEMfk" target="_blank">http://youtu.be/XCIMOETEMfk</a></p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80299'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80299',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80299" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80325">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 25, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Zona norte é mais que Av. Dom Helder Camara, mas para nosso prefeito, é apenas parque Madureira e Tijuca. Na fase de propostas postarei o que comsidero um plano concreto de ciclovias para o Rio. Se vermos apenas uma rua ou outra, não seremos includentes o bastante.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80325'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80325',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80325" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:80560">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Segue a previa da ideia que proporei nesta plataforma: Ciclovias arteriais do Rio de Janeiro, aproveitando calçadas e áreas pouco utilizadas que margeiam os ramais da Supervia e o Metrô na linha 2:</p>
+<p><a href="http://youtu.be/A1Y95NtmbXQ" target="_blank">http://youtu.be/A1Y95NtmbXQ</a></p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/48027" onclick="popUp('/user/view/48027', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>DouglasEngle</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80560'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80560',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80560" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:80791">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg" alt="Ágora Rio" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a> diz... Jan 29, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Muito bacana, Bolanhos.<br />Durante a fase de Proposição o Desafio Ágora estará aberto a muitas ideias como esta.<br /><br />Obrigado pela participação!</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80791'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80791',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80791" style="margin-left:120px;"></div>
+
+            </div>
+                	<div id="postResponse:80570">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/31967" onclick="popUp('/user/view/31967', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="EloirFaria" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/31967" onclick="popUp('/user/view/31967', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EloirFaria</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Em 2012, com duas colegas da Prefeitura do Rio (Valéria Hazan e Cláudia Reis), desenvolvemos o projeto "Estação de Cicloconveniências", que objetiva ofertar serviços ao ciclista (ex: guarda abrigada da bicicleta, entre outros, junto às estações do BRT Transoeste e promover a integração tarifária. Vejam o resumo executivo do projeto.</p>
+<p>PROJETO Estação de Cicloconveniências<br />Sumário executivo e recomendações<br />2012<br /> <br />     O projeto tem por objetivos ampliar a integração intermodal, ofertando um kit de serviços para ciclistas-passageiros no BRT Transoeste (estacionamento abrigado, vestiário, banheiro, locação e conserto de bicicletas, venda de acessórios e lanches) e promover a integração tarifária entre bicicleta e ônibus. <br />     Foram estudados projetos e realizadas pesquisas para se chegar à proposta: entrevistas com especialistas, gestores públicos e usuários do BRT; análise de casos similares no Brasil e em outros países; análise do projeto das estações do BRT; pesquisas sobre a operacionalidade do sistema e do marco legal. <br />     As viabilidades técnica e financeira demandam aprimoramento em fases posteriores.</p>
+<p>Descrição do projeto<br />     O projeto se integra ao corredor BRT Transoeste, nos bairros da Barra da Tijuca, Recreio dos Bandeirantes,Guaratiba, Santa Cruz e Campo Grande e se beneficia da infraestrutura criada por ele.  As estações ocuparão áreas públicas nos canteiros centrais das vias servidas pelo sistema e também áreas particulares em terrenos distantes até duzentos e cinqüenta metros da estação BRT, quando não for viável a primeira solução, como nos bairros de Santa Cruz e Campo Grande.<br />     As estações de cicloconveniências seguirão um projeto padronizado, modular e compatível formal e funcionalmente com as estações do BRT Transoeste, projetadas pelo escritório de arquitetura JC&amp;S Arquitetos Associados. A intenção é criar uma marca visual alinhada aos sistemas Trans e adaptável aos BRTs Transcarioca, Transbrasil e Transolímpico.<br />     A área mínima de uma estação é 90m2, com capacidade para abrigar 48 bicicletas.  Foram selecionadas 17 estações do BRT Transoeste para construir junto estações cicloconveniências, com quantidade variável de vagas de estacionamento, dimensionadas em função de três critérios: 2% da quantidade de passageiros da estação do BRT, desde que maior que 48 vagas; demanda atual por vagas; potencial de aumento do número de passageiros-ciclistas.<br />     Está prevista a integração tarifária com o sistema Bilhete Único Carioca, possibilitando aos ciclistas usufruírem do serviço de guarda abrigada de bicicleta como alternativa de integração. Os demais serviços oferecidos serão pagos diretamente pelo usuário.<br />     A população primária beneficiada com o projeto é estimada em três mil e seiscentas pessoas por dia. Indiretamente, toda a população dos bairros por onde passa o Transoeste será beneficiada com o kit de serviços ofertados e com a melhoria do nível de serviço nas viagens de linhas de ônibus alimentadoras do sistema, pois se espera que parte dos passageiros, residentes entre 2 e 5km da Estação do BRT, faça o trajeto de bicicleta.</p>
+<p>Análise das necessidades e das opções<br />     O projeto pretende oferecer os serviços considerados mais importantes por ciclistas e por pesquisas de referência, de modo a proporcionar conforto e qualidade no intervalo das viagens dos ciclistas e na integração com o transporte público, no caso o BRT Transoeste.<br />     Foram estudadas algumas opções de serviços para a montagem da viabilidade financeira, até se concluir pelas alternativas do kit de cicloconveniências com e sem aluguel de bicicletas. A locação de bicicletas corresponde ao sistema BikeRio, atualmente com previsão de ser ampliado para Recreio, Barra e Jacarepaguá. Assim, as estações cicloconveniências previstas poderão ser efetivamente contempladas com este serviço.<br />     Atualmente, já há a oferta de serviços de guarda coberta de bicicletas e vestiário próximos às estações ferroviárias de Santa Cruz e de Campo Grande, com sucesso, em construções adaptadas. Entretanto, trata-se de iniciativas isoladas, com repercussão local, dependentes do empreendedorismo particular, sem apoio municipal. Entretanto, o conjunto de estações, operando de forma integrada, permite a viabilidade do negócio mesmo em áreas que não seriam viáveis as iniciativas isoladas de particulares.</p>
+<p>Adequação do negócio e viabilidade financeira Preliminar<br />     Foram estudadas as alternativas de Concessão precedida de obra pública e Parceria público privada. Ao longo da pré-análise de viabilidade financeira, verificou-se a alternativa de concessão, por cinco anos, é mais adequada ao projeto, em função de sua característica pioneira e em função da prática atual da PCRJ em negócios similares.<br />     Aproveitando o modelo de negócio do BikeRio, modelou-se concessão para exploração de publicidade em espaço público (nas estações e nas bicicletas alugadas), em troca da prestação dos serviços de cicloconveniência.<br />     O estudo mostrou que há viabilidade financeira, com investimento inicial da PCRJ.</p>
+<p> </p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80570'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80570',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80570" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80571">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/31967" onclick="popUp('/user/view/31967', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="EloirFaria" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/31967" onclick="popUp('/user/view/31967', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">EloirFaria</a> diz... Jan 27, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Em 2012, com duas colegas da Prefeitura do Rio (Valéria Hazan e Cláudia Reis), desenvolvemos o projeto "Estação de Cicloconveniências", que objetiva ofertar serviços ao ciclista (ex: guarda abrigada da bicicleta, entre outros, junto às estações do BRT Transoeste e promover a integração tarifária. Vejam o resumo executivo do projeto.</p>
+<p>PROJETO Estação de Cicloconveniências<br />Sumário executivo e recomendações<br />2012<br /> <br />     O projeto tem por objetivos ampliar a integração intermodal, ofertando um kit de serviços para ciclistas-passageiros no BRT Transoeste (estacionamento abrigado, vestiário, banheiro, locação e conserto de bicicletas, venda de acessórios e lanches) e promover a integração tarifária entre bicicleta e ônibus. <br />     Foram estudados projetos e realizadas pesquisas para se chegar à proposta: entrevistas com especialistas, gestores públicos e usuários do BRT; análise de casos similares no Brasil e em outros países; análise do projeto das estações do BRT; pesquisas sobre a operacionalidade do sistema e do marco legal. <br />     As viabilidades técnica e financeira demandam aprimoramento em fases posteriores.</p>
+<p>Descrição do projeto<br />     O projeto se integra ao corredor BRT Transoeste, nos bairros da Barra da Tijuca, Recreio dos Bandeirantes,Guaratiba, Santa Cruz e Campo Grande e se beneficia da infraestrutura criada por ele.  As estações ocuparão áreas públicas nos canteiros centrais das vias servidas pelo sistema e também áreas particulares em terrenos distantes até duzentos e cinqüenta metros da estação BRT, quando não for viável a primeira solução, como nos bairros de Santa Cruz e Campo Grande.<br />     As estações de cicloconveniências seguirão um projeto padronizado, modular e compatível formal e funcionalmente com as estações do BRT Transoeste, projetadas pelo escritório de arquitetura JC&amp;S Arquitetos Associados. A intenção é criar uma marca visual alinhada aos sistemas Trans e adaptável aos BRTs Transcarioca, Transbrasil e Transolímpico.<br />     A área mínima de uma estação é 90m2, com capacidade para abrigar 48 bicicletas.  Foram selecionadas 17 estações do BRT Transoeste para construir junto estações cicloconveniências, com quantidade variável de vagas de estacionamento, dimensionadas em função de três critérios: 2% da quantidade de passageiros da estação do BRT, desde que maior que 48 vagas; demanda atual por vagas; potencial de aumento do número de passageiros-ciclistas.<br />     Está prevista a integração tarifária com o sistema Bilhete Único Carioca, possibilitando aos ciclistas usufruírem do serviço de guarda abrigada de bicicleta como alternativa de integração. Os demais serviços oferecidos serão pagos diretamente pelo usuário.<br />     A população primária beneficiada com o projeto é estimada em três mil e seiscentas pessoas por dia. Indiretamente, toda a população dos bairros por onde passa o Transoeste será beneficiada com o kit de serviços ofertados e com a melhoria do nível de serviço nas viagens de linhas de ônibus alimentadoras do sistema, pois se espera que parte dos passageiros, residentes entre 2 e 5km da Estação do BRT, faça o trajeto de bicicleta.</p>
+<p>Análise das necessidades e das opções<br />     O projeto pretende oferecer os serviços considerados mais importantes por ciclistas e por pesquisas de referência, de modo a proporcionar conforto e qualidade no intervalo das viagens dos ciclistas e na integração com o transporte público, no caso o BRT Transoeste.<br />     Foram estudadas algumas opções de serviços para a montagem da viabilidade financeira, até se concluir pelas alternativas do kit de cicloconveniências com e sem aluguel de bicicletas. A locação de bicicletas corresponde ao sistema BikeRio, atualmente com previsão de ser ampliado para Recreio, Barra e Jacarepaguá. Assim, as estações cicloconveniências previstas poderão ser efetivamente contempladas com este serviço.<br />     Atualmente, já há a oferta de serviços de guarda coberta de bicicletas e vestiário próximos às estações ferroviárias de Santa Cruz e de Campo Grande, com sucesso, em construções adaptadas. Entretanto, trata-se de iniciativas isoladas, com repercussão local, dependentes do empreendedorismo particular, sem apoio municipal. Entretanto, o conjunto de estações, operando de forma integrada, permite a viabilidade do negócio mesmo em áreas que não seriam viáveis as iniciativas isoladas de particulares.</p>
+<p>Adequação do negócio e viabilidade financeira Preliminar<br />     Foram estudadas as alternativas de Concessão precedida de obra pública e Parceria público privada. Ao longo da pré-análise de viabilidade financeira, verificou-se a alternativa de concessão, por cinco anos, é mais adequada ao projeto, em função de sua característica pioneira e em função da prática atual da PCRJ em negócios similares.<br />     Aproveitando o modelo de negócio do BikeRio, modelou-se concessão para exploração de publicidade em espaço público (nas estações e nas bicicletas alugadas), em troca da prestação dos serviços de cicloconveniência.<br />     O estudo mostrou que há viabilidade financeira, com investimento inicial da PCRJ.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80571'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80571',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80571" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:80790">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_26241_36f63e21755f9a52696c724c7a43a6cc_500x500-AGORA.jpg.jpg" alt="Ágora Rio" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/26241" onclick="popUp('/user/view/26241', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Ágora Rio</a> diz... Jan 29, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Muito obrigado pela sua participação, Eloir.<br />A partir do dia 23/02 o Desafio Ágora Rio: Mobilidade Urbana estrará em sua fase de <strong>Proposição.<br /> <br /></strong>Os usuários terão 40 dias para compartilhar suas idéis que, posteriormente, serão selecionadas e irão a votação popular. Você poderá enviar estas e mais quantas ideias quiser. Até lá, convidamos você a continuar participando desta fase de engajamento, conhecendo as informações sobre o transporte da nossa cidade nos documentos dispostos acima. <br /><br />Você pode conhecer a dinâmica de todas as etapas do Desafio no link:<br /><a href="https://desafioagorario.crowdicity.com/page/view/1944" target="_blank">https://desafioagorario.crowdicity.com/page/view/1944</a></p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('80790'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/80790',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:80790" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81377">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg" alt="Secretaria Municipal de Meio Ambiente" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Meio Ambiente</a> diz... Feb 5, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Olá, Jaime. Obrigado pela participação.<br /><br />Atualmente, a região da Zona Norte possui uma malha cicloviária de 41 quilômetros. A extensão desta malha é foco de atenção constante da Prefeitura, temos 10,45 quilômetros de vias em andamento e estão planejadas uma ampliação de mais 50 km. Um bom exemplo dos futuros investimentos é a Ciclovia da Maré, que será iniciada no próximo mês.<br /><br /></p>
+<p> </p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81377'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81377',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81377" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:81544">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 6, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Obrigado pelo retorno SMAC. Gostaria de saber se viram minha apresentação onde mostro a distribuição geógráfica destes 41km de ciclovias na região, demonstrando que a Zona Norte não tem uma malha que estimule o uso da bicicleta nos bairros:</p>
+<p><a href="http://youtu.be/A1Y95NtmbXQ" target="_blank">http://youtu.be/A1Y95NtmbXQ</a></p>
+<p>Importante destacar que além de ciclovias onde precisa, ainda há um grande potencial de urbanismo dos bairros degradados com as linhas ferroviárias que cortam a cidade nesta apresentação compartilhada.</p>
+<p>Poderia também informar por zona da cidade qual a quilometragem de ciclovia disponível?</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81544'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81544',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81544" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:81873">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 9, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A tempo: nem todo projeto de ciclovia na zona norte precisa ser em comunidade. Tem uma grande população nesta região que não tem a segurança de circular nestas áreas e acaba que fica esquecida com tantos projetos em comunidades, já que não é morador de uma. Não generalizemos a zona norte.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81873'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81873',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81873" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:81572">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg" alt="azeitegallo" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">azeitegallo</a> diz... Feb 7, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Gostaria de saber se alguém tem alguma proposta para disciplinar o uso das ciclovias. Vejo ciclistas irresponsáveis fazendo barbaridades, reproduzindo o que os motoristas fazem com seus carros nas ruas. Do jeito que vai a coisa, mais a frente também teremos problemas tão sérios quanto o que temos com os carros atualmente.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29748_a6801984be0508b7c0aae40d10470c6e_logoGoverno3.jpg.jpg);"><a  href="user/activity/29748" onclick="popUp('/user/view/29748', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Governo</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('81572'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/81572',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:81572" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:82204">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg" alt="Secretaria Municipal de Meio Ambiente" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Meio Ambiente</a> diz... Feb 11, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Obrigado pela participação, Marcello.<br /><br />O Rio, Capital da Bicicleta conta com o programa Rio, Capital da Bicicleta, eu apoio. Voltado à educação e promoção ao uso deste modal de transporte. Sempre que uma ciclovia <br />está em fase final de implantação, um grupo de agentes ambientais de educação, fazem o circuito de bicicleta, orientando tanto os comerciantes local, como os pedestres sobre as<br />regras de utilização, esse trabalho dura em torno de trinta dias e só após essa ação, a via é inaugurada.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30403_446ad3d178cdbe0bd4b45609e5858e70_azeitegallo.jpg.jpg);"><a  href="user/activity/30403" onclick="popUp('/user/view/30403', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>azeitegallo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('82204'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/82204',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:82204" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:82212">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg" alt="Secretaria Municipal de Meio Ambiente" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Secretaria Municipal de Meio Ambiente</a> diz... Feb 11, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            Prezado "Bolanhos",<br />
+ <br />
+É muito importante seu interesse nas ciclovias da Cidade. O Programa Rio Capital da Bicicleta visa não apenas a ampliação do sistema cicloviário municipal, mas incentivar uma mobilidade mais sustentável e favorecer a intermobilidade entre o transporte público, bicicleta e pedestres. Nesse sentido, os 74,62 km de rotas existentes na zona norte, incluindo os bairros das áreas de planejamento 1 e 2, visam à interligação com o transporte de massa, sendo alimentadoras desse modal
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('82212'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/82212',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:82212" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:82319">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 12, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Obrigadonpelo retorno mas não foi informado o pedido: Qual a quilometragem de ciclovias por area de planejamento do Rio? Qual a área total em km2 de  cada area de planejamento e quantos moradores em cada area de planejamento? Se estas informações estivessem detalhadas por bairro na zona norte seria otimo.</p>
+<p> </p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('82319'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/82319',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:82319" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:82443">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:0px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/48756" onclick="popUp('/user/view/48756', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="MarianaCarrozzino" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:600px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/48756" onclick="popUp('/user/view/48756', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">MarianaCarrozzino</a> diz... Feb 13, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Os ciclistas carecem de segurança para circular pela cidade. Há poucas ciclovias e nenhuma conectividade entre as rotas, os motoristas em veículos motorizados demonstram total ignorância a respeito da postura que deveriam ter em relação aos ciclistas, e os ciclistas também não são bem instruídos sobre a adoção de um comportamento seguro nas pistas do Rio de Janeiro.</p>
+<p>Além disso, a pouca integração do transporte de massa e o sistema cicloviário torna praticamente inviáveis os deslocamentos de ciclistas. Os trens e o metrô só recebem ciclistas em fins de semana e feriados, ou então tarde da noite, enquanto os ônibus não possuem qualquer estrutura para recebê-los. É lamentável.</p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('82443'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/82443',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:82443" style="margin-left:30px;"></div>
+
+            </div>
+                	<div id="postResponse:82626">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:30px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatar_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg" alt="Bolanhos" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:570px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">Bolanhos</a> diz... Feb 14, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Mariana, vamos pensar no seguinte: as ruas do Rio de Janeiro foram planejadas para a passagem de cavalos e carroças, que posteriormente ganhou bondes, carros e finalmente onibus. Elas tem algo entorno de 3,5 a 5 metros de largura com duas faixas de rolamento, e na maioria das vezes uma vira ponto de onibus ou estacionamento irregular com pisca alerta e duas rodas sobre a calçada. Um onibus, principal meio de transporte da cidade, tem 2,5 metros de largura, e normalmente as vias tem mais de uma linha de onibus por rua. Alem disso ainda há a praga urbana do motociclista, que acha que só tem direitos. No meio deste caos, vem a Prefeitura e inventa uma "Ciclofaixa Compartilhada"  pintando uma seta e uma bicicleta no chão. O fato é simples: esta propaganda para juntar os km necessarios e se vender como cidade para bcicletas é facil fazer. criar o ambiente certo não se faz. Seria necessario recriar a cidade. Não culpe os motoristas, pois eles vivem na mesma m. que os ciclistas, só que tem medo e se protegem mais com carcaças de metal a sua volta.</p>
+<p> </p>
+<p>um exemplo do que falei: "ciclofaixa" na Rua General Polidoro em frente ao cemiterio, em Botafogo.a maior presepada que já vi.</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/48756" onclick="popUp('/user/view/48756', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>MarianaCarrozzino</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29808_ded5c3e478b1f247af178f13091abdbf_smac.jpg.jpg);"><a  href="user/activity/29808" onclick="popUp('/user/view/29808', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Meio Ambiente</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('82626'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/82626',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:82626" style="margin-left:60px;"></div>
+
+            </div>
+                	<div id="postResponse:83660">
+		                                                    						                        <div class="postResponse postResponseBackgroundB" style="margin-left:60px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:540px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Feb 19, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>A criação do ambiente favorável a transporte não-motorizado passa pela criação de faixas compartilhadas(ex: Rua Silva Castro <a href="https://goo.gl/maps/ozSHb" target="_blank">https://goo.gl/maps/ozSHb</a> ), segregadas (ex: Rua Rodolfo Dantas próximo à Praça Cardeal Arcoverde <a href="https://goo.gl/maps/bss7Y" target="_blank">https://goo.gl/maps/bss7Y</a> ) ou exclusivas (como as da orla) para bicicletas. Esse é o "basicão" e o que vai determinar qual solução é melhor é o tipo de via, demanda de usuários, além de outros motivos específicos; sem isso não há com o que se trabalhar.</p>
+<p>Além desse "basicão", devem haver campanhas de conscientização de motoristas, pedestres e ciclistas; deve haver adequação do restante da via e fluxo: estabelecimento de "Zonas 30 ou 40", de forma a não haver muita diferença de velocidades (pedalando normalmente se vai a pouco mais de 20km/h), limitação de certos tipos de tráfego (produtos perigosos ou veículos muito grandes), pigmentação de pavimento em cor diferenciada, além outras adequações viárias a fim de garantir maior segurança.</p>
+<p>Como conselho geral a quem se interessar sobre o tema, recomendo buscas no Youtube sobre Amsterdam (na verdade, sobre a Holanda em geral) e sobre Copenhagen, que têm sistemas interessantíssimos de viários compartilhados com uso de bicicleta (pista de bicicletas junto às dos carros, porém ligeiramente mais elevadas, priorização de sinal para bicicletas, tachões que sinalizam a aproximação de ciclistas em esquinas, muito úteis para conversões em esquinas, bicicletas com adaptações para se carregar crianças, bicicletas para carga como compras - <a href="http://daneshea.com/wp-content/uploads/2013/05/IMG_0843.jpg" target="_blank">http://daneshea.com/wp-content/uploads/2013/05/IMG_0843.jpg</a> -, etc)</p>
+                                                                                                <div class="commentForm_userTagArea">
+                                        <div class="tagText">Users tagged: </div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter22.png);"><a  href="user/activity/48756" onclick="popUp('/user/view/48756', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>MarianaCarrozzino</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_47491_81932db598ac8c07b5611be01b72e05b_Avatar3.jpg.jpg);"><a  href="user/activity/47491" onclick="popUp('/user/view/47491', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Bolanhos</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_29744_4fdb739a2d3a3f4aee9d3b8a9b4ee2f4_Logo%20SMTR.jpg.jpg);"><a  href="user/activity/29744" onclick="popUp('/user/view/29744', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Transportes</span></a></div>
+                                                                                                                                <div class="userTag" style="background-image:url(https://f69aa27b9b6c6702e27b-ffbfdeddb5f7166a1729dfea28599a63.ssl.cf3.rackcdn.com/avatarInline_30210_b7c37ea65e3b82ca1c0a94907d04c6f4_logo%20prefeitura%20valendo.jpg.jpg);"><a  href="user/activity/30210" onclick="popUp('/user/view/30210', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;"><span>Secretaria Municipal de Urbanismo</span></a></div>
+                                                                            </div>
+                                                                                                                </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('83660'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/83660',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:83660" style="margin-left:90px;"></div>
+
+            </div>
+                	<div id="postResponse:83947">
+		                                                    						                        <div class="postResponse postResponseBackground" style="margin-left:90px;">
+                <div class="left form_button_marginRight">
+                                                            <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">
+                        <img class="b-image--rounded" width="43" height="43" src="https://c3bc684a70f5e8966084-caecdbfe75c7306a66bf26d7c68caa5d.ssl.cf3.rackcdn.com/profile_counter43.png" alt="jhmelman" />
+                    </a>
+                </div>
+            	<div class="postResponseBody"  style="width:510px;">
+    
+                    <div class="postResponseInfoLine">
+                        <a  href="user/activity/35736" onclick="popUp('/user/view/35736', { popUpTitle:'Perfil',height:profilePopUpHeight });return false;">jhmelman</a> diz... Feb 21, 2015
+                    </div>
+                                            <div class="postResponseText">
+                            <p>Colocando dois vídeos (estão em inglês, mas deve ter alguma maneira de traduzir, mas na pior das hipóteses vale o vídeo):<br /><a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=Url1pt8NgEo#t=120" target="_blank">https://www.youtube.com/watch?feature=player_detailpage&amp;v=Url1pt8NgEo#t=120</a><br /><a href="https://www.youtube.com/watch?v=ZtX8qiC_rXE" target="_blank">https://www.youtube.com/watch?v=ZtX8qiC_rXE</a></p>
+                                                                                                                                            </div>
+    
+                                                                             
+    
+                                                                            
+                                                
+                        <div class="postResponseOptions">
+                            <ul>
+                                                                    <li class="postResponseOptions reply"><a href="#" onclick="placeReplyForm('83947'); return false;" class="postResponseButton userInteraction">Responder</a></li>
+                                                                <li class="postResponseOptions report"><a href="#" onclick="popUp('/report/form/83947',{ 'popUpTitle':'Denunciar comentário','width':400,'height':230,'showClose':0 });return false;" class="postResponseButton userInteraction" onmouseover="Tips.add(this,event,'Report',ttoptions);"><span class="hidden">Denunciar</span></a></li>                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+            <div class="clear"><!--IE--></div>
+            <div class="postResponseFormSlot" id="postResponseFormSlot:83947" style="margin-left:120px;"></div>
+
+            </div>
+                    <div id="postResponseFormSlot:79829"></div>
+</div>
+
+    <a href="/user/signinform" class="userInteraction warning">Faça o login ou cadastre-se para participar da discussão</a>
+
+<script type="text/javascript">
+placeReplyForm('79829');
+</script>
+
+
+    </div>
+</div>
+
+        <div class="clear"><!-- IE --></div>
+    </div>
+</div>
+
+<div id="new_idea_form_outer">
+	<div class="b-single-post--underlay b-single-post--trigger"></div>
+	<div class="b-single-post--wrapper">
+		
+	</div>
+</div>
+
+<script>
+	jQuery(function(){
+		initPostButton('');
+	});
+</script>
+
+        		<div id="footer" class="sharingSpace">
+			<div class="footerCWBadge "><a href="http://www.crowdicity.com/" target="_blank"><span>Powered by Crowdicity</span></a></div>
+                            <div class="footerCWBadge footerCWBadgePartner">
+                    <a href="" target="_blank">
+                        <img src="https://resources.crowdworks.net/partnerlogos/9.png" alt="Rio Prefeitura" />
+                        <span>Rio Prefeitura</span>
+                    </a>
+                </div>
+                                    <div class="left small lightGrey" style="text-align:left;line-height:14px;">
+                <a href="/hubbub/privacypolicy" target="_blank">Crowdicity Privacy Policy</a> | <a href="/hubbub/termsofuse" target="_blank">Terms of Use</a><br />
+                
+                                    <div id="shareContainer">
+                        <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+                    </div>
+                
+                            </div>
+		</div>
+        	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54737204-1', 'auto');
+  ga('send', 'pageview');
+  
+    ga('create', 'UA-30156372-2', 'desafioagorario.crowdicity.com');
+  ga('send', 'pageview');
+  
+</script>
+    <!--[TRACKING]-->
+    </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51234ec40ff40f1a"></script>
+        
+
+        
+
+        <script type="text/javascript" src="/min/g=footer,footerNoAdmin"></script>
+
+                    <div id="shareContainerSide">
+                <div class="shareTitle">Share</div>
+                <!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+    if (typeof addthis_config === "undefined") {
+        var addthis_config=
+                {
+                    data_track_addressbar: false,
+                    data_track_clickback:false
+                }
+        var addthis_share =
+        {
+           url: "https://desafioagorario.crowdicity.com/",
+           title: "Desafio Ágora Rio",
+           description: "",
+        }
+    }
+</script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style sharePageChangeTrack">
+<a class="addthis_button_twitter atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_linkedin atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_facebook atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_google_plusone_share atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_yammer atb" addthis:data_track_addressbar="false" addthis:data_track_clickback="false" ></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+            </div>
+        
+    </body>
+
+</html>
